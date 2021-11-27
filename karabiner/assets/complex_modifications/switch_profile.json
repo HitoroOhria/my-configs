@@ -1,0 +1,49 @@
+{
+    "title": "switch_profile",
+    "rules": [
+        {
+            "description": "switch_MacBook_build-in_keyboard_profile",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "1",
+                        "modifiers": {
+                            "mandatory": [
+                                "control",
+                                "shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'MacBook build-in keyboard'"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "switch_Corne_Cherry_profile",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "2",
+                        "modifiers": {
+                            "mandatory": [
+                                "control",
+                                "shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'Corne Cherry'"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
