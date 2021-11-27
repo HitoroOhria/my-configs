@@ -6,7 +6,7 @@ export EDITOR=vim
 ## cd
 ### set cd
 alias ..='cd ..'
-alias ../..='cd ../..'
+alias ...='cd ../..'
 
 ## ls
 ### set ls
@@ -46,7 +46,7 @@ bindkey '^R' peco-history-selection
 # fi
 # alias cdi='cdr -l | sed "s/^[0-9]\+ \+//" | peco --prompt="cdr >" --query "$LBUFFER"'
 
-# Version management
+# Version controll system 
 ## git
 ### set git
 alias g='git'
