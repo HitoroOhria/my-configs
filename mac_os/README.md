@@ -20,7 +20,13 @@ $ ./setup.sh
 ## Set change Application window shortcut
 
 - open Keyboard Prefecture and move shortcut tab
-- select keyboard of sidebar and `次のウィンドウを操作対象にする` set Cmd + Esc 
+- select keyboard of sidebar and `次のウィンドウを操作対象にする` set Cmd + Esc
+
+## Set role of fn key to none
+
+- open Keyboard Prefecture and move keyboard tab
+- change `press ${earth_mark} to` set none
+    - for prevent malfunction of single press fn
 
 ## Install Google Japanese Input
 
