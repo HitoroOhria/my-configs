@@ -1,0 +1,138 @@
+ [alias]
+  ; command
+  statusFiles = !git status --porcelain | peco --query \"$LBUFFER\" | awk -F ' ' '{print $NF}'
+  branches = !git branch | peco --prompt \"GIT BRANCH>\" | head -n 1 | sed -e \"s/^\\*\\s*//g\"
+  pbcopy = !printf "$1" | pbcopy
+
+  ; clone
+  cl = clone
+
+  ; branch
+  b = branch
+  bdb = !git branch -D $(git branches)
+
+  ; checkout
+  ch = checkout
+  chf = !git checkout $(git statusFiles)
+  chb = !git checkout $(git branches)
+  mas = checkout master
+  dev = checkout develop
+
+  ; status
+  s = status
+
+  ; diff
+  d = diff
+  dc = diff --cached
+  dm = diff master
+  df = !git diff $(git statusFiles)
+
+  ; add
+  a = add
+  au = add -u
+  aa = add -A
+  ap = add -p
+  as = add src/
+  af = !git add $(git statusFiles)
+
+  ; reset
+  rh = reset HEAD
+  rhf = !git reset HEAD $(git statusFiles)
+
+  ; commit
+  c = commit
+  cm = commit -m
+  ca = commit --amend
+  coa = commit --abort
+  coc = commit --continue
+  cos = commit --skip
+  
+  ; cherry-pick
+  cp = cherry-pick
+  cpc = cherry-pick --continue 
+  cpa = cherry-pick --abort
+  cps = cherry-pick --skip
+
+  ; push
+  p = push
+  ; 要改善、git branch -r の実行結果を加工したものを選択するようにする
+  pd = push --delete origin $(git branches)
+  po = !git push origin $(git rev-parse --abbrev-ref HEAD)
+  pfo = !git push --force-with-lease origin $(git rev-parse --abbrev-ref HEAD)
+
+  ; fetch
+  f = fetch
+
+  ; pull
+  pu = pull
+  pur = pull --rebase
+  puo = !git pull origin --rebase $(git rev-parse --abbrev-ref HEAD)
+
+  ; log
+  l = log
+  lp = log -p
+  ln= log --name-status
+  lo = log --oneline -10
+  lon = log --oneline
+  today = "!f () {\
+             git log --oneline --branches \
+               --since=midnight --date=iso \
+               --author=\"$(git config user.name)\" \
+               --format=\" - %C(green)(%ad)%Creset %C(auto)%h%Creset : %s\";\
+           };f"
+  la = log --graph --decorate --pretty=oneline --all --abbrev-commit
+
+  ; stash
+  st = stash
+  sts = stash save
+  stl = stash list
+  sta = stash apply
+  stp = stash pop
+  std = stash drop
+
+  ; rebase
+  re = rebase
+  rem = rebase master
+  ree = rebase --edit-todo
+  rec = rebase --continue
+  rea = rebase --abort
+  res = rebase --skip
+  reh = rebase -i HEAD~~~~~
+  reo = rebase --onto
+  
+  ; show-branch
+  derived-branch = !git show-branch | grep '*' | grep -v "$(git rev-parse --abbrev-ref HEAD)" | head -1 | awk -F'[]~^[]' '{print $2}'
+  
+  ; git webui
+  webui = !~/.git-webui/release/libexec/git-core/git-webui
+
+[user]
+	email = hiroto100114@gmail.com
+	name = hiroto.ohira
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore_global
+	symlinks = true
+[webui]
+	autoupdate = true
+[merge]
+	tool = vimdiff
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[http]
+	postBuffer = 524288000
+[pager]
+	log = diff-highlight | less -r
+	show = diff-highlight | less -r
+	diff = diff-highlight | less -r
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = ~/.stCommitMsg
