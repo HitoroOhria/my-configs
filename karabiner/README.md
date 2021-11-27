@@ -1,6 +1,9 @@
+<!-- START doctoc -->
+<!-- END doctoc -->
+
 # Preconditions
 
-- キーボード種別が ISO であること
+- キーボード種別が ANSI であること
 - ghq がインストールされていること
 - Karabiner がインストールされていること
 
