@@ -1,1 +1,12 @@
+# Excluded URLs and Kyes
+https://calendar.google.com/calendar/*
+https://www.mindmeister.com/*
+https://www.e-typing.ne.jp/*
+
 # Custom key mappings
+map h goBack
+map l goForward
+map H previousTab
+map L nextTab
+map J scrollPageDown
+map K scrollPageUp
