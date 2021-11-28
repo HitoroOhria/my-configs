@@ -46,7 +46,7 @@ $ ghq get https://github.com/HirotoOhria/my-configs.git
 ### Run setup script
 
 ```shell
-$ ./setup.sh
+$ ./setup_all.sh
 ```
 
 ### Setup manually
