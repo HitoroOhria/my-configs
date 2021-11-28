@@ -1,112 +1,135 @@
-#
-# Executes commands at the start of an interactive session.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
-
-# Source Prezto.
+# Shell
+## zsh
+### source prezto
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
-fpath=(/usr/local/share/zsh-completions $fpath)
+## editor
+### set editor
+export EDITOR=vim
 
-# `/Users/hiroto.ohira/google-cloud-sdk/install.sh` exec result
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/hiroto.ohira/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/hiroto.ohira/google-cloud-sdk/path.zsh.inc'; fi
+## cd
+### set cd
+alias ..='cd ..'
+alias ...='cd ../..'
 
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/hiroto.ohira/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/hiroto.ohira/google-cloud-sdk/completion.zsh.inc'; fi
+## ls
+### set ls
+alias ls='ls -G -l'
+alias lsg='ls -G -l | grep'
 
-# Editor
-export EDITOR=emacs
+## ps
+### set ps
+alias psg='ps aux | grep'
 
-# PATH
-export GOPATH=$HOME/go
-export PATH=$HOME/.nodebrew/current/bin:$PATH # node, npm
+## tail
+### set tail
+alias ta='tail -n 30'
 
-# embulk
+## ssh
+### set ssh
+alias ssho='ssh -oStrictHostKeyChecking=no'
+
+## peco
+### set peco
+function peco-history-selection() {
+    BUFFER=$(history 1 | sort -k1,1nr | perl -ne 'BEGIN { my @lines = (); } s/^\s*\d+\*?\s*//; $in=$_; if (!(grep {$in eq $_} @lines)) { push(@lines, $in); print $in; }' | peco --query "$LBUFFER")
+    CURSOR=${#BUFFER}
+    zle reset-prompt
+}
+zle -N peco-history-selection
+bindkey '^R' peco-history-selection
+
+### set incremantal cd
+# if [[ -n $(echo ${^fpath}/chpwd_recent_dirs(N)) && -n $(echo ${^fpath}/cdr(N)) ]]; then
+#     autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
+#     add-zsh-hook chpwd chpwd_recent_dirs
+#     zstyle ':completion:*' recent-dirs-insert both
+#     zstyle ':chpwd:*' recent-dirs-default true
+#     zstyle ':chpwd:*' recent-dirs-max 1000
+#     zstyle ':chpwd:*' recent-dirs-file "$HOME/.cache/chpwd-recent-dirs"
+# fi
+# alias cdi='cdr -l | sed "s/^[0-9]\+ \+//" | peco --prompt="cdr >" --query "$LBUFFER"'
+
+# Version control system
+## git
+### set git
+export PATH=/usr/local/bin/git:$PATH
+alias g='git'
+
+### set tig
+alias t='tig'
+
+## github
+### set ghq
+alias gcd='cd $(ghq list -p | peco --query "$LBUFFER")'
+
+# Data loadler
+## embulk
+### set embulk
 export PATH=$HOME/.embulk/bin:$PATH
 
-# PostgreSQL
-export PGDATA=/usr/local/var/postgres
+# Package manager
+## set nodenv by anyenv
+export PATH=$HOME/.anyenv/envs/nodenv/bin:$PATH
 
-# MySQL
-export PATH=/usr/local/opt/mysql@5.7/bin:$PATH
-
-# Go
-export PATH=$GOROOT/bin:$PATH
-export PATH=$PATH:$GOPATH/bin
-
-# jenv by anyenv
+## set jenv by anyenv
 export PATH=$HOME/.anyenv/envs/jenv/bin:$PATH
 if which jenv > /dev/null; then
   export JENV_ROOT=$HOME/.anyenv/envs/jenv
   eval "$(jenv init -)"
 fi
 
-# nodenv by anyenv
-export PATH=$HOME/.anyenv/envs/nodenv/bin:$PATH
-
-# pyenv by anyenv
+## set pyenv by anyenv
 export PATH=$HOME/.anyenv/envs/pyenv/bin:$PATH
 
-# goenv
-export GOENV_ROOT=$HOME/.goenv
+## set goenv by anyenv
 export PATH=$GOENV_ROOT/bin:$PATH
 export PATH=$HOME/.goenv/bin:$PATH
 export PATH=$HOME/.goenv/shims:$PATH
-eval "$(goenv init -)"
+if which goenv > /dev/null; then
+  export GOENV_ROOT=$HOME/.goenv
+  eval "$(goenv init -)"
+fi
 
-# Java
-# export JAVA_HOME=`/usr/libexec/java_home -v 11`
-# alias java_home='/usr/libexec/java_home'
+# Programing language
+## javascript
+### set node
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 
-# Gradle
+## java
+### set gradle
 export GTADLE_OPTS=-Dorg.gradle.daemon=true
-alias gb='gradle -i bootRun'
-alias gt='gradle test'
 
-# Docker
-export COMPOSE_HTTP_TIMEOUT=120
+## go
+### set go
+export GOPATH=$HOME/go
+export PATH=$GOROOT/bin:$PATH
+export PATH=$PATH:$GOPATH/bin
 
-# Build-in command
-alias psg='ps aux | grep'
-alias ta='tail -n 30'
-alias ls='ls -G -l'
-alias lsg='ls -G -l | grep'
-
-# Emacs
-alias em='emacs'
-
-# ssh
-alias ssho='ssh -oStrictHostKeyChecking=no'
-
-# git
-alias g='git'
-
-# tig
-alias t='tig'
-
-# rials
+## ruby
+### set rials
 alias r='rails'
-alias rc='rails credentials:edit' be='bundle exec'
+alias rc='rails credentials:edit'
+alias be='bundle exec'
 
-# rubocp
+### set rubocp
 alias ru='rubocop'
 alias rug='rubocop --auto-gen-config '
 alias ruc='rubocop --auto-correct'
 
-# Google Cloud SDK
-alias gc='gcloud'
-alias gcf='gcloud functions'
+# Database
+## set PostgreSQL
+export PGDATA=/usr/local/var/postgres
 
-# Firebase
-alias fi='firebase'
+## set MySQL
+export PATH=/usr/local/opt/mysql@5.7/bin:$PATH
 
-# docker
+# Infrastracture
+## docker
+### set docker
+export COMPOSE_HTTP_TIMEOUT=120
 alias d='docker'
 alias dl='docker logs'
 alias db='docker build'
@@ -119,49 +142,34 @@ alias dn='docker network'
 alias -g C='`docker ps -a | tail -n +2 | peco | cut -d" " -f1`'
 alias -g I='`docker images | tail -n +2 | peco | cut -d" " -f1`'
 
-# docker-compose
+### set docker-compose
 alias com='docker-compose'
 alias come='docker-compose exec'
 
-# docker-clean
+### set docker-clean
 alias dcl='docker-clean'
 
-# circleci
+## circleci
+### set circleci
 alias ci='circleci'
 alias civa='circleci config validate -c .circleci/config.yml'
 alias cipr='circleci config process .circleci/config.yml > .circleci/process.yml'
 alias cilo='circleci local execute -c process.yml --job'
 
-# Terraform
+## terraform
+### set terraform
 alias te='terraform'
 
-# cdr
-# if [[ -n $(echo ${^fpath}/chpwd_recent_dirs(N)) && -n $(echo ${^fpath}/cdr(N)) ]]; then
-#     autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
-#     add-zsh-hook chpwd chpwd_recent_dirs
-#     zstyle ':completion:*' recent-dirs-insert both
-#     zstyle ':chpwd:*' recent-dirs-default true
-#     zstyle ':chpwd:*' recent-dirs-max 1000
-#     zstyle ':chpwd:*' recent-dirs-file "$HOME/.cache/chpwd-recent-dirs"
-# fi
-# alias cdi='cdr -l | sed "s/^[0-9]\+ \+//" | peco --prompt="cdr >" --query "$LBUFFER"'
+# Cloud service platform
+## gcp
+### set google cloud sdk
+alias gc='gcloud'
+alias gcf='gcloud functions'
+# below is result of executing `~/google-cloud-sdk/install.sh`
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/hiroto.ohira/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/hiroto.ohira/google-cloud-sdk/path.zsh.inc'; fi
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/hiroto.ohira/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/hiroto.ohira/google-cloud-sdk/completion.zsh.inc'; fi
 
-# peco
-function peco-history-selection() {
-    BUFFER=$(history 1 | sort -k1,1nr | perl -ne 'BEGIN { my @lines = (); } s/^\s*\d+\*?\s*//; $in=$_; if (!(grep {$in eq $_} @lines)) { push(@lines, $in); print $in; }' | peco --query "$LBUFFER")
-    CURSOR=${#BUFFER}
-    zle reset-prompt
-}
-zle -N peco-history-selection
-bindkey '^R' peco-history-selection
-
-# ghq
-alias gcd='cd $(ghq list -p | peco --query "$LBUFFER")'
-
-#autoload -Uz vcs_info
-#precmd_vcs_info() { vcs_info }
-#precmd_functions+=( precmd_vcs_info )
-#setopt prompt_subst
-#RPROMPT=\$vcs_info_msg_0_
-##PROMPT=\$vcs_info_msg_0_'%# '
-#zstyle ':vcs_info:git:*' formats '%b'
+### set firebase
+alias fi='firebase'

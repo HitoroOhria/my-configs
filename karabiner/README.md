@@ -3,31 +3,27 @@
 
 # Preconditions
 
-- キーボード種別が ANSI であること
-- ghq がインストールされていること
-- Karabiner がインストールされていること
+- should be cloned this repository
+- should be set keyboard type is ANSI of macOS
+- should be installed ghq
 
 # Step
 
-## Install Karabiner-Elements
+### Install Karabiner-Elements
 
 - install from [here](https://karabiner-elements.pqrs.org/)
 
-## Setup Karabiner-Elements
+### Setup Karabiner-Elements
 
 - launch Karabiner-Elements and allow access privacy
 
-## Clone this repository
-
-- do it by root README.md
-
-## Run setup script
+### Run setup script
 
 ```shell
 $ ./setup.sh
 ```
 
-## Set Karabiner-Elements profiles
+### Set Karabiner-Elements profiles (skip)
 
 - launch Karabienr-Elements and move Profiles tab
 - remove default profile

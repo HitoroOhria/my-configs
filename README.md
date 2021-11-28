@@ -4,34 +4,50 @@
 
 - [Overview](#overview)
 - [Step](#step)
-  - [Install some software](#install-some-software)
-  - [Run setup script](#run-setup-script)
+    - [Install some software](#install-some-software)
+    - [Run setup script](#run-setup-script)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # Overview
 
-- this is my setting
+- this is my Mac setting
 
 # Step
 
-## Install some software
+### Install homebrew
 
-- homebrew
-    - install from [here](https://brew.sh/index)
-- git
-    - run `$ brew install git`
-    - make pass command
-        - skip this step because already added my `.zshrc` and `setup.sh`.
-        - `$ ehoc "export PATH=/usr/local/bin/git:$PATH" >> ~/.zshrc`
-        - `$ source ~/.zshrc`
-- Karabiner-Elements
-    - install from [here](https://karabiner-elements.pqrs.org/)
-- tig
-    - todo: write here
+- install from [here](https://brew.sh/index)
 
-## Run setup script
+### Install git
+
+- run `$ brew install git`
+- make pass command
+    - skip this step because already added my `.zshrc`
+    - `$ ehoc "export PATH=/usr/local/bin/git:$PATH" >> ~/.zshrc`
+    - `$ source ~/.zshrc`
+
+### Install ghq
+
+```shell
+$ brew install ghq
+```
+
+### Clone this repository
+
+```shell
+$ ghq get https://github.com/HirotoOhria/my-configs.git
+```
+
+### Run setup script
 
 ```shell
 $ ./setup.sh
 ```
+
+### Setup manually
+
+- macOS Prefectures
+- Karabiner-Elements
+- Viminum
+

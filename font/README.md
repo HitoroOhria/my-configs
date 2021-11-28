@@ -9,3 +9,8 @@
 ```shell
 $ ./setup.sh
 ```
+
+### Set font
+
+- IntelliJ IDEA
+- Iterm2

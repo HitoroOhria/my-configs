@@ -1,6 +1,10 @@
+# Preconditions
+
+- should be installed git
+
 # Step
 
-## Run setup script
+### Run setup script
 
 ```shell
 $ ./setup.sh

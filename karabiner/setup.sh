@@ -1,5 +1,7 @@
 #!/bin/sh
 
+SCRIPT_DIR=$(cd $(dirname "$0"); pwd)
+
 # replace karabiner config directory
 rm -r ~/.config/karabiner
-ln -s ~/ghq/github.com/HirotoOhria/my-configs/karabiner/ ~/.config
+ln -s "$SCRIPT_DIR" ~/.config

@@ -1,10 +1,10 @@
 # Preconditions
 
-- homebrew がインストールされていること
+- should be installed homebrew 
 
 # Step
 
-## Run setup script
+### Run setup script
 
 ```shell
 $ ./setup.sh

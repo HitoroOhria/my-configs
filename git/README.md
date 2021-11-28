@@ -1,10 +1,11 @@
 # Preconditions
 
-- git がインストールされていること
+- should be cloned this repository
+- should be installed git
 
 # Step
 
-## Run setup script
+### Run setup script
 
 ```shell
 $ ./setup.sh
