@@ -16,6 +16,9 @@
 # Overview
 
 - this is my Mac setting
+- make pass command
+    - skip this step because already added my `.zprofile`
+    - `$ echo 'eval $(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprifile`
 
 # Step
 
