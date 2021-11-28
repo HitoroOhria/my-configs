@@ -71,6 +71,11 @@ alias gcd='cd $(ghq list -p | peco --query "$LBUFFER")'
 export PATH=$HOME/.embulk/bin:$PATH
 
 # Package manager
+## set anyenv
+if which anyenv > /dev/null; then
+  eval "$(anyenv init -)"
+fi
+
 ## set nodenv by anyenv
 export PATH=$HOME/.anyenv/envs/nodenv/bin:$PATH
 
