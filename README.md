@@ -4,8 +4,12 @@
 
 - [Overview](#overview)
 - [Step](#step)
-    - [Install some software](#install-some-software)
+    - [Install homebrew](#install-homebrew)
+    - [Install git](#install-git)
+    - [Install ghq](#install-ghq)
+    - [Clone this repository](#clone-this-repository)
     - [Run setup script](#run-setup-script)
+    - [Setup manually](#setup-manually)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
