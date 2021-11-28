@@ -40,7 +40,7 @@ $ brew install ghq
 ### Clone this repository
 
 ```shell
-$ ghq get https://github.com/HirotoOhria/my-configs.git
+$ ghq get https://github.com/HirotoOhria/my-mac-configs.git
 ```
 
 ### Run setup script
