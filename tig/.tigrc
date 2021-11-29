@@ -26,7 +26,7 @@ set diff-options = -m --first-parent
 # ------- キーバンド --------
 
 # + で commit --amend
-bind generic +      !git commit --amend --allow-empty
+bind generic + !git commit --amend --allow-empty
 
 # S で stash save
 # A で stash apply
