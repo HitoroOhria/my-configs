@@ -5,9 +5,16 @@
 
 ### Install IDE
 
-- install IntelliJ IDEA from [here]()
+- install IntelliJ IDEA from [here](https://www.jetbrains.com/idea/download/#section=mac)
 
-### Set font
+### Set Theme
+
+- move Preferences > Plugin
+- search `One Dark theme` and install
+- move Preferences > Appearance & Behavior > Appearance
+- select Theme to `One Dark Vivit`
+
+### Set Font
 
 - move Preferences > Editor > Font
 - select Font to `Ricty Diminished`
