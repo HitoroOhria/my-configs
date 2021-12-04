@@ -45,3 +45,8 @@ bind diff S ?!git commit --squash %(commit)
 
 # H で クリップボードに commit hash をコピー
 bind main H !@git pbcopy %(commit)
+
+# [not working] Commit 後の Press Enter to continue を抑制
+# see https://github.com/jonas/tig/issues/463
+# see https://blue-red.ddo.jp/~ao/wiki/wiki.cgi?page=tig
+bind generic C >git commit
