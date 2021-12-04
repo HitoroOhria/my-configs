@@ -19,8 +19,10 @@
     - `Delete line` to `Ctrl + X`
     - `Move Caret to Line End with Selection` to `Shift + Ctrl + E`
     - `Move Caret to Line Start with Selection` to `Shift + Ctrl + A`
+    - `Clone Caret Above` to `Cmd + Up Arrow`
+    - `Clone Caret Below`to `Cdm + Down Arrow`
     - 矩形選択
-    - 1行コピー
+    - 1行コピー（なさそう）
     - `Terminal` to `Ctrl + T`
     - `Switch Frame` to `Alt + W`
 
