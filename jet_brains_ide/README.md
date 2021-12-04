@@ -22,4 +22,5 @@
     - 矩形選択
     - 1行コピー
     - `Terminal` to `Ctrl + T`
+    - `Switch Frame` to `Alt + W`
 
