@@ -9,24 +9,24 @@ RUBY_VERSION="3.0.3"
 # set anyenv
 brew install anyenv
 anyenv init
-exec "$SHELL" -l
+"$SHELL" -l
 anyenv install --init
 
 # set nodenv
 anyenv install nodenv
-exec "$SHELL" -l
+"$SHELL" -l
 nodenv install "$NODE_VERSION"
 nodenv global "$NODE_VERSION"
 
 # set goenv
 anyenv install goenv
-exec "$SHELL" -l
+"$SHELL" -l
 goenv install "$GO_VERSION"
 goenv global "$GO_VERSION"
 
 # set rbenv
 anyenv install rbenv
-exec "$SHELL" -l
+"$SHELL" -l
 rbenv install "$RUBY_VERSION"
 rbenv global "$RUBY_VERSION"
 
