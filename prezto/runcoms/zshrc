@@ -88,6 +88,9 @@ fi
 
 ## set pyenv by anyenv
 export PATH=$HOME/.anyenv/envs/pyenv/bin:$PATH
+if which pyenv > /dev/null; then
+  eval "$(pyenv init -)"
+fi
 
 ## set goenv by anyenv
 export PATH=$GOENV_ROOT/bin:$PATH

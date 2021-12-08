@@ -3,6 +3,7 @@
 NODE_VERSION="16.13.0"
 GO_VERSION="1.17.3"
 RUBY_VERSION="3.0.3"
+PYTHON_VERIOSN="3.10.1"
 
 # TODO find another way of re login shell
 
@@ -29,6 +30,12 @@ anyenv install rbenv
 "$SHELL" -l
 rbenv install "$RUBY_VERSION"
 rbenv global "$RUBY_VERSION"
+
+# set pyenv
+anyenv install pyenv
+"$SHELL" -l
+pyenv install "$RUBY_VERSION"
+pyenv global "$RUBY_VERSION"
 
 # set jenv
 # research it
