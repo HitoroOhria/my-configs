@@ -19,7 +19,7 @@
 - move Preferences > Editor > Font
 - select Font to `Ricty Diminished`
 
-### Set keymap
+### Set Keymap
 
 - move Preferences > Keymap
 - set blow shortcuts
@@ -33,3 +33,14 @@
     - `Terminal` to `Ctrl + T`
     - `Switch Frame` to `Alt + W`
 
+## Set Editor
+
+### Inlay Hints
+
+- move Preferences > Editor > Inlay Hints
+- uncheck all
+
+### Code Folding
+
+- move Preferences > Editor > General > Code Folding
+- uncheck all
