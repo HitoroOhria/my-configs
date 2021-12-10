@@ -29,6 +29,11 @@ $ ./setup.sh
 - change `press ${earth_mark} to` set none
     - for prevent malfunction of single press fn
 
+### Set Yen to Backslash
+
+- open Keyboard Prefecture and move Input Source tab
+- select `日本語-ローマ字入力` on sidebar and `"¥"キーで入力する文字` to Backslack
+
 ### Install Google Japanese Input
 
 - install from [here](https://www.google.co.jp/ime/)
