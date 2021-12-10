@@ -180,3 +180,8 @@ source ~/google-cloud-sdk/completion.zsh.inc
 
 ### set firebase
 alias fi='firebase'
+
+# Smartphone
+## Android
+### set adb
+export PATH=$PATH:~/Library/Android/sdk/platform-tools
