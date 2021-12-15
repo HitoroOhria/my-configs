@@ -44,3 +44,13 @@
 
 - move Preferences > Editor > General > Code Folding
 - uncheck all
+
+## Set Plugins
+
+- Atom Material Icons
+- Awesome Console
+- Grep Console
+- Rainbow Brackets
+- Sticky Selection
+- GitToolBox
+
