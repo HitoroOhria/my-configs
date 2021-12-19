@@ -54,3 +54,8 @@
 - Sticky Selection
 - GitToolBox
 
+### Set Live Templates
+
+- click File > Manage IDE Settings > Import Settings...
+- select `./live_template_settings.zip`.
+- click `OK` and `Import and Restart`.
