@@ -4,6 +4,10 @@
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
+### set pure
+### try original pure instead of prezto plugin because it has bug.
+autoload -U promptinit; promptinit
+prompt pure
 
 ## editor
 ### set editor
