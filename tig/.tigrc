@@ -50,3 +50,8 @@ bind main H !@git pbcopy %(commit)
 # see https://github.com/jonas/tig/issues/463
 # see https://blue-red.ddo.jp/~ao/wiki/wiki.cgi?page=tig
 bind generic C >git commit
+
+# Y/N を非表示
+bind stash S !git stash save "%(prompt Enter stash comment: )"
+bind stash A !git stash apply %(stash)
+bind stash P !git stash pop %(stash)
