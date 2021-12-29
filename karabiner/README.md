@@ -30,17 +30,17 @@ $ ./setup.sh
 - add `MacBook build-in keyboard` profile
     - add all Complex modifications
     - add Simple modifications
-        - interational1 to equal_sign
-        - 英数キー to left_control
-        - かなキー to fn
-        - left_control to tab
-        - oen_bracket to hyphen
-        - quote to close_bracket
-        - right_command to right_option
-        - semicolon to open_bracket
-        - tab to escape 
+        - `interational1` to `equal_sign`
+        - `英数キー` to `left_control`
+        - `かなキー` to `caps_lock`
+        - `left_control` to `tab`
+        - `open_bracket` to `hyphen`
+        - `quote` to `close_bracket`
+        - `right_command` to `right_option`
+        - `semicolon` to `open_bracket`
+        - `tab` to `escape` 
 - add `Crne Cherry` profile
-    - add all Complex modificatifons
+    - add all Complex modifications
 
 ## Done!!
 
