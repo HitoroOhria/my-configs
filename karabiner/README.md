@@ -48,5 +48,10 @@ $ ./setup.sh
 
 # Feature
 
+- [ ] Fix non-working keys
+    - Shift + Ctrl + E
+    - Shift + Ctrl + N
+    - Shift + Ctrl + Y
+    - Shift + Ctrl + C
 - [ ] Set Fn + Left Edges
 - [ ] Consider what key to use for lower left key
