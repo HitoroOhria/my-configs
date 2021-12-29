@@ -45,3 +45,8 @@ $ ./setup.sh
 ## Done!!
 
 - Congratulation! You got it all for anything!
+
+# Feature
+
+- [ ] Set Fn + Left Edges
+- [ ] Consider what key to use for lower left key
