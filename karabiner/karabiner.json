@@ -1331,7 +1331,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "Ctrl + F / B to → / ←.",
+                        "description": "Ctrl + F / B to Right / Left.",
                         "manipulators": [
                             {
                                 "from": {
@@ -1375,7 +1375,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "Ctrl + N / P to ↓ / ↑.",
+                        "description": "Ctrl + N / P to Down / Up.",
                         "manipulators": [
                             {
                                 "from": {
@@ -1725,7 +1725,7 @@
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },
-            "selected": true,
+            "selected": false,
             "simple_modifications": [
                 {
                     "from": {
@@ -3544,7 +3544,7 @@
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },
-            "selected": false,
+            "selected": true,
             "simple_modifications": [],
             "virtual_hid_keyboard": {
                 "country_code": 0,
