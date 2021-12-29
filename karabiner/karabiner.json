@@ -3150,7 +3150,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "Ctrl + F / B to → / ←.",
+                        "description": "Ctrl + F / B to Right / Left.",
                         "manipulators": [
                             {
                                 "from": {
@@ -3194,7 +3194,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "Ctrl + N / P to ↓ / ↑.",
+                        "description": "Ctrl + N / P to Down / Up.",
                         "manipulators": [
                             {
                                 "from": {
@@ -3372,7 +3372,7 @@
                         ]
                     },
                     {
-                        "description": "switch_MacBook_build-in_keyboard_profile",
+                        "description": "Switch to MacBook build-in keyboard profile",
                         "manipulators": [
                             {
                                 "from": {
@@ -3394,7 +3394,7 @@
                         ]
                     },
                     {
-                        "description": "switch_Corne_Cherry_profile",
+                        "description": "Switch to Corne Cherry profile",
                         "manipulators": [
                             {
                                 "from": {
