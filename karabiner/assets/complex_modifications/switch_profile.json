@@ -1,8 +1,8 @@
 {
-    "title": "switch_profile",
+    "title": "Switch profile",
     "rules": [
         {
-            "description": "switch_MacBook_build-in_keyboard_profile",
+            "description": "Switch to MacBook build-in keyboard profile",
             "manipulators": [
                 {
                     "type": "basic",
@@ -24,7 +24,7 @@
             ]
         },
         {
-            "description": "switch_Corne_Cherry_profile",
+            "description": "Switch to Corne Cherry profile",
             "manipulators": [
                 {
                     "type": "basic",

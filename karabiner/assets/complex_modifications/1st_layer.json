@@ -3,7 +3,7 @@
     "rules": [
         {
             "available_since": "12.3.0",
-            "description": "fn + left edges to ctrl and space keymap.",
+            "description": "Fn + Left Edges to Ctrl and Space.",
             "manipulators": [
                 {
                     "from": {
@@ -54,7 +54,7 @@
         },
         {
             "available_since": "12.3.0",
-            "description": "fn + right edges to media keys.",
+            "description": "Fn + Right Edges to Media keys.",
             "manipulators": [
                 {
                     "from": {
@@ -117,7 +117,7 @@
         },
         {
             "available_since": "12.3.0",
-            "description": "fn + 2nd column to symbol.",
+            "description": "Fn + 2nd columns to Symbols.",
             "manipulators": [
                 {
                     "from": {
@@ -125,9 +125,6 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
-                            ],
-                            "optional": [
-                                "any"
                             ]
                         }
                     },
@@ -144,9 +141,6 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
-                            ],
-                            "optional": [
-                                "any"
                             ]
                         }
                     },
@@ -164,9 +158,6 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
-                            ],
-                            "optional": [
-                                "any"
                             ]
                         }
                     },
@@ -183,9 +174,6 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
-                            ],
-                            "optional": [
-                                "any"
                             ]
                         }
                     },
@@ -203,9 +191,6 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
-                            ],
-                            "optional": [
-                                "any"
                             ]
                         }
                     },
@@ -222,9 +207,6 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
-                            ],
-                            "optional": [
-                                "any"
                             ]
                         }
                     },
@@ -242,9 +224,6 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
-                            ],
-                            "optional": [
-                                "any"
                             ]
                         }
                     },
@@ -261,9 +240,6 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
-                            ],
-                            "optional": [
-                                "any"
                             ]
                         }
                     },
@@ -279,7 +255,7 @@
         },
         {
             "available_since": "12.3.0",
-            "description": "fn + 3rd column to number .",
+            "description": "Fn + 3rd columns to Numbers.",
             "manipulators": [
                 {
                     "from": {
@@ -475,7 +451,7 @@
         },
         {
             "available_since": "12.3.0",
-            "description": "fn + 4th column to symbol .",
+            "description": "Fn + 4th Columns to Symbols.",
             "manipulators": [
                 {
                     "from": {
@@ -483,9 +459,6 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
-                            ],
-                            "optional": [
-                                "any"
                             ]
                         }
                     },
@@ -503,9 +476,6 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
-                            ],
-                            "optional": [
-                                "any"
                             ]
                         }
                     },
@@ -523,9 +493,6 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
-                            ],
-                            "optional": [
-                                "any"
                             ]
                         }
                     },
@@ -543,9 +510,6 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
-                            ],
-                            "optional": [
-                                "any"
                             ]
                         }
                     },
@@ -563,9 +527,6 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
-                            ],
-                            "optional": [
-                                "any"
                             ]
                         }
                     },
@@ -583,9 +544,6 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
-                            ],
-                            "optional": [
-                                "any"
                             ]
                         }
                     },
@@ -603,9 +561,6 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
-                            ],
-                            "optional": [
-                                "any"
                             ]
                         }
                     },
@@ -623,9 +578,6 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
-                            ],
-                            "optional": [
-                                "any"
                             ]
                         }
                     },
@@ -643,9 +595,6 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
-                            ],
-                            "optional": [
-                                "any"
                             ]
                         }
                     },
@@ -663,9 +612,6 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
-                            ],
-                            "optional": [
-                                "any"
                             ]
                         }
                     },

@@ -17,7 +17,7 @@
                 "rules": [
                     {
                         "available_since": "12.3.0",
-                        "description": "fn + left edges to ctrl and space keymap.",
+                        "description": "Fn + Left Edges to Ctrl and Space.",
                         "manipulators": [
                             {
                                 "from": {
@@ -68,7 +68,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "fn + right edges to media keys.",
+                        "description": "Fn + Right Edges to Media keys.",
                         "manipulators": [
                             {
                                 "from": {
@@ -131,7 +131,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "fn + 2nd column to symbol.",
+                        "description": "Fn + 2nd columns to Symbols.",
                         "manipulators": [
                             {
                                 "from": {
@@ -139,9 +139,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -158,9 +155,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -178,9 +172,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -197,9 +188,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -217,9 +205,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -236,9 +221,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -256,9 +238,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -275,9 +254,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -293,7 +269,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "fn + 3rd column to number .",
+                        "description": "Fn + 3rd columns to Numbers.",
                         "manipulators": [
                             {
                                 "from": {
@@ -489,7 +465,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "fn + 4th column to symbol .",
+                        "description": "Fn + 4th Columns to Symbols.",
                         "manipulators": [
                             {
                                 "from": {
@@ -497,9 +473,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -517,9 +490,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -537,9 +507,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -557,9 +524,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -577,9 +541,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -597,9 +558,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -617,9 +575,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -637,9 +592,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -657,9 +609,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -677,9 +626,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -694,7 +640,199 @@
                         ]
                     },
                     {
-                        "description": "right_alt + 3th column to function key.",
+                        "description": "Right Alt + 2nd Columns to Cmd + Function keys.",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "z",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f1",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "x",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f2",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "c",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f3",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "v",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f4",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "b",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f5",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "n",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f6",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "m",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f7",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "comma",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f8",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "period",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f9",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "slash",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f10",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "equal_sign",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f11",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Right Alt + 3rd Columns to Function keys.",
                         "manipulators": [
                             {
                                 "from": {
@@ -891,8 +1029,217 @@
                         ]
                     },
                     {
+                        "description": "Right Alt + 4th Columns to Shift + Function keys.",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "q",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f1",
+                                        "modifiers": "shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "w",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f2",
+                                        "modifiers": "shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "e",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f3",
+                                        "modifiers": "shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "r",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f4",
+                                        "modifiers": "shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "t",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f5",
+                                        "modifiers": "shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "y",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f6",
+                                        "modifiers": "shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "u",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f7",
+                                        "modifiers": "shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "i",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f8",
+                                        "modifiers": "shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "o",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f9",
+                                        "modifiers": "shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "p",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f10",
+                                        "modifiers": "shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "hyphen",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f11",
+                                        "modifiers": "shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "escape",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f12",
+                                        "modifiers": "shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "available_since": "12.3.0",
-                        "description": "Ctrl + { / } to Command + Shift + { / }.",
+                        "description": "Ctrl + { / } to Cmd + Shift + { / }.",
                         "manipulators": [
                             {
                                 "from": {
@@ -938,7 +1285,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "Ctrl + M to return_or_enter.",
+                        "description": "Ctrl + M to Return.",
                         "manipulators": [
                             {
                                 "from": {
@@ -946,9 +1293,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "control"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -963,7 +1307,31 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "Ctrl + F / B to arrows right / left.",
+                        "description": "Ctrl + Fn + M to Cmd + Return.",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "m",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control",
+                                            "fn"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "return_or_enter",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "available_since": "12.3.0",
+                        "description": "Ctrl + F / B to → / ←.",
                         "manipulators": [
                             {
                                 "from": {
@@ -971,6 +1339,9 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "control"
+                                        ],
+                                        "optional": [
+                                            "any"
                                         ]
                                     }
                                 },
@@ -987,6 +1358,9 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "control"
+                                        ],
+                                        "optional": [
+                                            "any"
                                         ]
                                     }
                                 },
@@ -1001,7 +1375,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "Ctrl + N / P to arrows down / up.",
+                        "description": "Ctrl + N / P to ↓ / ↑.",
                         "manipulators": [
                             {
                                 "from": {
@@ -1009,6 +1383,9 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "control"
+                                        ],
+                                        "optional": [
+                                            "any"
                                         ]
                                     }
                                 },
@@ -1025,6 +1402,9 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "control"
+                                        ],
+                                        "optional": [
+                                            "any"
                                         ]
                                     }
                                 },
@@ -1039,7 +1419,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "Ctrl + H / D to delete_or_backspace / delete_forward .",
+                        "description": "Ctrl + H / D to Delete / Delete forward .",
                         "manipulators": [
                             {
                                 "from": {
@@ -1076,31 +1456,7 @@
                         ]
                     },
                     {
-                        "description": "fn to right_command if press ctrl.",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "fn",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_command",
-                                        "modifiers": [
-                                            "control"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "ctrl to eisuu / fn to kana if alone.",
+                        "description": "Ctrl to Eisuu if alone.",
                         "manipulators": [
                             {
                                 "from": {
@@ -1131,10 +1487,15 @@
                                     }
                                 ],
                                 "type": "basic"
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "description": "CapsLock to Fn. If alone, to Kana",
+                        "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "fn",
+                                    "key_code": "caps_lock",
                                     "modifiers": {
                                         "optional": [
                                             "any"
@@ -1192,7 +1553,7 @@
                         ]
                     },
                     {
-                        "description": "switch_MacBook_build-in_keyboard_profile",
+                        "description": "Switch to MacBook build-in keyboard profile",
                         "manipulators": [
                             {
                                 "from": {
@@ -1214,7 +1575,7 @@
                         ]
                     },
                     {
-                        "description": "switch_Corne_Cherry_profile",
+                        "description": "Switch to Corne Cherry profile",
                         "manipulators": [
                             {
                                 "from": {
@@ -1392,7 +1753,7 @@
                     },
                     "to": [
                         {
-                            "apple_vendor_top_case_key_code": "keyboard_fn"
+                            "key_code": "caps_lock"
                         }
                     ]
                 },
@@ -1475,7 +1836,7 @@
                 "rules": [
                     {
                         "available_since": "12.3.0",
-                        "description": "fn + left edges to ctrl and space keymap.",
+                        "description": "Fn + Left Edges to Ctrl and Space.",
                         "manipulators": [
                             {
                                 "from": {
@@ -1526,7 +1887,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "fn + right edges to media keys.",
+                        "description": "Fn + Right Edges to Media keys.",
                         "manipulators": [
                             {
                                 "from": {
@@ -1589,7 +1950,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "fn + 2nd column to symbol.",
+                        "description": "Fn + 2nd columns to Symbols.",
                         "manipulators": [
                             {
                                 "from": {
@@ -1597,9 +1958,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -1616,9 +1974,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -1636,9 +1991,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -1655,9 +2007,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -1675,9 +2024,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -1694,9 +2040,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -1714,9 +2057,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -1733,9 +2073,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -1751,7 +2088,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "fn + 3rd column to number .",
+                        "description": "Fn + 3rd columns to Numbers.",
                         "manipulators": [
                             {
                                 "from": {
@@ -1947,7 +2284,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "fn + 4th column to symbol .",
+                        "description": "Fn + 4th Columns to Symbols.",
                         "manipulators": [
                             {
                                 "from": {
@@ -1955,9 +2292,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -1975,9 +2309,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -1995,9 +2326,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -2015,9 +2343,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -2035,9 +2360,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -2055,9 +2377,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -2075,9 +2394,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -2095,9 +2411,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -2115,9 +2428,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -2135,9 +2445,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -2152,7 +2459,199 @@
                         ]
                     },
                     {
-                        "description": "right_alt + 3th column to function key.",
+                        "description": "Right Alt + 2nd Columns to Cmd + Function keys.",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "z",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f1",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "x",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f2",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "c",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f3",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "v",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f4",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "b",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f5",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "n",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f6",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "m",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f7",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "comma",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f8",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "period",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f9",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "slash",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f10",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "equal_sign",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f11",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Right Alt + 3rd Columns to Function keys.",
                         "manipulators": [
                             {
                                 "from": {
@@ -2349,489 +2848,38 @@
                         ]
                     },
                     {
-                        "description": "Mouse keys Ambidextrous",
+                        "description": "Right Alt + 4th Columns to Shift + Function keys.",
                         "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "i",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "vertical_wheel": -64
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "k",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "vertical_wheel": 64
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "j",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "horizontal_wheel": 64
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "l",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "horizontal_wheel": -64
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "j",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control",
-                                            "left_shift"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "x": -16072
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "k",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control",
-                                            "left_shift"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "y": 16072
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "i",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control",
-                                            "left_shift"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "y": -16072
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "l",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control",
-                                            "left_shift"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "x": 16072
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "u",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "pointing_button": "button1"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "o",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "pointing_button": "button2"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "j",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "x": -4072
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "k",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "y": 4072
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "i",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "y": -4072
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "l",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "x": 4072
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "w",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "vertical_wheel": -64
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "s",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "vertical_wheel": 64
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "a",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "horizontal_wheel": 64
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "d",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "horizontal_wheel": -64
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "a",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control",
-                                            "left_shift"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "x": -16072
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "s",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control",
-                                            "left_shift"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "y": 16072
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "w",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control",
-                                            "left_shift"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "y": -16072
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "d",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control",
-                                            "left_shift"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "x": 16072
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
                             {
                                 "from": {
                                     "key_code": "q",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_control"
-                                        ],
-                                        "optional": [
-                                            "any"
+                                            "right_alt"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "pointing_button": "button1"
+                                        "key_code": "f1",
+                                        "modifiers": "shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "w",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f2",
+                                        "modifiers": "shift"
                                     }
                                 ],
                                 "type": "basic"
@@ -2841,100 +2889,167 @@
                                     "key_code": "e",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_control"
-                                        ],
-                                        "optional": [
-                                            "any"
+                                            "right_alt"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "pointing_button": "button2"
+                                        "key_code": "f3",
+                                        "modifiers": "shift"
                                     }
                                 ],
                                 "type": "basic"
                             },
                             {
                                 "from": {
-                                    "key_code": "a",
+                                    "key_code": "r",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_control"
-                                        ],
-                                        "optional": [
-                                            "any"
+                                            "right_alt"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "mouse_key": {
-                                            "x": -4072
-                                        }
+                                        "key_code": "f4",
+                                        "modifiers": "shift"
                                     }
                                 ],
                                 "type": "basic"
                             },
                             {
                                 "from": {
-                                    "key_code": "s",
+                                    "key_code": "t",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_control"
-                                        ],
-                                        "optional": [
-                                            "any"
+                                            "right_alt"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "mouse_key": {
-                                            "y": 4072
-                                        }
+                                        "key_code": "f5",
+                                        "modifiers": "shift"
                                     }
                                 ],
                                 "type": "basic"
                             },
                             {
                                 "from": {
-                                    "key_code": "w",
+                                    "key_code": "y",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_control"
-                                        ],
-                                        "optional": [
-                                            "any"
+                                            "right_alt"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "mouse_key": {
-                                            "y": -4072
-                                        }
+                                        "key_code": "f6",
+                                        "modifiers": "shift"
                                     }
                                 ],
                                 "type": "basic"
                             },
                             {
                                 "from": {
-                                    "key_code": "d",
+                                    "key_code": "u",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_control"
-                                        ],
-                                        "optional": [
-                                            "any"
+                                            "right_alt"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "mouse_key": {
-                                            "x": 4072
-                                        }
+                                        "key_code": "f7",
+                                        "modifiers": "shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "i",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f8",
+                                        "modifiers": "shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "o",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f9",
+                                        "modifiers": "shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "p",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f10",
+                                        "modifiers": "shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "hyphen",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f11",
+                                        "modifiers": "shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "escape",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_alt"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f12",
+                                        "modifiers": "shift"
                                     }
                                 ],
                                 "type": "basic"
@@ -2943,7 +3058,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "Ctrl + { / } to Command + Shift + { / }.",
+                        "description": "Ctrl + { / } to Cmd + Shift + { / }.",
                         "manipulators": [
                             {
                                 "from": {
@@ -2989,7 +3104,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "Ctrl + M to return_or_enter.",
+                        "description": "Ctrl + M to Return.",
                         "manipulators": [
                             {
                                 "from": {
@@ -2997,9 +3112,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "control"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -3014,7 +3126,31 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "Ctrl + F / B to arrows right / left.",
+                        "description": "Ctrl + Fn + M to Cmd + Return.",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "m",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control",
+                                            "fn"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "return_or_enter",
+                                        "modifiers": "command"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "available_since": "12.3.0",
+                        "description": "Ctrl + F / B to → / ←.",
                         "manipulators": [
                             {
                                 "from": {
@@ -3022,6 +3158,9 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "control"
+                                        ],
+                                        "optional": [
+                                            "any"
                                         ]
                                     }
                                 },
@@ -3038,6 +3177,9 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "control"
+                                        ],
+                                        "optional": [
+                                            "any"
                                         ]
                                     }
                                 },
@@ -3052,7 +3194,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "Ctrl + N / P to arrows down / up.",
+                        "description": "Ctrl + N / P to ↓ / ↑.",
                         "manipulators": [
                             {
                                 "from": {
@@ -3060,6 +3202,9 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "control"
+                                        ],
+                                        "optional": [
+                                            "any"
                                         ]
                                     }
                                 },
@@ -3076,6 +3221,9 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "control"
+                                        ],
+                                        "optional": [
+                                            "any"
                                         ]
                                     }
                                 },
@@ -3090,7 +3238,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "Ctrl + H / D to delete_or_backspace / delete_forward .",
+                        "description": "Ctrl + H / D to Delete / Delete forward .",
                         "manipulators": [
                             {
                                 "from": {
@@ -3127,31 +3275,7 @@
                         ]
                     },
                     {
-                        "description": "fn to right_command if press ctrl.",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "fn",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_command",
-                                        "modifiers": [
-                                            "control"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "ctrl to eisuu / fn to kana if alone.",
+                        "description": "Ctrl to Eisuu if alone.",
                         "manipulators": [
                             {
                                 "from": {
@@ -3182,10 +3306,15 @@
                                     }
                                 ],
                                 "type": "basic"
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "description": "CapsLock to Fn. If alone, to Kana",
+                        "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "fn",
+                                    "key_code": "caps_lock",
                                     "modifiers": {
                                         "optional": [
                                             "any"

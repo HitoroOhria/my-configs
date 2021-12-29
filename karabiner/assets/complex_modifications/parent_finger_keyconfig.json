@@ -1,32 +1,8 @@
 {
-    "title": "parent finger key custom.",
+    "title": "Parent finger keyconfig.",
     "rules": [
         {
-            "description": "fn to right_command if press ctrl.",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "fn",
-                        "modifiers": {
-                            "mandatory": [
-                                "control"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "right_command",
-                            "modifiers": [
-                                "control"
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "description": "ctrl to eisuu / fn to kana if alone.",
+            "description": "Ctrl to Eisuu if alone.",
             "manipulators": [
                 {
                     "type": "basic",
@@ -57,11 +33,16 @@
                             "key_code": "japanese_eisuu"
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "description": "CapsLock to Fn. If alone, to Kana",
+            "manipulators": [
                 {
                     "type": "basic",
                     "from": {
-                        "key_code": "fn",
+                        "key_code": "caps_lock",
                         "modifiers": {
                             "optional": [
                                 "any"

@@ -1,9 +1,9 @@
 {
-    "title": "control keyconfig",
+    "title": "Ctrl keyconfig",
     "rules": [
         {
             "available_since": "12.3.0",
-            "description": "Ctrl + { / } to Command + Shift + { / }.",
+            "description": "Ctrl + { / } to Cmd + Shift + { / }.",
             "manipulators": [
                 {
                     "from": {
@@ -49,7 +49,7 @@
         },
         {
             "available_since": "12.3.0",
-            "description": "Ctrl + M to return_or_enter.",
+            "description": "Ctrl + M to Return.",
             "manipulators": [
                 {
                     "from": {
@@ -57,9 +57,6 @@
                         "modifiers": {
                             "mandatory": [
                                 "control"
-                            ],
-                            "optional": [
-                                "any"
                             ]
                         }
                     },
@@ -74,7 +71,31 @@
         },
         {
             "available_since": "12.3.0",
-            "description": "Ctrl + F / B to arrows right / left.",
+            "description": "Ctrl + Fn + M to Cmd + Return.",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "m",
+                        "modifiers": {
+                            "mandatory": [
+                                "control",
+                                "fn"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "return_or_enter",
+                            "modifiers": "command"
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {
+            "available_since": "12.3.0",
+            "description": "Ctrl + F / B to Right / Left.",
             "manipulators": [
                 {
                     "from": {
@@ -82,6 +103,9 @@
                         "modifiers": {
                             "mandatory": [
                                 "control"
+                            ],
+                            "optional": [
+                                "any"
                             ]
                         }
                     },
@@ -98,6 +122,9 @@
                         "modifiers": {
                             "mandatory": [
                                 "control"
+                            ],
+                            "optional": [
+                                "any"
                             ]
                         }
                     },
@@ -112,7 +139,7 @@
         },
         {
             "available_since": "12.3.0",
-            "description": "Ctrl + N / P to arrows down / up.",
+            "description": "Ctrl + N / P to Down / Up.",
             "manipulators": [
                 {
                     "from": {
@@ -120,6 +147,9 @@
                         "modifiers": {
                             "mandatory": [
                                 "control"
+                            ],
+                            "optional": [
+                                "any"
                             ]
                         }
                     },
@@ -136,6 +166,9 @@
                         "modifiers": {
                             "mandatory": [
                                 "control"
+                            ],
+                            "optional": [
+                                "any"
                             ]
                         }
                     },
@@ -150,7 +183,7 @@
         },
         {
             "available_since": "12.3.0",
-            "description": "Ctrl + H / D to delete_or_backspace / delete_forward .",
+            "description": "Ctrl + H / D to Delete / Delete forward .",
             "manipulators": [
                 {
                     "from": {
