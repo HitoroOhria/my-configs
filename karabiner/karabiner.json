@@ -3114,7 +3114,9 @@
                                             "control"
                                         ],
                                         "optional": [
-                                            "any"
+                                            "shift",
+                                            "option",
+                                            "command"
                                         ]
                                     }
                                 },
