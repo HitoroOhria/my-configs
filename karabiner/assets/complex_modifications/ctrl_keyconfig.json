@@ -76,30 +76,6 @@
         },
         {
             "available_since": "12.3.0",
-            "description": "Ctrl + Fn + M to Cmd + Return.",
-            "manipulators": [
-                {
-                    "from": {
-                        "key_code": "m",
-                        "modifiers": {
-                            "mandatory": [
-                                "control",
-                                "fn"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "return_or_enter",
-                            "modifiers": "command"
-                        }
-                    ],
-                    "type": "basic"
-                }
-            ]
-        },
-        {
-            "available_since": "12.3.0",
             "description": "Ctrl + F / B to Right / Left.",
             "manipulators": [
                 {
@@ -196,6 +172,9 @@
                         "modifiers": {
                             "mandatory": [
                                 "control"
+                            ],
+                            "optional": [
+                                "any"
                             ]
                         }
                     },
@@ -212,6 +191,9 @@
                         "modifiers": {
                             "mandatory": [
                                 "control"
+                            ],
+                            "optional": [
+                                "any"
                             ]
                         }
                     },
