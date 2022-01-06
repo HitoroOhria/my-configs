@@ -34,6 +34,15 @@ $ ./setup.sh
 - open Keyboard Prefecture and move Input Source tab
 - select `日本語-ローマ字入力` on sidebar and `"¥"キーで入力する文字` to Backslack
 
+### Set Stickies Opening/Closing hot key for Alfred workflow
+
+- open Keyboard Prefecture and move shortcut tab
+- select Application on left sidebar
+- add two shortcut (Opening/Closing)
+    - Application: Stickies
+    - Menu Title: `開く` / `折りたたむ`
+    - Keyboard Shortcut: `Cmd + Shift + M`
+
 ### Install Google Japanese Input
 
 - install from [here](https://www.google.co.jp/ime/)
