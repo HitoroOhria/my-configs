@@ -43,6 +43,10 @@
 - move Preferences > Editor > General > Code Folding
 - uncheck all
 
+### Smart Keys
+
+- uncheck `End on blank line moves caret to indent position`
+
 ## Set Plugins
 
 - Atom Material Icons
