@@ -47,6 +47,12 @@
 
 - uncheck `End on blank line moves caret to indent position`
 
+### Set Live Templates
+
+- click File > Manage IDE Settings > Import Settings...
+- select `./live_template_settings.zip`.
+- click `OK` and `Import and Restart`.
+
 ## Set Plugins
 
 - Atom Material Icons
@@ -57,8 +63,53 @@
 - GitToolBox
 - Frame Switcher
 
-### Set Live Templates
+## Set Language & Frameworks
 
-- click File > Manage IDE Settings > Import Settings...
-- select `./live_template_settings.zip`.
-- click `OK` and `Import and Restart`.
+### Set Markdown
+
+- move Preferences > Language & Frameworks > Markdown
+- click `Custom CSS` and paste below
+    - like GitHub 
+
+```css
+/*
+背景色、文字色指定
+*/
+body {
+  background-color: white;
+  color: #24292e;
+}
+/*
+テーブルの整形 
+- 既定だとページ幅いっぱいになっていたのをやめる
+- ヘッダーを見やすくする
+*/
+table {
+  width: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-width: 1px;
+}
+td, th {
+  min-width: 100px;
+  background-color: #f9f9f9;
+  border-color: #eeeeee;
+}
+th {
+  font-weight: bold;
+}
+/*
+コード
+*/
+pre, code {
+  background-color: rgba(27,31,35,0.05);
+  font-size: 85%;
+  color: #24292e;
+}
+/*
+引用
+*/
+blockquote {
+  color: #6a737d;
+}
+```
