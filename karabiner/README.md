@@ -48,6 +48,9 @@ $ ./setup.sh
 
 # Feature
 
+- [ ] Set 2nd layer keys
+    - remove with Cmd, with Shift
+    - add with Alt
 - [ ] Fix non-working keys
     - Shift + Ctrl + E
     - Shift + Ctrl + N
