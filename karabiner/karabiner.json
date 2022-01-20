@@ -3142,30 +3142,6 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "Ctrl + Fn + M to Cmd + Return.",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "m",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control",
-                                            "fn"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "return_or_enter",
-                                        "modifiers": "command"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "available_since": "12.3.0",
                         "description": "Ctrl + F / B to Right / Left.",
                         "manipulators": [
                             {
@@ -3262,6 +3238,9 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "control"
+                                        ],
+                                        "optional": [
+                                            "any"
                                         ]
                                     }
                                 },
@@ -3278,6 +3257,9 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "control"
+                                        ],
+                                        "optional": [
+                                            "any"
                                         ]
                                     }
                                 },
@@ -3326,14 +3308,16 @@
                         ]
                     },
                     {
-                        "description": "CapsLock to Fn. If alone, to Kana",
+                        "description": "CapsLock to Fn if not press with Ctrl. If alone, to Kana",
                         "manipulators": [
                             {
                                 "from": {
                                     "key_code": "caps_lock",
                                     "modifiers": {
                                         "optional": [
-                                            "any"
+                                            "shift",
+                                            "option",
+                                            "command"
                                         ]
                                     }
                                 },
@@ -3354,6 +3338,28 @@
                                 "to_if_held_down": [
                                     {
                                         "key_code": "fn"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "CapsLock to Cmd if press with Ctrl.",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_command",
+                                        "modifiers": "control"
                                     }
                                 ],
                                 "type": "basic"
