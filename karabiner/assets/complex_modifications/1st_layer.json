@@ -3,68 +3,14 @@
     "rules": [
         {
             "available_since": "12.3.0",
-            "description": "Fn + Left Edges to Ctrl and Space.",
+            "description": "Fn + Edges to Media keys.",
             "manipulators": [
                 {
                     "from": {
-                        "key_code": "escape",
+                        "key_code": "close_bracket",
                         "modifiers": {
                             "mandatory": [
                                 "fn"
-                            ],
-                            "optional": [
-                                "any"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "spacebar",
-                            "modifiers": [
-                                "control",
-                                "shift"
-                            ]
-                        }
-                    ],
-                    "type": "basic"
-                },
-                {
-                    "from": {
-                        "key_code": "tab",
-                        "modifiers": {
-                            "mandatory": [
-                                "fn"
-                            ],
-                            "optional": [
-                                "any"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "spacebar",
-                            "modifiers": [
-                                "control"
-                            ]
-                        }
-                    ],
-                    "type": "basic"
-                }
-            ]
-        },
-        {
-            "available_since": "12.3.0",
-            "description": "Fn + Right Edges to Media keys.",
-            "manipulators": [
-                {
-                    "from": {
-                        "key_code": "hyphen",
-                        "modifiers": {
-                            "mandatory": [
-                                "fn"
-                            ],
-                            "optional": [
-                                "any"
                             ]
                         }
                     },
@@ -77,13 +23,10 @@
                 },
                 {
                     "from": {
-                        "key_code": "close_bracket",
+                        "key_code": "equal_sign",
                         "modifiers": {
                             "mandatory": [
                                 "fn"
-                            ],
-                            "optional": [
-                                "any"
                             ]
                         }
                     },
@@ -96,13 +39,10 @@
                 },
                 {
                     "from": {
-                        "key_code": "equal_sign",
+                        "key_code": "tab",
                         "modifiers": {
                             "mandatory": [
                                 "fn"
-                            ],
-                            "optional": [
-                                "any"
                             ]
                         }
                     },
@@ -451,7 +391,7 @@
         },
         {
             "available_since": "12.3.0",
-            "description": "Fn + 4th Columns to Symbols.",
+            "description": "Fn + 4th Columns to Function keys.",
             "manipulators": [
                 {
                     "from": {
@@ -459,13 +399,15 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
+                            ],
+                            "optional": [
+                                "any"
                             ]
                         }
                     },
                     "to": [
                         {
-                            "key_code": "1",
-                            "modifiers": "shift"
+                            "key_code": "f1"
                         }
                     ],
                     "type": "basic"
@@ -476,13 +418,15 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
+                            ],
+                            "optional": [
+                                "any"
                             ]
                         }
                     },
                     "to": [
                         {
-                            "key_code": "2",
-                            "modifiers": "shift"
+                            "key_code": "f2"
                         }
                     ],
                     "type": "basic"
@@ -493,13 +437,15 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
+                            ],
+                            "optional": [
+                                "any"
                             ]
                         }
                     },
                     "to": [
                         {
-                            "key_code": "3",
-                            "modifiers": "shift"
+                            "key_code": "f3"
                         }
                     ],
                     "type": "basic"
@@ -510,13 +456,15 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
+                            ],
+                            "optional": [
+                                "any"
                             ]
                         }
                     },
                     "to": [
                         {
-                            "key_code": "4",
-                            "modifiers": "shift"
+                            "key_code": "f4"
                         }
                     ],
                     "type": "basic"
@@ -527,13 +475,15 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
+                            ],
+                            "optional": [
+                                "any"
                             ]
                         }
                     },
                     "to": [
                         {
-                            "key_code": "5",
-                            "modifiers": "shift"
+                            "key_code": "f5"
                         }
                     ],
                     "type": "basic"
@@ -544,13 +494,15 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
+                            ],
+                            "optional": [
+                                "any"
                             ]
                         }
                     },
                     "to": [
                         {
-                            "key_code": "6",
-                            "modifiers": "shift"
+                            "key_code": "f6"
                         }
                     ],
                     "type": "basic"
@@ -561,13 +513,15 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
+                            ],
+                            "optional": [
+                                "any"
                             ]
                         }
                     },
                     "to": [
                         {
-                            "key_code": "7",
-                            "modifiers": "shift"
+                            "key_code": "f7"
                         }
                     ],
                     "type": "basic"
@@ -578,13 +532,15 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
+                            ],
+                            "optional": [
+                                "any"
                             ]
                         }
                     },
                     "to": [
                         {
-                            "key_code": "8",
-                            "modifiers": "shift"
+                            "key_code": "f8"
                         }
                     ],
                     "type": "basic"
@@ -595,13 +551,15 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
+                            ],
+                            "optional": [
+                                "any"
                             ]
                         }
                     },
                     "to": [
                         {
-                            "key_code": "9",
-                            "modifiers": "shift"
+                            "key_code": "f9"
                         }
                     ],
                     "type": "basic"
@@ -612,13 +570,53 @@
                         "modifiers": {
                             "mandatory": [
                                 "fn"
+                            ],
+                            "optional": [
+                                "any"
                             ]
                         }
                     },
                     "to": [
                         {
-                            "key_code": "0",
-                            "modifiers": "shift"
+                            "key_code": "f10"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "hyphen",
+                        "modifiers": {
+                            "mandatory": [
+                                "fn"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "f11"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "escape",
+                        "modifiers": {
+                            "mandatory": [
+                                "fn"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "f12"
                         }
                     ],
                     "type": "basic"
