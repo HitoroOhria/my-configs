@@ -43,6 +43,9 @@ bind diff R !git  rebase -i %(commit)
 bind diff F ?!git commit --fixup %(commit)
 bind diff S ?!git commit --squash %(commit)
 
+# B で reset %(commit)
+bind main B !git reset %(commit)
+
 # H で クリップボードに commit hash をコピー
 bind main H !@git pbcopy %(commit)
 
