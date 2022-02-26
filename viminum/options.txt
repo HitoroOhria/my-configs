@@ -2,7 +2,7 @@
 https://calendar.google.com/calendar/*
 https://www.mindmeister.com/*
 https://www.e-typing.ne.jp/*
-http://localhost/*
+http://localhost*/*
 
 # Custom key mappings
 map h goBack
