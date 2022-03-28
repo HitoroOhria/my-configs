@@ -41,7 +41,12 @@ $ ./setup.sh
 ### Set Yen to Backslash
 
 - open Keyboard Prefecture and move Input Source tab
-- select `日本語-ローマ字入力` on sidebar and `"¥"キーで入力する文字` to Backslack
+- select `日本語-ローマ字入力` on sidebar and `"¥"キーで入力する文字` to back slack
+
+### Suppress char replacement
+
+- open Keyboard Prefecture and move Application tab
+- Add any shortcut on Slack to Ctrl + T 
 
 ### Install Google Japanese Input
 
