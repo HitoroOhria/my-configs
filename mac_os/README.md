@@ -51,3 +51,29 @@ $ ./setup.sh
 ### Install Google Japanese Input
 
 - install from [here](https://www.google.co.jp/ime/)
+
+# Using software
+
+### Index
+
+- Utility Tools
+    - Alfred
+    - Karabiner-Elements
+    - Notion
+    - Deepl
+    - 1Password
+- Development Tools
+    - Slack for Desktop
+    - Docker for Mac
+    - JetBrains IDE
+    - homebrew
+    - prezto
+    - git
+    - tig
+    - ghq
+    - peco
+    - anyenv
+    - ricty deminished
+- Chrome Extensions
+    - workona
+    - Vimium
