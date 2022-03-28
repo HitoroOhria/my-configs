@@ -16,7 +16,7 @@ $ ./setup.sh
 ### Set keyboard type to ANSI
 
 - open Keyboard Prefecture and set ANSI
-    - for Karabiner-Elements 
+    - for Karabiner-Elements
 
 ### Change Application window shortcut
 
@@ -28,9 +28,9 @@ $ ./setup.sh
 - open Keyboard Prefecture and move shortcut tab
 - select Application on left sidebar
 - add two shortcut
-  - Application: All Application
-  - Menu Title: `最小化` / `Minimize`
-  - Keyboard Shortcut: `Alt + 0`
+    - Application: All Application
+    - Menu Title: `最小化` / `Minimize`
+    - Keyboard Shortcut: `Alt + 0`
 
 ### Set role of fn key to none
 
@@ -46,35 +46,8 @@ $ ./setup.sh
 ### Suppress char replacement
 
 - open Keyboard Prefecture and move Application tab
-- Add any shortcut on Slack to Ctrl + T 
+- Add any shortcut on Slack to Ctrl + T
 
 ### Install Google Japanese Input
 
 - install from [here](https://www.google.co.jp/ime/)
-
-# Using software
-
-### Index
-
-- Utility Tools
-    - Alfred
-    - Karabiner-Elements
-    - Deepl
-    - 1Password
-    - Slack for Desktop
-    - Notion
-- Development Tools
-    - Docker for Mac
-    - JetBrains IDE
-    - homebrew
-    - prezto
-    - git
-    - tig
-    - ghq
-    - peco
-    - anyenv
-    - ricty deminished
-- Chrome Extensions
-    - [workona](https://chrome.google.com/webstore/detail/workona-tab-manager/ailcmbgekjpnablpdkmaaccecekgdhlh)
-    - [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb)
-    - [Color zilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp)

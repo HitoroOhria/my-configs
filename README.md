@@ -58,3 +58,29 @@ $ ./setup_all.sh
 - Karabiner-Elements
 - Viminum
 
+# Using software
+
+### Index
+
+- Utility Tools
+    - Alfred
+    - Karabiner-Elements
+    - Deepl
+    - 1Password
+    - Slack for Desktop
+    - Notion
+- Development Tools
+    - Docker for Mac
+    - JetBrains IDE
+    - homebrew
+    - prezto
+    - git
+    - tig
+    - ghq
+    - peco
+    - anyenv
+    - ricty deminished
+- Chrome Extensions
+    - [workona](https://chrome.google.com/webstore/detail/workona-tab-manager/ailcmbgekjpnablpdkmaaccecekgdhlh)
+    - [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb)
+    - [Color zilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp)
