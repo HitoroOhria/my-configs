@@ -59,11 +59,11 @@ $ ./setup.sh
 - Utility Tools
     - Alfred
     - Karabiner-Elements
-    - Notion
     - Deepl
     - 1Password
-- Development Tools
     - Slack for Desktop
+    - Notion
+- Development Tools
     - Docker for Mac
     - JetBrains IDE
     - homebrew
@@ -75,5 +75,6 @@ $ ./setup.sh
     - anyenv
     - ricty deminished
 - Chrome Extensions
-    - workona
-    - Vimium
+    - [workona](https://chrome.google.com/webstore/detail/workona-tab-manager/ailcmbgekjpnablpdkmaaccecekgdhlh)
+    - [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb)
+    - [Color zilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp)
