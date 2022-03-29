@@ -74,6 +74,7 @@ $ ./setup_all.sh
 - Development Tools
     - Docker for Mac
     - JetBrains IDE
+    - Dash
     - homebrew
     - prezto
     - git
