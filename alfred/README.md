@@ -20,6 +20,7 @@ $ ./setup.sh
     - Add new searches
         - keep: Open Google Keep
         - photo: Open Google Photo
+        - scrap: Open Scrapbox
     - Edit existing searches
         - m: Search Google Maps
         - tr: Translate (Google Translate)
