@@ -71,6 +71,7 @@ $ ./setup_all.sh
     - 1Password
     - Slack for Desktop
     - Notion
+    - f.lux (set 6:00 wake up)
 - Development Tools
     - Docker for Mac
     - JetBrains IDE
