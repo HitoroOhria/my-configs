@@ -72,6 +72,7 @@ $ ./setup_all.sh
     - Slack for Desktop
     - Notion
     - f.lux (set 6:00 wake up)
+    - CleanShot X
 - Development Tools
     - Docker for Mac
     - JetBrains IDE
