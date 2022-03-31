@@ -71,8 +71,13 @@ $ ./setup_all.sh
     - 1Password
     - Slack for Desktop
     - Notion
+    - 1Focus
     - f.lux (set 6:00 wake up)
     - CleanShot X
+    - Yoink
+    - BetterSnapTool
+    - [Google Dive](https://www.google.com/intl/ja_jp/drive/download/)
+    - [VIA](https://github.com/the-via/releases/releases)
 - Development Tools
     - Docker for Mac
     - JetBrains IDE
