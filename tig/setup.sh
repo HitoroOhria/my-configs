@@ -6,4 +6,4 @@ SCRIPT_DIR=$(cd $(dirname "$0"); pwd)
 brew install tig
 
 # set tig config
-ln -s "$SCRIPT_DIR"/.tigrc ~/
+ln -s "$SCRIPT_DIR"/tigrc ~/.tigrc
