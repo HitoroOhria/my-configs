@@ -12,11 +12,10 @@ $ ./setup.sh
 
 # Features
 
-### File Search
-
-- Universal Actions
+### Universal Actions
     - Show Actions: check only right arrow
-- Web Search
+
+### Web Search
     - Add new searches
         - keep: Open Google Keep
         - photo: Open Google Photo
@@ -24,6 +23,10 @@ $ ./setup.sh
     - Edit existing searches
         - m: Search Google Maps
         - tr: Translate (Google Translate)
+
+### Dictionary
+
+- Define a word: def
 
 # Workflows
 

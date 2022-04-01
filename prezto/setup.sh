@@ -11,6 +11,7 @@ rm -rf ~/.zprezto/runcoms
 ln -s "$SCRIPT_DIR"/runcoms/ ~/.zprezto/
 
 # set zsh config files
+# Don't execute by shell script.
 setopt EXTENDED_GLOB
 for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
   ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
