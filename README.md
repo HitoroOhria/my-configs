@@ -89,6 +89,7 @@ $ ./setup_all.sh
     - ghq
     - peco
     - anyenv
+    - httpie
     - ricty deminished
 - Chrome Extensions
     - [workona](https://chrome.google.com/webstore/detail/workona-tab-manager/ailcmbgekjpnablpdkmaaccecekgdhlh)
