@@ -138,7 +138,7 @@ export PGDATA=/usr/local/var/postgres
 ## set MySQL
 export PATH=/usr/local/opt/mysql@5.7/bin:$PATH
 
-# Infrastracture
+# Infrastructure
 ## docker
 ### set docker
 export COMPOSE_HTTP_TIMEOUT=120
@@ -160,6 +160,9 @@ alias come='docker-compose exec'
 
 ### set docker-clean
 alias dcl='docker-clean'
+
+### set kubectl
+alias ku='kubectl'
 
 ## circleci
 ### set circleci
