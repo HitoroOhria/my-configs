@@ -124,3 +124,12 @@ blockquote {
 ### Terminal
 
 - check `copy to clipboard to selection`
+
+# Set View Appearance
+
+- [click View on Menu bar](https://pleiades.io/help/idea/customize-actions-menus-and-toolbars.html#show-hide)
+- move Appearance
+- turn on only below
+    - Toolbar
+    - Navigation Bar
+    - Members in Navigation Bar
