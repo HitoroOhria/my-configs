@@ -132,4 +132,16 @@ blockquote {
 - turn on only below
     - Toolbar
     - Navigation Bar
+    - Status Bar
     - Members in Navigation Bar
+
+# Version Control
+
+### GitToolBox
+
+- move Preferences > VersionControl > GitToolBox
+- select General tab
+- uncheck below
+    - Show 'Git Stat' in status bar
+    - Show 'Changed' in status bar
+    - Show 'Blame' in status bar 
