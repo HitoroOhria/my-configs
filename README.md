@@ -58,7 +58,7 @@ $ ./setup_all.sh
 
 - macOS Prefectures
 - Karabiner-Elements
-- Viminum
+- Vimium
 
 # Using software
 
@@ -72,7 +72,7 @@ $ ./setup_all.sh
     - Slack for Desktop
     - Notion
     - 1Focus
-    - f.lux (set 6:00 wake up)
+    - [f.lux](https://justgetflux.com/) (set 6:00 wake up)
     - CleanShot X
     - Yoink
     - BetterSnapTool
