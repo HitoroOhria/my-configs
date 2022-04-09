@@ -29,7 +29,8 @@
     - `Move Caret to Line End with Selection` to `Shift + Ctrl + E`
     - `Move Caret to Line Start with Selection` to `Shift + Ctrl + A`
     - `Clone Caret Above` to `Fn + Up Arrow`
-    - `Clone Caret Below`to `Fn + Down Arrow`
+    - `Clone Caret Below` to `Fn + Down Arrow`
+    - `Jump to Navigation Bar` to `Cmd + 0` 
 
 ## Set Editor
 
