@@ -7,6 +7,10 @@
 
 - install IntelliJ IDEA from [here](https://www.jetbrains.com/idea/download/#section=mac)
 
+### Sync now!
+
+- [click bottom right setting icon and sync](https://pleiades.io/help/idea/sharing-your-ide-settings.html#IDE_settings_sync) 
+
 ### Set Theme
 
 - move Preferences > Plugin
