@@ -35,6 +35,8 @@
     - `Clone Caret Above` to `Fn + Up Arrow`
     - `Clone Caret Below` to `Fn + Down Arrow`
     - `Jump to Navigation Bar` to `Cmd + 0` 
+    - `Split and Move Right` to `Ctrl + Cmd + S`
+    - `Split and Move Down` to `Ctrl + Cmd + V`
 
 ## Set Editor
 
