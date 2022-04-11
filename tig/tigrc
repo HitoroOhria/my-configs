@@ -25,13 +25,10 @@ set diff-options = -m --first-parent
 
 # ------- キーバンド --------
 
+## -------- Commit --------
+
 # + で commit --amend
 bind generic + !git commit --amend --allow-empty
-
-# S で stash save
-# A で stash apply
-bind stash S ?git stash save "%(prompt Enter stash comment: )"
-bind stash A ?git stash apply %(stash)
 
 # R で rebase -i
 # F で commit --fixup
@@ -43,11 +40,21 @@ bind diff R !git  rebase -i %(commit)
 bind diff F ?!git commit --fixup %(commit)
 bind diff S ?!git commit --squash %(commit)
 
+# R で branch を rebase
+bind refs R ?!git rebase %(branch)
+
 # B で reset %(commit)
 bind main B !git reset %(commit)
 
 # H で クリップボードに commit hash をコピー
 bind main H !@git pbcopy %(commit)
+
+## -------- Stash --------
+
+# S で stash save
+# A で stash apply
+bind stash S ?git stash save "%(prompt Enter stash comment: )"
+bind stash A ?git stash apply %(stash)
 
 # [not working] Commit 後の Press Enter to continue を抑制
 # see https://github.com/jonas/tig/issues/463
