@@ -30,6 +30,9 @@ set diff-options = -m --first-parent
 # + で commit --amend
 bind generic + !git commit --amend --allow-empty
 
+# M で merge
+bind refs M ?!git merge %(branch)
+
 # R で rebase -i
 # F で commit --fixup
 # S で commit --squash
