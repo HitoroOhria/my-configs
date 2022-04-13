@@ -50,7 +50,8 @@ bind refs R ?!git rebase %(branch)
 bind main B !git reset %(commit)
 
 # H で クリップボードに commit hash をコピー
-bind main H !@git pbcopy %(commit)
+bind main   H !@git pbcopy %(commit)
+bind reflog H !@git pbcopy %(commit)
 
 ## -------- Stash --------
 
