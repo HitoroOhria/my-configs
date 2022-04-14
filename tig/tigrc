@@ -43,10 +43,11 @@ bind diff R !git  rebase -i %(commit)
 bind diff F ?!git commit --fixup %(commit)
 bind diff S ?!git commit --squash %(commit)
 
+# N で branch を rename
 # R で branch を rebase
-bind refs R ?!git rebase %(branch)
-
 # O で branch を rebase --onto
+bind refs N !git branch -m %(branch) "%(prompt Enter new branch name: )"
+bind refs R ?!git rebase %(branch)
 bind refs O !git rebase --onto %(branch) "%(prompt Enter commit hash: )"
 
 # B で reset %(commit)
