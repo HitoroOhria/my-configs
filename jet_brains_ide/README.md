@@ -34,6 +34,7 @@
     - `Move Caret to Line Start with Selection` to `Shift + Ctrl + A`
     - `Clone Caret Above` to `Fn + Up Arrow`
     - `Clone Caret Below` to `Fn + Down Arrow`
+    - `database` to `Cmd + 9`
     - `Jump to Navigation Bar` to `Cmd + 0`
     - `Split and Move Right` to `Ctrl + Cmd + S`
     - `Split and Move Down` to `Ctrl + Cmd + V`
