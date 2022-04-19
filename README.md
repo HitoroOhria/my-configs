@@ -73,7 +73,7 @@ $ ./setup_all.sh
     - Notion
     - 1Focus
     - [f.lux](https://justgetflux.com/) (set 6:00 wake up)
-    - CleanShot X
+    - [CleanShot X](https://cleanshot.com/)
     - Yoink
     - BetterSnapTool
     - [Google Dive](https://www.google.com/intl/ja_jp/drive/download/)
