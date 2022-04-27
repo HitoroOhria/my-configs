@@ -163,6 +163,9 @@ alias dcl='docker-clean'
 
 ### set kubectl
 alias ku='kubectl'
+alias get_k8s_pod_id='kubectl get pod | tail -n +2 | peco | cut -d" " -f1'
+alias kulog='kubectl logs -f $(get_k8s_pod_id)'
+alias kudel='kubectl delete pod $(get_k8s_pod_id)'
 
 ## circleci
 ### set circleci
