@@ -71,6 +71,7 @@
 - Sticky Selection
 - GitToolBox
 - Frame Switcher
+- [Relative Line Numbers](https://plugins.jetbrains.com/plugin/7414-relative-line-numbers)
 
 ## Set Language & Frameworks
 
