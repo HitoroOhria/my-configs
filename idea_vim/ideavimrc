@@ -1,3 +1,6 @@
+" see https://stackoverflow.com/questions/55202799/ideavim-multi-cursor-usage
+set multiple-cursors
+
 " 検索するときに大文字小文字を区別しない
 set ignorecase
 
