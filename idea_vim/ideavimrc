@@ -1,5 +1,14 @@
+" Set leader to space 
+let mapleader = "\<Space>"
+
 " see https://stackoverflow.com/questions/55202799/ideavim-multi-cursor-usage
 set multiple-cursors
+
+" EasyMotion 
+set easymotin
+map <leader>w <Plug>(easymotion-bd-w)  " word
+map <leader>s <Plug>(easymotion-bd-f2) " search 
+map <leader>l <Plug>(easymotion-bd-jk) " line
 
 " 検索するときに大文字小文字を区別しない
 set ignorecase
