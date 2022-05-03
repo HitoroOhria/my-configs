@@ -1,7 +1,8 @@
 " Set leader to space 
 let mapleader = "\<Space>"
 
-" see https://stackoverflow.com/questions/55202799/ideavim-multi-cursor-usage
+" for vim,     see https://github.com/terryma/vim-multiple-cursors
+" for ideavim, see https://stackoverflow.com/questions/55202799/ideavim-multi-cursor-usage
 set multiple-cursors
 
 " EasyMotion 
