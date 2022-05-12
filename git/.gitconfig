@@ -2,6 +2,7 @@
   ; command
   statusFiles = !git status --porcelain | peco --query \"$LBUFFER\" | awk -F ' ' '{print $NF}'
   branches = !git branch | peco --prompt \"GIT BRANCH>\" | head -n 1 | sed -e \"s/^\\*\\s*//g\"
+  allBranches = !git branch -a | peco --prompt \"GIT BRANCH>\" | head -n 1 | sed -e \"s/^\\*\\s*//g\"
   pbcopy = !printf "$1" | pbcopy
 
   ; clone
@@ -9,12 +10,14 @@
 
   ; branch
   b = branch
-  bdb = !git branch -D $(git branches)
+  bd = !git branch -D $(git branches)
 
   ; checkout
   ch = checkout
   chf = !git checkout $(git statusFiles)
   chb = !git checkout $(git branches)
+  chba = !git checkout $(git allBranches)
+  mai = checkout main
   mas = checkout master
   dev = checkout develop
 
@@ -99,6 +102,7 @@
   res = rebase --skip
   reh = rebase -i HEAD~~~~~
   reo = rebase --onto
+  reb = !git rebase $(git branches)
   
   ; show-branch
   derived-branch = !git show-branch | grep '*' | grep -v "$(git rev-parse --abbrev-ref HEAD)" | head -1 | awk -F'[]~^[]' '{print $2}'
