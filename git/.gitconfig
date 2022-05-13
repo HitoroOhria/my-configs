@@ -11,6 +11,7 @@
   ; branch
   b = branch
   bd = !git branch -D $(git branches)
+  bdr = !git push --delete origin $(git allBranches)
   bc = !git branches | pbcopy 
 
   ; checkout
