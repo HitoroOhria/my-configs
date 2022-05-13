@@ -47,6 +47,7 @@
   c = commit
   cm = commit -m
   ca = commit --amend
+  cn = commit --no-verify
   coa = commit --abort
   coc = commit --continue
   cos = commit --skip
