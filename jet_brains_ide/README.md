@@ -70,8 +70,10 @@
 - Rainbow Brackets
 - Sticky Selection
 - GitToolBox
-- Frame Switcher
 - [Relative Line Numbers](https://plugins.jetbrains.com/plugin/7414-relative-line-numbers)
+- IdeaVim
+- AceJump
+- EasyMotion
 
 ## Set Language & Frameworks
 
