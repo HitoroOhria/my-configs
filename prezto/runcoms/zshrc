@@ -69,7 +69,7 @@ alias t='tig'
 ### set ghq
 alias gcd='cd $(ghq list -p | peco --query "$LBUFFER")'
 
-# Data loadler
+# Data loader
 ## embulk
 ### set embulk
 export PATH=$HOME/.embulk/bin:$PATH
@@ -192,7 +192,7 @@ source ~/google-cloud-sdk/completion.zsh.inc
 ### set firebase
 alias fi='firebase'
 
-# Smartphone
+# Mobile
 ## Android
 ### set adb
 export PATH=$PATH:~/Library/Android/sdk/platform-tools
