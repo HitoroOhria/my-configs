@@ -7,10 +7,9 @@ set multiple-cursors
 
 " EasyMotion 
 set easymotion
-map <leader>f <Plug>(easymotion-bd-f)  " char
+map f <Plug>(easymotion-s)
 map <leader>w <Plug>(easymotion-bd-w)  " word
 map <leader>l <Plug>(easymotion-bd-jk) " line
-map <leader>s <Plug>(easymotion-bd-f2) " search 
 
 " 検索するときに大文字小文字を区別しない
 set ignorecase
