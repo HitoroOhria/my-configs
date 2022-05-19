@@ -11,6 +11,12 @@ map f <Plug>(easymotion-s)
 map <leader>w <Plug>(easymotion-bd-w)  " word
 map <leader>l <Plug>(easymotion-bd-jk) " line
 
+" Scroll
+set scroll=10
+set scrolloff=5
+map J <C-D>
+map K <C-U>
+
 " 検索するときに大文字小文字を区別しない
 set ignorecase
 
