@@ -12,7 +12,7 @@ map <leader>w <Plug>(easymotion-bd-w)  " word
 map <leader>l <Plug>(easymotion-bd-jk) " line
 
 " Scroll
-set scroll=10
+set scroll=15
 set scrolloff=5
 map J <C-D>
 map K <C-U>
