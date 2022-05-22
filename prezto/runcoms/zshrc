@@ -1,13 +1,28 @@
 # Shell
 ## zsh
 ### source prezto
+### exec before zplug because activate enhancd.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
+
 ### set pure
-### try original pure instead of prezto plugin because it has bug.
-autoload -U promptinit; promptinit
-prompt pure
+# autoload -U promptinit; promptinit
+# prompt pure
+
+### set zplug
+export ZPLUG_HOME=~/.zplug
+source $ZPLUG_HOME/init.zsh
+
+zplug "b4b4r07/enhancd", use:init.sh
+export ENHANCD_FILTER=peco
+zplug "sindresorhus/pure"
+
+if ! zplug check; then
+    zplug install
+fi
+
+zplug load
 
 ## editor
 ### set editor
@@ -186,8 +201,8 @@ alias gc='gcloud'
 alias gcf='gcloud functions'
 # should be placed google-cloud-sdk in your home directory.
 # set PATH and completion by `~/google-cloud-sdk/install.sh`
-source ~/google-cloud-sdk/path.zsh.inc
-source ~/google-cloud-sdk/completion.zsh.inc
+# source ~/google-cloud-sdk/path.zsh.inc
+# source ~/google-cloud-sdk/completion.zsh.inc
 
 ### set firebase
 alias fi='firebase'

@@ -19,4 +19,5 @@ zstyle ':prezto:load' pmodule \
 zstyle ':prezto:module:editor' key-bindings 'emacs'
 
 # Set the prompt theme to load.
+# Not use below because it has bug.
 # zstyle ':prezto:module:prompt' theme 'pure'
