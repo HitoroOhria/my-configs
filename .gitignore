@@ -3,3 +3,6 @@
 
 # git
 !.gikeep
+
+# zsh
+prezto/zsh.d/*.zsh

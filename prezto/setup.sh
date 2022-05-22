@@ -10,6 +10,9 @@ git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$H
 rm -rf ~/.zprezto/runcoms
 ln -s "$SCRIPT_DIR"/runcoms/ ~/.zprezto/
 
+# set zsh.d
+ln -s "$SCRIPT_DIR"/zsh.d/ ~/.zsh.d
+
 # set zsh config files
 # Don't execute by shell script.
 setopt EXTENDED_GLOB
