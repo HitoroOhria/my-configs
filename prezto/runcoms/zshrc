@@ -23,8 +23,8 @@ zplug load
 # load zsh config files
 ZSHHOME="${HOME}/.zsh.d"
 
-if [ -d $ZSHHOME ] && [ -r $ZSHHOME ] && [ -x $ZSHHOME ]; then
-    for file in ${ZSHHOME}/**/*.zsh; do
-        [ -r $file ] && source $file
-    done
-fi
+for conf in "$ZSHHOME/"**/*.zsh; do
+  source "${conf}"
+done
+unset conf
+
