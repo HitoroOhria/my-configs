@@ -11,3 +11,5 @@ map H previousTab
 map L nextTab
 map J scrollPageDown
 map K scrollPageUp
+map [ moveTabLeft
+map ] moveTabRight
