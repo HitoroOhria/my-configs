@@ -39,6 +39,9 @@
     - `Split and Move Right` to `Ctrl + Cmd + S`
     - `Split and Move Down` to `Ctrl + Cmd + V`
     - `Path From Repository Root` to `Shift + Cmd + C`
+- TabMover shotcuts
+    - `Move Tab to Next` to `Alt + [`
+    - `Move Tab to Previous` to `Alt + ]`
 
 ## Set Editor
 
@@ -74,6 +77,7 @@
 - IdeaVim
 - AceJump
 - EasyMotion
+- TabMover
 
 ## Set Language & Frameworks
 
