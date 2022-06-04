@@ -20,6 +20,7 @@ $ ./setup.sh
         - keep: Open Google Keep
         - photo: Open Google Photo
         - scrap: Open Scrapbox
+        - todoist: Open Todoist
     - Edit existing searches
         - m: Search Google Maps
         - tr: Translate (Google Translate)
@@ -36,3 +37,4 @@ $ ./setup.sh
 - IP Address
 - Lazy Link
     - Set `Alt + Cmd + V` to hotkey
+
