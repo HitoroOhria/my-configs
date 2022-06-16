@@ -8,7 +8,6 @@ set multiple-cursors
 " EasyMotion 
 set easymotion
 map f <Plug>(easymotion-s)
-map <leader>w <Plug>(easymotion-bd-w)  " word
 map <leader>l <Plug>(easymotion-bd-jk) " line
 
 " Scroll
