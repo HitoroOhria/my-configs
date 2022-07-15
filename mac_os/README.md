@@ -23,6 +23,11 @@ $ ./setup.sh
 - open Keyboard Prefecture and move shortcut tab
 - select keyboard of sidebar and `次のウィンドウを操作対象にする` set Cmd + Esc
 
+### Set to display across monitors
+
+- open Mission Controll Prefecture
+- turn off 'Individual operation space for each display'
+
 ### Set disable Minimize
 
 - open Keyboard Prefecture and move shortcut tab
