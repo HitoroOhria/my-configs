@@ -115,7 +115,6 @@
   webui = !~/.git-webui/release/libexec/git-core/git-webui
 
 [user]
-	email = hiroto100114@gmail.com
 	name = hiroto.ohira
 [core]
 	editor = vim
