@@ -97,14 +97,16 @@
         },
         {
             "available_since": "12.3.0",
-            "description": "SandS",
+            "description": "SandS (expect allow space + shift, but it not works)",
             "manipulators": [
                 {
                     "from": {
                         "key_code": "spacebar",
                         "modifiers": {
                             "optional": [
-                                "any"
+                                "control",
+                                "option",
+                                "command"
                             ]
                         }
                     },
