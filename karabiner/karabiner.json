@@ -2168,16 +2168,14 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "SandS (expect allow space + shift, but it not works)",
+                        "description": "SandS (I want to allow shift + space. I try optional without shift, but it has problem when press after any key.)",
                         "manipulators": [
                             {
                                 "from": {
                                     "key_code": "spacebar",
                                     "modifiers": {
                                         "optional": [
-                                            "control",
-                                            "option",
-                                            "command"
+                                            "any"
                                         ]
                                     }
                                 },
