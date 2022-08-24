@@ -1,6 +1,6 @@
 # Excluded URLs and Kyes
-https://www.mindmeister.com/*
-https://www.e-typing.ne.jp/*
+https://calendar.google.com/calendar/*
+https://app.slack.com/client/*
 
 # Custom key mappings
 map h goBack
