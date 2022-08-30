@@ -39,6 +39,12 @@
     - `Split and Move Right` to `Ctrl + Cmd + S`
     - `Split and Move Down` to `Ctrl + Cmd + V`
     - `Path From Repository Root` to `Shift + Cmd + C`
+    - `Call Hierarchy` to `Ctrl + Shift + H`
+    - `Code > Code Completion > Basic` to `Alt + Space`
+- Tool Windows shotcuts
+    - `Hierarchy` to `Cmd + 8`
+    - `Database` to `Cmd + 9`
+    - `Jump to Navigation Bar` to `Cmd + 0`
 - TabMover shotcuts
     - `Move Tab to Next` to `Alt + [`
     - `Move Tab to Previous` to `Alt + ]`
