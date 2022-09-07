@@ -1,4 +1,8 @@
  [alias]
+  ; main branch
+  grepMain = !git branch --format=%'(refname:short)' | grep main
+  mainBranch = !test $(git grepMain) = "main" && echo "main" || echo "master"
+  
   ; command
   statusFiles = !git status --porcelain | peco --query \"$LBUFFER\" | awk -F ' ' '{print $NF}'
   branches = !git branch | peco --prompt \"GIT BRANCH>\" | head -n 1 | sed -e \"s/^\\*\\s*//g\"
@@ -19,8 +23,7 @@
   chf = !git checkout $(git statusFiles)
   chb = !git checkout $(git branches)
   chba = !git checkout $(git allBranches)
-  mai = checkout main
-  mas = checkout master
+  mai = !git checkout $(git mainBranch)
   dev = checkout develop
 
   ; status
@@ -29,7 +32,7 @@
   ; diff
   d = diff
   dc = diff --cached
-  dm = diff master
+  dm = !git diff $(git mainBranch)
   df = !git diff $(git statusFiles)
 
   ; add
@@ -98,7 +101,7 @@
 
   ; rebase
   re = rebase
-  rem = rebase master
+  rem = ! git rebase $(git mainBranch)
   ree = rebase --edit-todo
   rec = rebase --continue
   rea = rebase --abort
