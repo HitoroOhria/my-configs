@@ -28,7 +28,6 @@
 - move Preferences > Keymap
 - set blow shortcuts
     - `Terminal` to `Ctrl + T`
-    - `Switch Frame` to `Shift + F2`
     - `Delete line` to `Ctrl + X`
     - `Move Caret to Line End with Selection` to `Shift + Ctrl + E`
     - `Move Caret to Line Start with Selection` to `Shift + Ctrl + A`
@@ -36,16 +35,16 @@
     - `Clone Caret Below` to `Fn + Down Arrow`
     - `database` to `Cmd + 9`
     - `Jump to Navigation Bar` to `Cmd + 0`
+    - `Call Hierarchy` to `Ctrl + Shift + H`
     - `Split and Move Right` to `Ctrl + Cmd + S`
     - `Split and Move Down` to `Ctrl + Cmd + V`
     - `Path From Repository Root` to `Shift + Cmd + C`
-    - `Call Hierarchy` to `Ctrl + Shift + H`
     - `Code > Code Completion > Basic` to `Alt + Space`
-- Tool Windows shotcuts
+- Tool Windows shortcuts
     - `Hierarchy` to `Cmd + 8`
     - `Database` to `Cmd + 9`
     - `Jump to Navigation Bar` to `Cmd + 0`
-- TabMover shotcuts
+- TabMover shortcuts
     - `Move Tab to Next` to `Alt + [`
     - `Move Tab to Previous` to `Alt + ]`
 
@@ -84,6 +83,7 @@
 - AceJump
 - EasyMotion
 - TabMover
+- Frame Switcher
 
 ## Set Language & Frameworks
 
