@@ -8,4 +8,4 @@ source ~/google-cloud-sdk/path.zsh.inc
 source ~/google-cloud-sdk/completion.zsh.inc
 
 ## set firebase
-alias fi='firebase'
+# alias fb='firebase'
