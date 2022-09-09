@@ -11,6 +11,9 @@ alias psg='ps aux | grep'
 # tail
 alias ta='tail -n 30'
 
+# printenv
+alias pe='printenv'
+
 # ssh
 alias ssho='ssh -oStrictHostKeyChecking=no'
 
