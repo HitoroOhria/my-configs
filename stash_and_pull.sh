@@ -4,4 +4,4 @@ git stash
 
 git pull origin --rebase main
 
-git stash drop stash@{0}
+git stash pop stash@{0}
