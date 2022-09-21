@@ -82,6 +82,7 @@ $ ./setup_all.sh
     - Dash
     - homebrew
     - prezto
+    - enhancd
     - git
     - tig
     - ghq
