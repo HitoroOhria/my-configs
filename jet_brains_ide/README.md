@@ -22,18 +22,16 @@
 
 - move Preferences > Editor > Font
 - select Font to `Ricty Diminished`
+- select Size to 16
 
 ### Set Keymap
 
 - move Preferences > Keymap
 - set blow shortcuts
     - `Terminal` to `Ctrl + T`
-    - `Delete line` to `Ctrl + X`
-    - `Move Caret to Line End with Selection` to `Shift + Ctrl + E`
-    - `Move Caret to Line Start with Selection` to `Shift + Ctrl + A`
     - `Clone Caret Above` to `Fn + Up Arrow`
     - `Clone Caret Below` to `Fn + Down Arrow`
-    - `database` to `Cmd + 9`
+    - `Tool Windows` > `Database` to `Cmd + 9`
     - `Jump to Navigation Bar` to `Cmd + 0`
     - `Call Hierarchy` to `Ctrl + Shift + H`
     - `Split and Move Right` to `Ctrl + Cmd + S`
@@ -141,13 +139,24 @@ blockquote {
 }
 ```
 
-## Set Tools
+# Set Tools
 
-### Terminal
+## Terminal
 
 - check `copy to clipboard to selection`
 
-# Set View Appearance
+## Version Control
+
+### GitToolBox
+
+- move Preferences > VersionControl > GitToolBox
+- select General tab
+- uncheck below
+  - Show 'Git Stat' in status bar
+  - Show 'Changed' in status bar
+  - Show 'Blame' in status bar
+
+## Set View Appearance
 
 - [click View on Menu bar](https://pleiades.io/help/idea/customize-actions-menus-and-toolbars.html#show-hide)
 - move Appearance
@@ -156,14 +165,3 @@ blockquote {
     - Navigation Bar
     - Status Bar
     - Members in Navigation Bar
-
-# Version Control
-
-### GitToolBox
-
-- move Preferences > VersionControl > GitToolBox
-- select General tab
-- uncheck below
-    - Show 'Git Stat' in status bar
-    - Show 'Changed' in status bar
-    - Show 'Blame' in status bar 
