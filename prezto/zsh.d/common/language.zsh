@@ -3,8 +3,9 @@
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # java
-## set gradle
-export GTADLE_OPTS=-Dorg.gradle.daemon=true
+## set java
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-19.jdk/Contents/Home
+export PATH=$PATH:$JAVA_HOME/bin
 
 # go
 ## set go
