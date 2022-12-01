@@ -1,3 +1,6 @@
+# set brew
+export PATH=$PATH:/opt/homebrew/bin
+
 # set anyenv
 if which anyenv > /dev/null; then
   eval "$(anyenv init -)"
