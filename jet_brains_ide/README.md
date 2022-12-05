@@ -20,9 +20,13 @@
 
 ### Set Font
 
-- move Preferences > Editor > Font
-- select Font to `Ricty Diminished`
-- select Size to 16
+- ide font
+    - move Preferences > Appearance & Behavior > Appearance
+    - select Size to 16
+- editor font
+    - move Preferences > Editor > Font
+    - select Font to `Ricty Diminished`
+    - select Size to 16
 
 ### Set Keymap
 
