@@ -48,9 +48,9 @@
     - `Jump to Navigation Bar` to `Cmd + 0`
 - TabMover shortcuts
     - `Move Tab to Next` to `Alt + [`
-    - `Move Tab to Next Spliter` to `Alt + [`
+    - `Move Tab to Next Window/Spliter` to `Ctrl + Alt + [`
     - `Move Tab to Previous` to `Alt + ]`
-    - `Move Tab to Previous comand` to `Alt + ]`
+    - `Move Tab to Previous Window/Spliter` to `Ctrl + Alt + ]`
 
 ## Set Editor
 
