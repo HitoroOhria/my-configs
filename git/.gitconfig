@@ -1,6 +1,6 @@
  [alias]
   ; main branch
-  grepMain = !git branch --format=%'(refname:short)' | grep main
+  grepMain = !git branch --format=%'(refname:short)' | grep -x main
   mainBranch = !test $(git grepMain) = "main" && echo "main" || echo "master"
   
   ; command
