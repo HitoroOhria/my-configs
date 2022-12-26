@@ -6,6 +6,9 @@ set easymotion
 map f <Plug>(easymotion-s)
 map <leader>l <Plug>(easymotion-bd-jk) " line
 
+" vim-sandwich
+set surround
+
 " Scroll
 set scroll=15
 set scrolloff=5
@@ -66,6 +69,9 @@ set softtabstop=2
 "x キー削除でデフォルトレジスタに入れない
 nnoremap x "_x
 vnoremap x "_x
+
+" ヤンクしたときに範囲をハイライト
+set highlightedyank
 
 " ヤンクでクリップボードにコピー
 noremap "+y "*y
