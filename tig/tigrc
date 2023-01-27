@@ -43,6 +43,11 @@ bind diff R !git  rebase -i %(commit)
 bind diff F ?!git commit --fixup %(commit)
 bind diff S ?!git commit --squash %(commit)
 
+# A で add -u
+bind status A !git add -u 
+
+## -------- Branch --------
+
 # F で branch を rename
 # R で branch を rebase
 # O で branch を rebase --onto
@@ -52,6 +57,8 @@ bind refs O !git rebase --onto %(branch) "%(prompt Enter commit hash: )"
 
 # B で reset %(commit)
 bind main B !git reset %(commit)
+
+## -------- Commit Hash --------
 
 # H で クリップボードに commit hash をコピー
 bind main   H !@git pbcopy %(commit)
