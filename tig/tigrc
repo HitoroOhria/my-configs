@@ -46,6 +46,9 @@ bind diff S ?!git commit --squash %(commit)
 # A で add -u
 bind status A !git add -u 
 
+# R で git restore .
+bind status R ?git restore .
+
 ## -------- Branch --------
 
 # F で branch を rename
