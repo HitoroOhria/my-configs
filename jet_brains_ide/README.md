@@ -171,3 +171,15 @@ blockquote {
     - Navigation Bar
     - Status Bar
     - Members in Navigation Bar
+
+## Set Main Toolbar
+
+- move Appearance & Behavior > Menus and Toolbars
+- select Main Toolbar
+- custom it
+
+## Set Bottom Information Bar
+
+- right click on Bottom Information Bar
+- custom it
+
