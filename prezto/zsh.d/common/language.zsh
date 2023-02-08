@@ -23,3 +23,7 @@ alias be='bundle exec'
 alias ru='rubocop'
 alias rug='rubocop --auto-gen-config '
 alias ruc='rubocop --auto-correct'
+
+# python
+alias python="$(pyenv which python)"
+alias pip="$(pyenv which pip)"
