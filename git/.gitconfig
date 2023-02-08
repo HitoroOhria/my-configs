@@ -104,6 +104,7 @@
   ; rebase
   re = rebase
   rem = ! git rebase $(git mainBranch)
+  red = rebase develop
   ree = rebase --edit-todo
   rec = rebase --continue
   rea = rebase --abort
