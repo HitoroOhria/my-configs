@@ -74,12 +74,12 @@ $ ./setup_all.sh
     - [CleanShot X](https://cleanshot.com/)
     - Yoink
     - BetterSnapTool
+    - Typelet4Me
     - [Google Dive](https://www.google.com/intl/ja_jp/drive/download/)
     - [VIA](https://github.com/the-via/releases/releases)
 - Development Tools
     - Docker for Mac
     - JetBrains IDE
-    - Dash
     - homebrew
     - prezto
     - enhancd
