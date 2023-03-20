@@ -11,6 +11,19 @@
 
 - [click bottom right setting icon and sync](https://pleiades.io/help/idea/sharing-your-ide-settings.html#IDE_settings_sync)
 
+### VM Options
+
+Add below options.
+
+```
+-Xms128m
+-Xmx4096m
+-XX:+UseG1GC
+-XX:MaxGCPauseMillis=300
+-XX:ReservedCodeCacheSize=1024m
+-XX:+UseCompressedOops
+```
+
 ### Set Theme
 
 - move Preferences > Plugin
