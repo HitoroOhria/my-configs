@@ -93,4 +93,5 @@ $ ./setup_all.sh
 - Chrome Extensions
     - [workona](https://chrome.google.com/webstore/detail/workona-tab-manager/ailcmbgekjpnablpdkmaaccecekgdhlh)
     - [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb)
+    - [Chrome Show Tab Numbers](https://chrome.google.com/webstore/detail/chrome-show-tab-numbers/pflnpcinjbcfefgbejjfanemlgcfjbna)
     - [Color zilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp)
