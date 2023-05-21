@@ -91,6 +91,11 @@ m = `
 . = \
 / = |
 
+capslock = mute
+' = volumeup
+ro = volumedown
+
+
 [navigation+layer1]
 
 f = C-right
