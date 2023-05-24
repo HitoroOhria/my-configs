@@ -34,6 +34,10 @@ space = overload(shift, space)
 [ = _
 ro = +
 
+[control]
+
+= = C-+
+
 [navigation:C]
 
 f = right
