@@ -55,8 +55,8 @@ h = backspace
 d = delete
 
 m = enter
-# henkan+m = C-enter
 
+# navigation for horizontal
 ; = A-left
 ' = A-right
 
