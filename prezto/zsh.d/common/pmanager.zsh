@@ -1,5 +1,6 @@
 # set brew
 export PATH=$PATH:/opt/homebrew/bin
+export PATH="$HOME/.anyenv/bin:$PATH"
 
 # set anyenv
 if which anyenv > /dev/null; then
@@ -21,6 +22,10 @@ export PATH=$HOME/.anyenv/envs/pyenv/bin:$PATH
 if which pyenv > /dev/null; then
   eval "$(pyenv init -)"
 fi
+
+# python
+alias python="$(pyenv which python)"
+alias pip="$(pyenv which pip)"
 
 # set goenv by anyenv
 export PATH=$GOENV_ROOT/bin:$PATH

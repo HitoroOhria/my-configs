@@ -25,5 +25,6 @@ alias rug='rubocop --auto-gen-config '
 alias ruc='rubocop --auto-correct'
 
 # python
-alias python="$(pyenv which python)"
-alias pip="$(pyenv which pip)"
+# set by pmanager.zsh because use pyenv
+# alias python="$(pyenv which python)"
+# alias pip="$(pyenv which pip)"
