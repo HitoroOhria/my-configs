@@ -111,3 +111,11 @@ h = C-backspace
 d = C-delete
 
 m = C-enter
+
+; = C-A-left
+' = C-A-right
+
+[layer1+control+shift]
+
+# Ctrl + Shift + 6
+h = print
