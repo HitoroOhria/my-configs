@@ -23,10 +23,6 @@ if which pyenv > /dev/null; then
   eval "$(pyenv init -)"
 fi
 
-# python
-alias python="$(pyenv which python)"
-alias pip="$(pyenv which pip)"
-
 # set goenv by anyenv
 export PATH=$GOENV_ROOT/bin:$PATH
 export PATH=$HOME/.goenv/bin:$PATH
