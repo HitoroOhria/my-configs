@@ -65,8 +65,8 @@ bind main B !git reset %(commit)
 ## -------- Commit Hash --------
 
 # H で クリップボードに commit hash をコピー
-bind main   H @sh -c "printf '%s' %(commit) | xclip -selection clipbard -in"
-bind reflog H @sh -c "printf '%s' %(commit) | xclip -selection clipbard -in"
+bind main   H @sh -c "printf '%s' %(commit) | git pbcopy"
+bind reflog H @sh -c "printf '%s' %(commit) | git pbcopy"
 
 ## -------- Stash --------
 
