@@ -46,7 +46,9 @@ set display=lastline
 set listchars=tab:^\ ,trail:~
 
 " ヤンクでクリップボードにコピー
+" see https://vi.stackexchange.com/questions/84/how-can-i-copy-text-to-the-system-clipboard-from-vim
 set clipboard+=unnamed
+set clipboard+=unnamedplus
 
 " 対応する括弧を強調表示
 set showmatch
