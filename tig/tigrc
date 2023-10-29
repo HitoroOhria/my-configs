@@ -15,7 +15,7 @@ set diff-view   = line-number:yes,interval=1 text:yes,commit-title-overflow=no
 
 # 差分表示に diff-highlight を使う (tig 2.2.1 以降. diff-highlight が $PATH にあること)
 # not working on linux.
-# set diff-highlight = true
+set diff-highlight = true
 
 # diff-view で境界が見やすくなるように変更
 color  diff-header  default magenta
@@ -23,6 +23,21 @@ color  diff-chunk   black   white
 
 # マージ diff を表示する
 set diff-options = -m --first-parent
+
+# ------- 画面表示の高速化 --------
+
+# Use Git's default (reverse chronological) order, never automatically
+# use topo-order for the commit graph
+set commit-order = default
+
+# Limit number of commits loaded by default to 1000
+#set main-options = -n 1000
+
+# Don't show staged and unstaged changes in the main view
+set show-changes = no
+
+# Optionally, use the old and faster but less acurate graph renderer
+#set main-view-commit-title-graph = v1
 
 # ------- キーバンド --------
 
