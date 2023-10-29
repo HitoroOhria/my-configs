@@ -1,5 +1,5 @@
 # expect keyboard leyout is below
-# - layer2 ~ is US layout
+# - layer2 is US layout
 # - layer1 is JP layout
 #
 # (
@@ -116,6 +116,11 @@ m = C-enter
 ' = C-A-right
 
 [layer1+control+shift]
+
+# Ctrl + Shit + 4
+# fixme: not working
+# f = command(flameshot gui)
+f = command(/home/ohira/scripts/apps/launch_flameshot.sh)
 
 # Ctrl + Shift + 6
 h = print
