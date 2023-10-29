@@ -8,6 +8,7 @@
   currentBranch = !git rev-parse --abbrev-ref HEAD
   branches = !git branch | peco --prompt \"GIT BRANCH>\" | head -n 1 | sed -e \"s/^\\*\\s*//g\"
   allBranches = !git branch -a | peco --prompt \"GIT BRANCH>\" | head -n 1 | sed -e \"s/^\\*\\s*//g\"
+  localBranchList = !git for-each-ref --format '%(refname:short)' refs/heads/
   # for linux (e.g. echo "foo" | git pbcopy)
   pbcopy = !xclip -selection clipboard -in
 
@@ -92,7 +93,7 @@
                --author=\"$(git config user.name)\" \
                --format=\" - %C(green)(%ad)%Creset %C(auto)%h%Creset : %s\";\
            };f"
-  la = log --graph --decorate --pretty=oneline --all --abbrev-commit
+  lg = log --graph --decorate --pretty=oneline --branches --abbrev-commit --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(auto)%d%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
 
   ; stash
   st = stash
