@@ -14,8 +14,14 @@ alias ta='tail -n 30'
 # printenv
 alias pe='printenv'
 
+# copy
+alias copy='pbcopy'
+
 # ssh
 alias ssho='ssh -oStrictHostKeyChecking=no'
+
+# date
+alias datef='date +"%Y-%m-%d %H:%M:%S %z"'
 
 # peco
 function peco-history-selection() {
