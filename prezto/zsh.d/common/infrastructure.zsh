@@ -1,7 +1,7 @@
 # docker
 ## set docker
 export COMPOSE_HTTP_TIMEOUT=120
-alias get_docker_contaienr_id='docker ps -a | tail -n +2 | peco | cut -d" " -f1'
+alias get_docker_contaienr_id='docker ps | tail -n +2 | peco | cut -d" " -f1'
 alias d='docker'
 alias dl='docker logs'
 alias db='docker build'
@@ -10,12 +10,13 @@ alias din='docker inspect'
 alias dc='docker container'
 # Use like '$ dce bash' or '$ dce ash'
 alias dce='docker container exec -it $(get_docker_contaienr_id)'
+alias dk='docker kill $(get_docker_contaienr_id)'
 alias dv='docker volume'
 alias dn='docker network'
 
 ## set docker-compose
-alias com='docker-compose'
-alias come='docker-compose exec'
+alias com='docker compose'
+alias come='docker compose exec'
 
 ## set docker-clean
 alias dcl='docker-clean'
