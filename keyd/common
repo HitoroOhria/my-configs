@@ -21,10 +21,10 @@ capslock = tab
 ' = ]
 ro = =
 
-leftalt = overload(metasuper, layer(alt))
+leftalt = leftcontrol
 muhenkan = overload(navigation, muhenkan)
 henkan = overload(layer1, henkan)
-katakanahiragana = layer(alt)
+katakanahiragana = rightalt
 
 # SandS
 space = overload(shift, space)
@@ -37,9 +37,6 @@ ro = +
 [control]
 
 = = C-+
-
-# Match macOS keybind
-[metasuper:C]
 
 [navigation:C]
 
@@ -102,34 +99,8 @@ capslock = mute
 ' = volumeup
 ro = volumedown
 
-[metasuper+layer1]
-
-# Bind for dash to dock application
-a = M-1
-s = M-2
-d = M-3
-f = M-4
-g = M-5
-h = M-6
-j = M-7
-k = M-8
-l = M-9
-# Not bind for IntelliJ IDEA
-# ; = M-0
 
 [navigation+layer1]
-
-# For Slack shortcut
-p = A-up
-n = A-down
-
-m = C-enter
-
-# For IntelliJ IDEA's move tab to Next Splitter
-; = C-A-left
-' = C-A-right
-
-[navigation+alt]
 
 f = C-right
 b = C-left
@@ -139,6 +110,10 @@ n = C-down
 h = C-backspace
 d = C-delete
 
+m = C-enter
+
+; = C-A-left
+' = C-A-right
 
 [layer1+control+shift]
 
