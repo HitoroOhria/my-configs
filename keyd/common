@@ -99,7 +99,6 @@ capslock = mute
 ' = volumeup
 ro = volumedown
 
-
 [navigation+layer1]
 
 f = C-right
@@ -114,6 +113,18 @@ m = C-enter
 
 ; = C-A-left
 ' = C-A-right
+
+[layer1+control]
+
+q = M-1
+w = M-2
+e = M-3
+r = M-4
+t = M-5
+y = M-6
+u = M-7
+i = M-8
+o = M-9
 
 [layer1+control+shift]
 
