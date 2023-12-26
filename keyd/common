@@ -21,10 +21,10 @@ capslock = tab
 ' = ]
 ro = =
 
-leftalt = leftcontrol
+leftalt = layer(control)
 muhenkan = overload(navigation, muhenkan)
 henkan = overload(layer1, henkan)
-katakanahiragana = rightalt
+katakanahiragana = layer(alt)
 
 # SandS
 space = overload(shift, space)
