@@ -125,6 +125,7 @@ y = M-6
 u = M-7
 i = M-8
 o = M-9
+p = M-0
 
 [layer1+control+shift]
 
