@@ -31,15 +31,26 @@ matches:
           format: "%Y-%m-%d"
 
   # Text
+  - trigger: ";td"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
   - trigger: ";ri"
     replace: " → "
 
-  # Email
+  # Markdown
+  - trigger: ";detail"
+    replace: "<details>\n<summary>$|$</summary>\n\n</details>\n"
 
+  # Email
   - trigger: ";mail"
     replace: "hiroto100114@gmail.com"
 
-  - trigger: ";flmail"
+  - trigger: ";frmail"
     replace: "hiroto.ohira.freelance@gmail.com"
 
   - trigger: ";prmail"
@@ -50,4 +61,39 @@ matches:
 
   - trigger: ";pomail"
     replace: "ohira@pocketsign.co.jp"
+
+  # Phone
+  - trigger: ";tel"
+    replace: "07043902141"
+
+  # git
+  - trigger: ";re"
+    replace: "rebase: fix "
+
+  # GitHub
+  - trigger: ";sug"
+    replace: "```suggestion\n$|$\n```"
+
+
+  # Balus
+  - trigger: ";dtmail"
+    replace: "dev.taro@balus.co"
+
+  - trigger: ";isb"
+    replace: "## 背景・課題\n\n## 完了条件\n\n## 実装方法・提案\n\n## 期限\n\n## 関連リンク\n\n## その他・備考\n\n"
+
+  # PocketSign
+  - trigger: ";ggs"
+    replace: "go get github.com/pocketsign/schema@"
+
+  - trigger: ";gcpd"
+    replace: "git cherry-pick 3965b9c72cdf4b16ad1f77e0c4ba5dcd10485d2f"
+
+  ## GitHub PR template of bousai.
+  - trigger: ";prb"
+    replace: "# 背景\n\n\n# 概要\n\n\n# 挙動\n\n\n# 確認事項\n\n"
+
+  ## GitHub PR template of schema.
+  - trigger: ";prs"
+    replace: "# 背景\n\n\n# 概要\n\n\n#"
 
