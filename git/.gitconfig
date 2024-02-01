@@ -1,4 +1,9 @@
  [alias]
+  ; pr branch
+  prBranchPrefix = !echo '__pr__'
+  withPRPrefixCurrentBranch = !echo $(git prBranchPrefix)$(git currentBranch)
+  withoutPRPrefixCurrentBranch = !git currentBranch | sed "s/$(git prBranchPrefix)//"
+
   ; main branch
   grepMain = !git branch --format=%'(refname:short)' | grep -x main
   mainBranch = !test $(git grepMain) = "main" && echo "main" || echo "master"
@@ -21,6 +26,10 @@
   bdr = !git push --delete origin $(git allBranches)
   bc = !git branches | git pbcopy
   bcc = !git currentBranch | git pbcopy
+
+  ; pr branch
+  bmp = !git branch -m $(git withPRPrefixCurrentBranch)
+  puop = !git pull origin --rebase $(git withoutPRPrefixCurrentBranch)
 
   ; checkout
   ch = checkout
