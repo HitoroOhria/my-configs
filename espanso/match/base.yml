@@ -66,14 +66,23 @@ matches:
   - trigger: ";tel"
     replace: "07043902141"
 
+  # shell script
+  - trigger: ";sb"
+    replace: "#!/bin/bash"
+
   # git
   - trigger: ";re"
     replace: "rebase: fix "
 
   # GitHub
   - trigger: ";sug"
-    replace: "```suggestion\n$|$\n```"
+    replace: "```suggestion\n$|$\n```\n"
 
+  - trigger: ";typ"
+    replace: "```typescript\n$|$\n```\n"
+
+  - trigger: ";she"
+    replace: "```shell\n$|$\n```\n"
 
   # Balus
   - trigger: ";dtmail"
