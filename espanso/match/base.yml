@@ -96,7 +96,7 @@ matches:
     replace: "go get github.com/pocketsign/schema@"
 
   - trigger: ";gcpd"
-    replace: "git cherry-pick 3965b9c72cdf4b16ad1f77e0c4ba5dcd10485d2f"
+    replace: "git cherry-pick 712b822f722424b95408a1d61e3a28d5b6b68dff"
 
   ## GitHub PR template of bousai.
   - trigger: ";prb"
