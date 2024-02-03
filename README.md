@@ -60,7 +60,7 @@ $ ./setup_all.sh
 
 # Using software
 
-### Index
+### Mac
 
 - Utility Tools
     - Alfred
@@ -95,3 +95,10 @@ $ ./setup_all.sh
     - [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb)
     - [Chrome Show Tab Numbers](https://chrome.google.com/webstore/detail/chrome-show-tab-numbers/pflnpcinjbcfefgbejjfanemlgcfjbna)
     - [Color zilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp)
+
+###
+
+- Utility Tools
+    - CopyQ
+    - [emote](https://github.com/tom-james-watson/Emote)
+    
