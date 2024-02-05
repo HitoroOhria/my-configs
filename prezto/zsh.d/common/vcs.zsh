@@ -2,6 +2,8 @@
 ## set git
 export PATH=/usr/local/bin/git:$PATH
 alias g='git'
+### set diff-highlight. see https://stackoverflow.com/a/55891251.
+PATH="/usr/share/doc/git/contrib/diff-highlight:$PATH"
 
 ## set tig
 alias t='tig'
