@@ -149,23 +149,15 @@
 	required = true
 [http]
 	postBuffer = 524288000
-[diff]
-        tool = difftastic
-
-[difftool]
-        prompt = false
-
-[difftool "difftastic"]
-        cmd = difft "$LOCAL" "$REMOTE"
-
+[pager]
+	log = diff-highlight | less -r
+	show = diff-highlight | less -r
+	diff = diff-highlight | less -r
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
-[pager]
-        difftool = true
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [url "ssh://git@github.com/pocketsign"]
 	insteadOf = https://github.com/pocketsign
-
