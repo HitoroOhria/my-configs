@@ -91,6 +91,15 @@ matches:
   - trigger: ";isb"
     replace: "## 背景・課題\n\n## 完了条件\n\n## 実装方法・提案\n\n## 期限\n\n## 関連リンク\n\n## その他・備考\n\n"
 
+  - trigger: ";bimail"
+    replace: "invoice-spwn@balus.co"
+
+  - trigger: ";bisub"
+    replace: "【大平】2024年$|$月の請求書の送付について"
+
+  - trigger: ";bibod"
+    replace: "Balus株式会社 担当者様\n\nいつもお世話になっております。 \n業務委託の大平でございます。\n\n 表題の通り、先月分の請求書を送付いたします。 \n内容をご確認いただき、期日までにお支払いいただきますようお願い申し上げます。 \n\n何卒よろしくお願い申し上げます。\n"
+
   # PocketSign
   - trigger: ";ggs"
     replace: "go get github.com/pocketsign/schema@"
