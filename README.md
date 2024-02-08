@@ -11,7 +11,8 @@
     - [Run setup script](#run-setup-script)
     - [Setup manually](#setup-manually)
 - [Using software](#using-software)
-    - [Index](#index)
+    - [Mac](#mac)
+    - [](#)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
