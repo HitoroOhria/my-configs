@@ -31,13 +31,17 @@
   bmp = !git branch -m $(git withPRPrefixCurrentBranch)
   puop = !git pull origin --rebase $(git withoutPRPrefixCurrentBranch)
 
+  ; pr branch
+  sw = switch
+  swc = switch -c
+  swb = !git switch $(git branches)
+  swba = !git checkout $(git allBranches)
+  mai = !git switch $(git mainBranch)
+  dev = switch develop
+
   ; checkout
   ch = checkout
   chf = !git checkout $(git statusFiles)
-  chb = !git checkout $(git branches)
-  chba = !git checkout $(git allBranches)
-  mai = !git checkout $(git mainBranch)
-  dev = checkout develop
 
   ; status
   s = status
