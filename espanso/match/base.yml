@@ -85,6 +85,12 @@ matches:
     replace: "```shell\n$|$\n```\n"
 
   # Balus
+  - trigger: ";yar"
+    replace: "やります！\n\n-"
+
+  - trigger: ";owa"
+    replace: "終わります！\n\nやったこと\n-"
+
   - trigger: ";dtmail"
     replace: "dev.taro@balus.co"
 
@@ -114,4 +120,8 @@ matches:
   ## GitHub PR template of schema.
   - trigger: ";prs"
     replace: "# 背景\n\n\n# 概要\n\n\n#"
+
+  # Coeru
+  - trigger: ";coe"
+    replace: "コエルでやっていきます！"
 
