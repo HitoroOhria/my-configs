@@ -102,6 +102,10 @@ Add below options.
 - TabMover
 - Frame Switcher
 
+## Set IdeaVim
+
+- select IDE alternative Vim
+
 ## Set Language & Frameworks
 
 ### Set Markdown
