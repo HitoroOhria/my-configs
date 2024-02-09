@@ -29,6 +29,10 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Supe
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Super>Page_Down', '<Super><Alt>Right']"
 
 
-# disable emoji picker hotkey
+# Disable emoji picker hotkey
 gsettings set org.freedesktop.ibus.panel.emoji hotkey "[]"
+
+# Disable power management of wifi.
+# see https://vegam57.livedoor.blog/archives/9644083.html
+sudo sed -i 's/3/2/' /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
 
