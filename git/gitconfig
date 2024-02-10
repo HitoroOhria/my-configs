@@ -2,19 +2,19 @@
   ; pr branch
   prBranchPrefix = !echo '__pr__'
   withPRPrefixCurrentBranch = !echo $(git prBranchPrefix)$(git currentBranch)
-  withoutPRPrefixCurrentBranch = !git currentBranch | sed "s/$(git prBranchPrefix)//"
+  withoutPRPrefixCurrentBranch = !git currentBranch | sed "s/$(git prBranchPrefix)//g"
 
   ; main branch
   grepMain = !git branch --format=%'(refname:short)' | grep -x main
-  mainBranch = !test $(git grepMain) = "main" && echo "main" || echo "master"
+  mainBranch = !test $(git grepMain) = "main" && echo 'main' || echo 'master'
   
   ; command
-  statusFiles = !git status --porcelain | peco --query \"$LBUFFER\" | awk -F ' ' '{print $NF}'
+  statusFiles = !git status --porcelain | peco --query '$LBUFFER' | awk -F ' ' '{print $NF}'
   currentBranch = !git rev-parse --abbrev-ref HEAD
-  branches = !git branch | peco --prompt \"GIT BRANCH>\" | head -n 1 | sed -e \"s/^\\*\\s*//g\"
+  localBranches = !git branch | peco --prompt 'GIT BRANCH>' | head -n 1 | sed -e 's/^\\*\\s*//g'
   remoteBranches = !git branch -r | grep -v -w HEAD | peco --prompt 'GIT BRANCH' | head -n 1 | sed 's@origin/@@g'
-  localBranchList = !git for-each-ref --format '%(refname:short)' refs/heads/
-  # for linux (e.g. echo "foo" | git pbcopy)
+
+  ; for linux (e.g. echo "foo" | git pbcopy)
   pbcopy = !xclip -selection clipboard -in
 
   ; clone
@@ -22,9 +22,9 @@
 
   ; branch
   b = branch
-  bd = !git branch -D $(git branches)
+  bd = !git branch -D $(git localBranches)
   bdr = !git push --delete origin $(git remoteBranches)
-  bc = !git branches | git pbcopy
+  bc = !git localBranches | git pbcopy
   bcc = !git currentBranch | git pbcopy
 
   ; pr branch
@@ -34,8 +34,8 @@
   ; pr branch
   sw = switch
   swc = switch -c
-  swb = !git switch $(git branches)
-  swbr = !git checkout $(git remoteBranches)
+  swl = !git switch $(git localBranches)
+  swr = !git checkout $(git remoteBranches)
   mai = !git switch $(git mainBranch)
   dev = switch develop
 
@@ -82,7 +82,7 @@
   ; push
   p = push
   ; 要改善、git branch -r の実行結果を加工したものを選択するようにする
-  pd = push --delete origin $(git branches)
+  pd = push --delete origin $(git localBranches)
   po = !git push origin $(git rev-parse --abbrev-ref HEAD)
   pfo = !git push --force-with-lease origin $(git rev-parse --abbrev-ref HEAD)
 
@@ -126,8 +126,8 @@
   res = rebase --skip
   reh = rebase -i HEAD~~~~~
   reo = rebase --onto
-  reb = !git rebase $(git branches)
-  rebo = !git rebase --onto $(git branches)
+  reb = !git rebase $(git localBranches)
+  rebo = !git rebase --onto $(git localBranches)
   
   ; show-branch
   derived-branch = !git show-branch | grep '*' | grep -v "$(git rev-parse --abbrev-ref HEAD)" | head -1 | awk -F'[]~^[]' '{print $2}'
