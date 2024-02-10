@@ -12,7 +12,7 @@
   statusFiles = !git status --porcelain | peco --query \"$LBUFFER\" | awk -F ' ' '{print $NF}'
   currentBranch = !git rev-parse --abbrev-ref HEAD
   branches = !git branch | peco --prompt \"GIT BRANCH>\" | head -n 1 | sed -e \"s/^\\*\\s*//g\"
-  allBranches = !git branch -a | peco --prompt \"GIT BRANCH>\" | head -n 1 | sed -e \"s/^\\*\\s*//g\"
+  remoteBranches = !git branch -r | grep -v -w HEAD | peco --prompt 'GIT BRANCH' | head -n 1 | sed 's@origin/@@g'
   localBranchList = !git for-each-ref --format '%(refname:short)' refs/heads/
   # for linux (e.g. echo "foo" | git pbcopy)
   pbcopy = !xclip -selection clipboard -in
@@ -23,7 +23,7 @@
   ; branch
   b = branch
   bd = !git branch -D $(git branches)
-  bdr = !git push --delete origin $(git allBranches)
+  bdr = !git push --delete origin $(git remoteBranches)
   bc = !git branches | git pbcopy
   bcc = !git currentBranch | git pbcopy
 
@@ -35,7 +35,7 @@
   sw = switch
   swc = switch -c
   swb = !git switch $(git branches)
-  swba = !git checkout $(git allBranches)
+  swbr = !git checkout $(git remoteBranches)
   mai = !git switch $(git mainBranch)
   dev = switch develop
 
