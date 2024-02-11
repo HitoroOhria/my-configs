@@ -128,6 +128,9 @@
   reo = rebase --onto
   reb = !git rebase $(git localBranches)
   rebo = !git rebase --onto $(git localBranches)
+
+  ; merge
+  mb = !git merge $(git localBranches)
   
   ; show-branch
   derived-branch = !git show-branch | grep '*' | grep -v "$(git rev-parse --abbrev-ref HEAD)" | head -1 | awk -F'[]~^[]' '{print $2}'
