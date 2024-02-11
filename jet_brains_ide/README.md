@@ -200,3 +200,10 @@ blockquote {
 - right click on Bottom Information Bar
 - custom it
 
+# Other
+
+## Change boot runtime
+
+- [Choose Boot Java Runtime for the IDE](https://www.jetbrains.com/help/idea/switching-boot-jdk.html#switch-jdk)
+- select latest OpenJDK (path to `$JAVA_HOME`) or vanilla
+
