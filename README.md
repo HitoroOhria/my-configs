@@ -97,9 +97,10 @@ $ ./setup_all.sh
     - [Chrome Show Tab Numbers](https://chrome.google.com/webstore/detail/chrome-show-tab-numbers/pflnpcinjbcfefgbejjfanemlgcfjbna)
     - [Color zilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp)
 
-###
+### Linux
 
 - Utility Tools
-    - CopyQ
+    - [CopyQ](https://github.com/hluk/CopyQ)
     - [emote](https://github.com/tom-james-watson/Emote)
-    
+    - [peek](https://github.com/phw/peek)
+
