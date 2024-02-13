@@ -11,7 +11,7 @@ export PATH=$PATH:$JAVA_HOME/bin
 ## set go
 export GOPATH=$HOME/go
 export PATH=$GOROOT/bin:$PATH
-export PATH=$PATH:$GOPATH/bin
+export PATH=$GOPATH/bin:$PATH
 
 # ruby
 ## set rials
