@@ -24,6 +24,7 @@
   b = branch
   bd = !git branch -D $(git localBranches)
   bdr = !git push --delete origin $(git remoteBranches)
+  bdm = !git switch $(git localBranches) && git branch --merged | grep -v -e main -e master -e develop | xargs git branch -d
   bc = !git localBranches | git pbcopy
   bcc = !git currentBranch | git pbcopy
 
@@ -124,7 +125,7 @@
   rec = rebase --continue
   rea = rebase --abort
   res = rebase --skip
-  reh = rebase -i HEAD~~~~~
+  reh = rebase -i HEAD~~~~~~~~~
   reo = rebase --onto
   reb = !git rebase $(git localBranches)
   rebo = !git rebase --onto $(git localBranches)
