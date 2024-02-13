@@ -46,6 +46,9 @@ matches:
   - trigger: ";detail"
     replace: "<details>\n<summary>$|$</summary>\n\n</details>\n"
 
+  - trigger: ";img"
+    replace: "<img src=\"$|$\" width=\"350\"/>"
+
   # Email
   - trigger: ";mail"
     replace: "hiroto100114@gmail.com"
@@ -112,6 +115,9 @@ matches:
 
   - trigger: ";gcpd"
     replace: "git cherry-pick 712b822f722424b95408a1d61e3a28d5b6b68dff"
+
+  - trigger: ";sid"
+    replace: "ceb933b7-c6be-4d73-a2a0-c25d4866abdc"
 
   ## GitHub PR template of bousai.
   - trigger: ";prb"
