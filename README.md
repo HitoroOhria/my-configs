@@ -12,7 +12,7 @@
     - [Setup manually](#setup-manually)
 - [Using software](#using-software)
     - [Mac](#mac)
-    - [](#)
+    - [Linux](#linux)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
