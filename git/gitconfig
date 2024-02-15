@@ -11,8 +11,8 @@
   ; command
   statusFiles = !git status --porcelain | peco --query '$LBUFFER' | awk -F ' ' '{print $NF}'
   currentBranch = !git rev-parse --abbrev-ref HEAD
-  localBranches = !git branch | peco --prompt 'GIT BRANCH>' | head -n 1 | sed -e 's/^\\*\\s*//g'
-  remoteBranches = !git branch -r | grep -v -w HEAD | peco --prompt 'GIT BRANCH' | head -n 1 | sed 's@origin/@@g'
+  localBranches = !git branch | peco --prompt 'GIT BRANCH>' | head -n 1 | sed -e "s/^\\*\\s*//g"
+  remoteBranches = !git branch -r | grep -v -w HEAD | peco --prompt 'GIT BRANCH' | head -n 1 | sed "s@origin/@@g"
 
   ; for linux (e.g. echo "foo" | git pbcopy)
   pbcopy = !xclip -selection clipboard -in
@@ -22,23 +22,26 @@
 
   ; branch
   b = branch
-  bd = !git branch -D $(git localBranches)
-  bdr = !git push --delete origin $(git remoteBranches)
-  bdm = !git switch $(git localBranches) && git branch --merged | grep -v -e main -e master -e develop | xargs git branch -d
-  bc = !git localBranches | git pbcopy
-  bcc = !git currentBranch | git pbcopy
+  bd = !git branch -D
+  bdl = !git branch -D $(git localBranches)
+  bdr = !git push -d origin $(git remoteBranches)
+  bdm = !git branch --merged | grep -v -e main -e master -e develop | xargs git branch -d
+  bdmb = !git switch $(git localBranches) && git branch --merged | grep -v -e main -e master -e develop | xargs git branch -d
+  bc = !git currentBranch | git pbcopy
+  bcl = !git localBranches | git pbcopy
+  bcr = !git remoteBranches | git pbcopy
 
   ; pr branch
   bmp = !git branch -m $(git withPRPrefixCurrentBranch)
   puop = !git pull origin --rebase $(git withoutPRPrefixCurrentBranch)
 
   ; pr branch
+  mai = !git switch $(git mainBranch)
+  dev = switch develop
   sw = switch
   swc = switch -c
   swl = !git switch $(git localBranches)
   swr = !git checkout $(git remoteBranches)
-  mai = !git switch $(git mainBranch)
-  dev = switch develop
 
   ; checkout
   ch = checkout
@@ -58,7 +61,6 @@
   au = add -u
   aa = add -A
   ap = add -p
-  as = add src/
   af = !git add $(git statusFiles)
 
   ; reset
@@ -80,15 +82,13 @@
   cpa = cherry-pick --abort
   cps = cherry-pick --skip
 
-  ; push
-  p = push
-  ; 要改善、git branch -r の実行結果を加工したものを選択するようにする
-  pd = push --delete origin $(git localBranches)
-  po = !git push origin $(git rev-parse --abbrev-ref HEAD)
-  pfo = !git push --force-with-lease origin $(git rev-parse --abbrev-ref HEAD)
-
   ; fetch
   f = fetch
+
+  ; push
+  p = push
+  po = !git push origin $(git rev-parse --abbrev-ref HEAD)
+  pfo = !git push --force-with-lease origin $(git rev-parse --abbrev-ref HEAD)
 
   ; pull
   pu = pull
@@ -101,13 +101,13 @@
   ln= log --name-status
   lo = log --oneline -10
   lon = log --oneline
+  lg = log --graph --decorate --pretty=oneline --branches --abbrev-commit --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(auto)%d%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
   today = "!f () {\
              git log --oneline --branches \
                --since=midnight --date=iso \
                --author=\"$(git config user.name)\" \
                --format=\" - %C(green)(%ad)%Creset %C(auto)%h%Creset : %s\";\
            };f"
-  lg = log --graph --decorate --pretty=oneline --branches --abbrev-commit --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(auto)%d%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
 
   ; stash
   st = stash
@@ -131,6 +131,7 @@
   rebo = !git rebase --onto $(git localBranches)
 
   ; merge
+  m = merge
   mb = !git merge $(git localBranches)
   
   ; show-branch
