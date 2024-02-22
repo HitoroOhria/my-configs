@@ -22,6 +22,7 @@
 
   ; branch
   b = branch
+  bm = branch -m
   bd = !git branch -D
   bdl = !git branch -D $(git localBranches)
   bdr = !git push -d origin $(git remoteBranches)
