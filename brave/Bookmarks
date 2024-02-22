@@ -1,5 +1,5 @@
 {
-   "checksum": "d624b6896d202c1e6b579c75197ce9ff",
+   "checksum": "afa52b697689af4c89e42ba9d49d2f1f",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -508,7 +508,7 @@
                },
                "name": "Pairs",
                "type": "url",
-               "url": "https://pairs.lv/myprofile"
+               "url": "https://pairs.lv/"
             }, {
                "children": [ {
                   "date_added": "13328899479978390",
@@ -526,7 +526,7 @@
                   "date_last_used": "13330523308766269",
                   "guid": "96d98e37-cee8-4f0f-88df-4fabfcfac750",
                   "id": "34",
-                  "name": "GitHub - Pull requests - Reviews",
+                  "name": "GitHub - PR Review Requested",
                   "type": "url",
                   "url": "https://github.com/pulls/review-requested"
                }, {
@@ -713,7 +713,7 @@
                   "meta_info": {
                      "power_bookmark_meta": ""
                   },
-                  "name": "GitHub · balus-co-ltd/spwn - Pull requests",
+                  "name": "GitHub - balus-co-ltd/spwn - PRs",
                   "type": "url",
                   "url": "https://github.com/balus-co-ltd/spwn/pulls"
                }, {
@@ -724,7 +724,7 @@
                   "meta_info": {
                      "power_bookmark_meta": ""
                   },
-                  "name": "GitHub - balus-co-ltd/spwn - Pull requests - me",
+                  "name": "GitHub - balus-co-ltd/spwn - PRs - me",
                   "type": "url",
                   "url": "https://github.com/balus-co-ltd/spwn/pulls/assigned/HitoroOhria"
                }, {
@@ -986,10 +986,21 @@
                   "name": "Firestore - bls-boost",
                   "type": "url",
                   "url": "https://console.firebase.google.com/u/3/project/bls-boost/firestore/data/~2F"
+               }, {
+                  "date_added": "13352471933905054",
+                  "date_last_used": "0",
+                  "guid": "e3135dc1-9d1c-4b7f-b5f0-b4d70cede9fa",
+                  "id": "261",
+                  "meta_info": {
+                     "power_bookmark_meta": ""
+                  },
+                  "name": "Firestore - local - ginga-alice",
+                  "type": "url",
+                  "url": "http://localhost:4000/firestore/data/tenants/te_8wSQPZRVs9Y1Cp1sRVF0"
                } ],
                "date_added": "13330484668438605",
                "date_last_used": "0",
-               "date_modified": "13342766585474086",
+               "date_modified": "13352878460078348",
                "guid": "5961fc5f-6e7c-4ba2-8538-3b92fb313ef6",
                "id": "52",
                "name": "Firebase",
@@ -1517,7 +1528,7 @@
                   "meta_info": {
                      "power_bookmark_meta": ""
                   },
-                  "name": "GitHub - pocketsign/bousai - Pull requests",
+                  "name": "GitHub - pocketsign/bousai - PRs",
                   "type": "url",
                   "url": "https://github.com/pocketsign/bousai/pulls"
                }, {
@@ -1528,7 +1539,7 @@
                   "meta_info": {
                      "power_bookmark_meta": ""
                   },
-                  "name": "GitHub - pocketsign/bousai - Pull requests - me",
+                  "name": "GitHub - pocketsign/bousai - PRs - me",
                   "type": "url",
                   "url": "https://github.com/pocketsign/bousai/pulls/assigned/HitoroOhria"
                }, {
@@ -1640,7 +1651,7 @@
                } ],
                "date_added": "13352363446395323",
                "date_last_used": "0",
-               "date_modified": "13352379535710669",
+               "date_modified": "13352471933905054",
                "guid": "3519d2cd-8cb0-4197-8889-5585f430dc65",
                "id": "259",
                "name": "GCP",
@@ -1689,7 +1700,7 @@
          } ],
          "date_added": "13328291881009067",
          "date_last_used": "0",
-         "date_modified": "13352363439382823",
+         "date_modified": "13352471962731233",
          "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
          "name": "Bookmarks",
