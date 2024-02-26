@@ -11,8 +11,9 @@
   ; command
   statusFiles = !git status --porcelain | peco --query '$LBUFFER' | awk -F ' ' '{print $NF}'
   currentBranch = !git rev-parse --abbrev-ref HEAD
-  localBranches = !git branch | peco --prompt 'GIT BRANCH>' | head -n 1 | sed -e "s/^\\*\\s*//g"
-  remoteBranches = !git branch -r | grep -v -w HEAD | peco --prompt 'GIT BRANCH' | head -n 1 | sed "s@origin/@@g"
+  pecoBranch = !peco --prompt 'GIT BRANCH>' | xargs
+  localBranches = !git branch | git pecoBranch | sed -e "s/^\\*\\s*//g"
+  remoteBranches = !git branch -r | grep -v -w HEAD | git pecoBranch | sed "s@origin/@@g"
 
   ; for linux (e.g. echo "foo" | git pbcopy)
   pbcopy = !xclip -selection clipboard -in
