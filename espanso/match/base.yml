@@ -87,6 +87,14 @@ matches:
   - trigger: ";she"
     replace: "```shell\n$|$\n```\n"
 
+  # connpass
+  - trigger: ";shit"
+    replace: "【$|$】渋谷で朝活"
+
+  - trigger: ";shib"
+    replace: "### コンセプト\n渋谷でもくもくと朝活します！家や職場が近い方はぜひ一緒に朝活しましょう！\n\n主催者はエンジニアですが、エンジニアの方もそうでない方も大歓迎です〜:raising_hands:\n\n### 詳細\n- 毎日 8:00 ~ 10:00\n- エクセルシオール カフェ 渋谷道玄坂店\n- 参加費無料 (カフェ代のみ各自支払い)"
+
+
   # Balus
   - trigger: ";yar"
     replace: "やります！\n\n-"
