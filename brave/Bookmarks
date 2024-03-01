@@ -1,5 +1,5 @@
 {
-   "checksum": "e71888e29c4ab8d954fc970b270d6f41",
+   "checksum": "0de4f70d0f4e88706d34102c2076eea3",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -562,7 +562,7 @@
             } ],
             "date_added": "13328899501938018",
             "date_last_used": "0",
-            "date_modified": "13353132396655501",
+            "date_modified": "13353644638651905",
             "guid": "45a5830e-71e9-4ab4-adfa-c0f288fe7387",
             "id": "16",
             "name": "hiroto.ohira",
@@ -1470,6 +1470,17 @@
                   "type": "url",
                   "url": "https://demo.bousai.mock.pocketsign.app/console/"
                }, {
+                  "date_added": "13353644638651905",
+                  "date_last_used": "13353644671916491",
+                  "guid": "d06ece91-4f77-4143-aa5c-47d3422a7ca8",
+                  "id": "265",
+                  "meta_info": {
+                     "power_bookmark_meta": ""
+                  },
+                  "name": "PocketSign - bousai - console - kumamoto-staff",
+                  "type": "url",
+                  "url": "https://kumamoto-staff.bousai.pocketsign.app/console/"
+               }, {
                   "date_added": "13348994266861698",
                   "date_last_used": "0",
                   "guid": "5a0f50e3-8ed5-41e2-9c77-bc1c61957245",
@@ -1483,7 +1494,7 @@
                } ],
                "date_added": "13348994171277307",
                "date_last_used": "0",
-               "date_modified": "13350553336613813",
+               "date_modified": "13353644684672669",
                "guid": "eef747cf-85a4-41ab-97c6-eb48b1b34305",
                "id": "198",
                "name": "PocketSign",
@@ -1711,7 +1722,7 @@
          } ],
          "date_added": "13328291881009067",
          "date_last_used": "0",
-         "date_modified": "13353132393927225",
+         "date_modified": "13353644669296434",
          "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
          "name": "Bookmarks",
