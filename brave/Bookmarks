@@ -1,5 +1,5 @@
 {
-   "checksum": "0de4f70d0f4e88706d34102c2076eea3",
+   "checksum": "ce003e2633ddb49235db05c7b14dad48",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -400,6 +400,17 @@
                "type": "url",
                "url": "https://www.notion.so/Daily-36bd146c72f14de5920f9a6ee6b2ad4c"
             }, {
+               "date_added": "13353742740272624",
+               "date_last_used": "0",
+               "guid": "fd5abd3f-93c0-4ef0-abe6-7666ef345fc2",
+               "id": "267",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Notion - Reflection",
+               "type": "url",
+               "url": "https://www.notion.so/Reflection-7945faa19aa744879de529b64e6f925d"
+            }, {
                "date_added": "13331570066276048",
                "date_last_used": "0",
                "guid": "c1e86abf-d22b-4b91-81a4-7cbc4b56720b",
@@ -562,7 +573,7 @@
             } ],
             "date_added": "13328899501938018",
             "date_last_used": "0",
-            "date_modified": "13353644638651905",
+            "date_modified": "13353742754478367",
             "guid": "45a5830e-71e9-4ab4-adfa-c0f288fe7387",
             "id": "16",
             "name": "hiroto.ohira",
@@ -1494,7 +1505,7 @@
                } ],
                "date_added": "13348994171277307",
                "date_last_used": "0",
-               "date_modified": "13353644684672669",
+               "date_modified": "13353742740272624",
                "guid": "eef747cf-85a4-41ab-97c6-eb48b1b34305",
                "id": "198",
                "name": "PocketSign",
