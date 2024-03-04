@@ -1,5 +1,5 @@
 {
-   "checksum": "ce003e2633ddb49235db05c7b14dad48",
+   "checksum": "ada902209240d8ce38a8b981e386254a",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -271,10 +271,21 @@
                   "name": "Slack - PrAha Challenge(Season 5)",
                   "type": "url",
                   "url": "https://app.slack.com/client/T03SP5F1AGN/C03TKEQ1PEU"
+               }, {
+                  "date_added": "13353985139695484",
+                  "date_last_used": "0",
+                  "guid": "5370896d-81f9-447c-b610-333464a15072",
+                  "id": "258",
+                  "meta_info": {
+                     "power_bookmark_meta": ""
+                  },
+                  "name": "Slack - 渋谷で朝活",
+                  "type": "url",
+                  "url": "https://app.slack.com/client/T06MP6KAM3L/C06MGHJ3FLN"
                } ],
                "date_added": "13352100968829930",
                "date_last_used": "0",
-               "date_modified": "13352101049272513",
+               "date_modified": "13353985162554267",
                "guid": "13f4f7c9-504c-496d-ac92-f3d26838aefc",
                "id": "248",
                "name": "Slack",
