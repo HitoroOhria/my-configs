@@ -1,5 +1,5 @@
 {
-   "checksum": "ada902209240d8ce38a8b981e386254a",
+   "checksum": "1f71870b38dd52be558e002dc8a110d3",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -455,17 +455,6 @@
                "type": "url",
                "url": "https://chat.openai.com/?model=gpt-4"
             }, {
-               "date_added": "13352013406480855",
-               "date_last_used": "0",
-               "guid": "ce58be88-737a-449a-9351-637a21c9d269",
-               "id": "242",
-               "meta_info": {
-                  "power_bookmark_meta": ""
-               },
-               "name": "Firebase - flee-mind-dev",
-               "type": "url",
-               "url": "https://console.firebase.google.com/u/1/project/fleet-mind-dev/overview"
-            }, {
                "date_added": "13347079352783188",
                "date_last_used": "0",
                "guid": "bf995b5b-bf43-4ba9-8387-17a8513cbeb1",
@@ -581,10 +570,41 @@
                "id": "244",
                "name": "GitHub",
                "type": "folder"
+            }, {
+               "children": [ {
+                  "date_added": "13352013406480855",
+                  "date_last_used": "0",
+                  "guid": "ce58be88-737a-449a-9351-637a21c9d269",
+                  "id": "242",
+                  "meta_info": {
+                     "power_bookmark_meta": ""
+                  },
+                  "name": "Firebase - flee-mind-dev",
+                  "type": "url",
+                  "url": "https://console.firebase.google.com/u/1/project/fleet-mind-dev/overview"
+               }, {
+                  "date_added": "13353906306872987",
+                  "date_last_used": "0",
+                  "guid": "668e90f5-4516-4f98-9492-c2ed47da1db2",
+                  "id": "268",
+                  "meta_info": {
+                     "power_bookmark_meta": ""
+                  },
+                  "name": "GCP – fleet-mind-dev",
+                  "type": "url",
+                  "url": "https://console.cloud.google.com/welcome?authuser=1&project=fleet-mind-dev"
+               } ],
+               "date_added": "13353906339397202",
+               "date_last_used": "0",
+               "date_modified": "13353906346862162",
+               "guid": "6282a79d-e5c7-4659-b11a-12d20d6c42cc",
+               "id": "269",
+               "name": "fleetMind",
+               "type": "folder"
             } ],
             "date_added": "13328899501938018",
             "date_last_used": "0",
-            "date_modified": "13353742754478367",
+            "date_modified": "13353906339397277",
             "guid": "45a5830e-71e9-4ab4-adfa-c0f288fe7387",
             "id": "16",
             "name": "hiroto.ohira",
