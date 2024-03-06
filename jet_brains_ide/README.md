@@ -16,8 +16,8 @@
 Add below options.
 
 ```
--Xms128m
--Xmx4096m
+-Xmx16384m
+-XX:NewRatio=1
 -XX:+UseG1GC
 -XX:MaxGCPauseMillis=300
 -XX:ReservedCodeCacheSize=1024m
