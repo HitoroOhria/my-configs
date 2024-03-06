@@ -6,3 +6,6 @@
 
 # Linux
 .attach_pid*
+
+# JebBrains IDE
+.idea
