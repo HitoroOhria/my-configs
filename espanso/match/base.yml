@@ -42,6 +42,15 @@ matches:
   - trigger: ";ri"
     replace: " → "
 
+  - trigger: ";le"
+    replace: " ← "
+
+  - trigger: ";up"
+    replace: " ↑ "
+
+  - trigger: ";do"
+    replace: " ↓ "
+
   # Markdown
   - trigger: ";detail"
     replace: "<details>\n<summary>$|$</summary>\n\n</details>\n"
@@ -128,7 +137,7 @@ matches:
     replace: "go get github.com/pocketsign/schema@"
 
   - trigger: ";gcpd"
-    replace: "git cherry-pick 712b822f722424b95408a1d61e3a28d5b6b68dff"
+    replace: "git cherry-pick 9bd86487b9c61cca0e6f5aab30cf93a4968861bb"
 
   - trigger: ";sid"
     replace: "ceb933b7-c6be-4d73-a2a0-c25d4866abdc"
