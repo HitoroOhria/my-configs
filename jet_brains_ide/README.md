@@ -204,6 +204,9 @@ blockquote {
 
 ## Change boot runtime
 
-- [Choose Boot Java Runtime for the IDE](https://www.jetbrains.com/help/idea/switching-boot-jdk.html#switch-jdk)
-- select latest OpenJDK (path to `$JAVA_HOME`) or vanilla
+- not change boot runtime
+    - because [no preview of Markdown and OpenAPI](https://youtrack.jetbrains.com/issue/IDEA-287881).
+- old
+    - [Choose Boot Java Runtime for the IDE](https://www.jetbrains.com/help/idea/switching-boot-jdk.html#switch-jdk)
+    - select latest OpenJDK (path to `$JAVA_HOME`) or vanilla
 
