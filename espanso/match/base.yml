@@ -52,6 +52,15 @@ matches:
     replace: " ↓ "
 
   # Markdown
+  - trigger: ";blo"
+    replace: "```\n$|$\n```\n"
+
+  - trigger: ";typ"
+    replace: "```typescript\n$|$\n```\n"
+
+  - trigger: ";she"
+    replace: "```shell\n$|$\n```\n"
+
   - trigger: ";detail"
     replace: "<details>\n<summary>$|$</summary>\n\n</details>\n"
 
@@ -89,12 +98,6 @@ matches:
   # GitHub
   - trigger: ";sug"
     replace: "```suggestion\n$|$\n```\n"
-
-  - trigger: ";typ"
-    replace: "```typescript\n$|$\n```\n"
-
-  - trigger: ";she"
-    replace: "```shell\n$|$\n```\n"
 
   # Dev
   - trigger: ";lo"
