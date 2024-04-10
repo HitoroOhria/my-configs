@@ -18,6 +18,13 @@
   ; for linux (e.g. echo "foo" | git pbcopy)
   pbcopy = !xclip -selection clipboard -in
 
+  ; ps
+  mkdirTmp = !mkdir -p ~/tmp-git
+  storeSchemaHash = !xargs echo > ~/tmp-git/schema_hash.txt
+  readSchemaHash = !cat ~/tmp-git/schema_hash.txt
+  schemaLatestCommitHash = !cd ~/ghq/github.com/pocketsign/schema && git swl > /dev/null && git rev-parse HEAD
+  fetchSchema = !git schemaLatestCommitHash | git storeSchemaHash && cd ~/ghq/github.com/pocketsign/bousai && task fetch:schema -- $(git readSchemaHash)
+
   ; clone
   cl = clone
 
@@ -138,7 +145,7 @@
   
   ; show-branch
   derived-branch = !git show-branch | grep '*' | grep -v "$(git rev-parse --abbrev-ref HEAD)" | head -1 | awk -F'[]~^[]' '{print $2}'
-  
+
   ; git webui
   webui = !~/.git-webui/release/libexec/git-core/git-webui
 
