@@ -1,5 +1,5 @@
 {
-   "checksum": "3d0af867b22c2f893f4d12f426fdecc3",
+   "checksum": "dcd1029883d75cd235074b4b7e675155",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -285,7 +285,7 @@
                } ],
                "date_added": "13352100968829930",
                "date_last_used": "0",
-               "date_modified": "13353985162554267",
+               "date_modified": "13356618880107186",
                "guid": "13f4f7c9-504c-496d-ac92-f3d26838aefc",
                "id": "20",
                "name": "Slack",
@@ -1480,7 +1480,7 @@
                   "url": "http://localhost:5173/console/debug-tenant"
                }, {
                   "date_added": "13349521472031332",
-                  "date_last_used": "13349867360601522",
+                  "date_last_used": "13357055174843543",
                   "guid": "5b368136-22b8-4677-a313-f67ec9617a2d",
                   "id": "153",
                   "meta_info": {
@@ -1617,10 +1617,21 @@
                   "name": "GitHub - pocketsign/schema",
                   "type": "url",
                   "url": "https://github.com/pocketsign/schema"
+               }, {
+                  "date_added": "13356619284303043",
+                  "date_last_used": "0",
+                  "guid": "449478b1-b19a-4f5f-8286-b4905a462252",
+                  "id": "182",
+                  "meta_info": {
+                     "power_bookmark_meta": ""
+                  },
+                  "name": "GitHub - pocketsign/bousai-terraform",
+                  "type": "url",
+                  "url": "https://github.com/pocketsign/bousai-terraform/tree/main"
                } ],
                "date_added": "13349258285744150",
                "date_last_used": "0",
-               "date_modified": "13351677871259605",
+               "date_modified": "13356619301446448",
                "guid": "aea0a2ac-89d4-4bf6-bee8-d3e3f78bc4b6",
                "id": "160",
                "name": "GitHub",
@@ -1702,8 +1713,19 @@
                "type": "folder"
             }, {
                "children": [ {
-                  "date_added": "13352363428744937",
+                  "date_added": "13356618880107186",
                   "date_last_used": "0",
+                  "guid": "fa7a0136-e361-4ea6-bb19-a1ea1ecd5f69",
+                  "id": "181",
+                  "meta_info": {
+                     "power_bookmark_meta": ""
+                  },
+                  "name": "GCP  – ps-dev-mock-bousai",
+                  "type": "url",
+                  "url": "https://console.cloud.google.com/welcome?authuser=4&hl=ja&project=ps-dev-mock-bousai"
+               }, {
+                  "date_added": "13352363428744937",
+                  "date_last_used": "13356618419600724",
                   "guid": "52a78a92-a404-4e06-9a9a-5bbbd8c190ec",
                   "id": "174",
                   "meta_info": {
@@ -1715,7 +1737,7 @@
                } ],
                "date_added": "13352363446395323",
                "date_last_used": "0",
-               "date_modified": "13352471933905054",
+               "date_modified": "13356619284303043",
                "guid": "3519d2cd-8cb0-4197-8889-5585f430dc65",
                "id": "173",
                "name": "GCP",
@@ -1764,7 +1786,7 @@
          } ],
          "date_added": "13328291881009067",
          "date_last_used": "0",
-         "date_modified": "13353644669296434",
+         "date_modified": "13356619297410784",
          "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
          "name": "Bookmarks",
