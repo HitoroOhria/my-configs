@@ -1,6 +1,8 @@
-# javascript
+# node
 ## set node
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+alias nci='npm ci'
+alias nrd='npm run dev'
 
 # java
 ## set java
@@ -23,3 +25,4 @@ alias be='bundle exec'
 alias ru='rubocop'
 alias rug='rubocop --auto-gen-config '
 alias ruc='rubocop --auto-correct'
+
