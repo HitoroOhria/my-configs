@@ -101,6 +101,7 @@ $ ./setup_all.sh
 
 - Utility Tools
     - [CopyQ](https://github.com/hluk/CopyQ)
+    - [Flameshot](https://github.com/flameshot-org/flameshot)
     - [emote](https://github.com/tom-james-watson/Emote)
     - [peek](https://github.com/phw/peek)
 
