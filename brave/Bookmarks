@@ -1,5 +1,5 @@
 {
-   "checksum": "ca61290b0483217faba04003255608c4",
+   "checksum": "be8222201cfd3b6acb65eb8ff468ca4b",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -124,7 +124,7 @@
                } ],
                "date_added": "13352100957678262",
                "date_last_used": "0",
-               "date_modified": "13361012889534823",
+               "date_modified": "13361256894299612",
                "guid": "732b7e52-1fa6-4aa9-b14e-844fd070d369",
                "id": "10",
                "name": "Google Calendar",
@@ -1556,6 +1556,17 @@
                   "type": "url",
                   "url": "https://kumamoto-staff.bousai.pocketsign.app/console/"
                }, {
+                  "date_added": "13361256894299612",
+                  "date_last_used": "0",
+                  "guid": "258d3b56-72c4-4a4f-bdd4-6cfa997b47d4",
+                  "id": "198",
+                  "meta_info": {
+                     "power_bookmark_meta": ""
+                  },
+                  "name": "PocketSign - bousai - console - miyagi",
+                  "type": "url",
+                  "url": "https://miyagi.bousai.pocketsign.app/console/"
+               }, {
                   "date_added": "13348994266861698",
                   "date_last_used": "0",
                   "guid": "5a0f50e3-8ed5-41e2-9c77-bc1c61957245",
@@ -1569,7 +1580,7 @@
                } ],
                "date_added": "13348994171277307",
                "date_last_used": "0",
-               "date_modified": "13360137111180657",
+               "date_modified": "13361256914984293",
                "guid": "eef747cf-85a4-41ab-97c6-eb48b1b34305",
                "id": "145",
                "name": "PocketSign",
@@ -1872,7 +1883,7 @@
          } ],
          "date_added": "13328291881009067",
          "date_last_used": "0",
-         "date_modified": "13361012884559464",
+         "date_modified": "13361256908289200",
          "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
          "name": "Bookmarks",
