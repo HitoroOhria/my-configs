@@ -6,6 +6,14 @@
 | --- | --- |-------------| --- |
 | movePage | j | javascript: | move page from address bar |
 
+# Shortcuts
+
+## Previous/Next tab
+
+- open `brave://settings/system/shortcuts`
+- set `Previous/Next tab` to `Alt + Left/Right arrow`
+- (or see https://community.brave.com/t/custom-keyboard-shortcut/483237/4)
+
 # Install PWA
 
 Place file as follows.
