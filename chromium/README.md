@@ -30,5 +30,17 @@ $ sudo find / -type f -name "*balcphgbdpojaiombnfmlnllaihkmgnc*" -print
 /home/ohira/.local/share/icons/hicolor/48x48/apps/brave-balcphgbdpojaiombnfmlnllaihkmgnc-Default.png
 /home/ohira/.local/share/applications/brave-balcphgbdpojaiombnfmlnllaihkmgnc-Default.desktop
 /home/ohira/.gnome/apps/brave-balcphgbdpojaiombnfmlnllaihkmgnc-Default.desktop
+
+$ cat ~/.gnome/apps/brave-balcphgbdpojaiombnfmlnllaihkmgnc-Default.desktop
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Notion
+Exec=/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=balcphgbdpojaiombnfmlnllaihkmgnc
+Icon=brave-balcphgbdpojaiombnfmlnllaihkmgnc-Default
+StartupWMClass=crx_balcphgbdpojaiombnfmlnllaihkmgnc
+OnlyShowIn=Old;
 ```
 
