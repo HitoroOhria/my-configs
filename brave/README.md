@@ -1,3 +1,7 @@
+# Installation
+
+Install with repository manager. Don't use snap store.
+
 # Bookmarks
 
 - sync setting other than bookmarks

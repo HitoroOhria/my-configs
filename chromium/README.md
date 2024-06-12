@@ -23,7 +23,8 @@ $ ls ~/.local/share/applications
 total 60
 -rw------- 1 ohira  310 May 19  2023 brave-balcphgbdpojaiombnfmlnllaihkmgnc-Default.desktop
 
-$ sudo find / -type f -name "*balcphgbdpojaiombnfmlnllaihkmgnc*" -print
+$ sudo find / -name **balcphgbdpojaiombnfmlnllaihkmgnc*'
+/home/ohira/.config/BraveSoftware/Brave-Browser/Default/Web Applications/Manifest Resources/pjibgclleladliembfgfagdaldikeohf
 /home/ohira/.local/share/icons/hicolor/256x256/apps/brave-balcphgbdpojaiombnfmlnllaihkmgnc-Default.png
 /home/ohira/.local/share/icons/hicolor/32x32/apps/brave-balcphgbdpojaiombnfmlnllaihkmgnc-Default.png
 /home/ohira/.local/share/icons/hicolor/128x128/apps/brave-balcphgbdpojaiombnfmlnllaihkmgnc-Default.png

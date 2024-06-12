@@ -78,6 +78,7 @@ $ ./setup_all.sh
     - Typelet4Me
     - [Google Dive](https://www.google.com/intl/ja_jp/drive/download/)
     - [VIA](https://github.com/the-via/releases/releases)
+    - [DevToys](https://devtoys.app/)
 - Development Tools
     - Docker for Mac
     - JetBrains IDE
