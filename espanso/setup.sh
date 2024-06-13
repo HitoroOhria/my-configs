@@ -1,5 +1,5 @@
 #!/bin/bash
 
-ln -sf $(pwd)/config/ ~/.config/espanso/config/
-ln -sf $(pwd)/match/ ~/.config/espanso/match/
+ln -sf -d $(pwd)/config/ ~/.config/espanso/
+ln -sf -d $(pwd)/match/ ~/.config/espanso/
 
