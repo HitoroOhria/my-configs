@@ -41,3 +41,9 @@
 
 show_notifications: false
 
+# setxkbmap -query
+keyboard_layout:
+  layout: "us"
+  rules: "evdev"
+  model: "pc105"
+
