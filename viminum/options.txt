@@ -1,7 +1,7 @@
 # Excluded URLs and Kyes
 https://calendar.google.com/calendar/*
 https://app.slack.com/client/*
-https://app.gather.town/app/*
+https://calendar.notion.so/*
 
 # Custom key mappings
 map h goBack
