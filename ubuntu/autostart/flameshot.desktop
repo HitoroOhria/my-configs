@@ -1,6 +1,8 @@
 [Desktop Entry]
 Type=Application
-Exec=/bin/flameshot
+# For wayland
+# but not working
+Exec=env QT_QPA_PLATFORM=wayland /bin/flameshot
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
