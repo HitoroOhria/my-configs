@@ -38,3 +38,7 @@ eval "$(direnv hook zsh)"
 # Data loader
 ## embulk
 export PATH=$HOME/.embulk/bin:$PATH
+
+# bin
+export PATH="$HOME/.local/bin:$PATH"
+
