@@ -2,6 +2,7 @@
 https://calendar.google.com/calendar/*
 https://app.slack.com/client/*
 https://calendar.notion.so/*
+https://www.mindmeister.com/app/map/*
 
 # Custom key mappings
 map h goBack
