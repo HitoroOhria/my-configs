@@ -72,7 +72,9 @@ u = f7
 i = f8
 o = f9
 p = f10
-[ = f11
+# Lock screen
+# [ = f11
+[ = M-l
 tab = f12
 
 a = 1
@@ -132,7 +134,6 @@ p = M-0
 # Ctrl + Shit + 4
 # fixme: not working
 # f = command(flameshot gui)
-f = command(/home/ohira/scripts/apps/launch_flameshot.sh)
 
 # Ctrl + Shift + 6
 h = print
