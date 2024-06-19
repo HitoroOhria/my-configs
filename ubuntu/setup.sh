@@ -3,7 +3,7 @@
 # autstart
 ln -sf $(pwd)/autostart/albert.desktop ~/.config/autostart && \
   ln -sf $(pwd)/autostart/copyq.desktop ~/.config/autostart && \
-  ln -sf $(pwd)/autostart/dockred.desktop ~/.config/autostart && \
+  ln -sf $(pwd)/autostart/dockerd.desktop ~/.config/autostart && \
   ln -sf $(pwd)/autostart/flameshot.desktop ~/.config/autostart && \
   ln -sf $(pwd)/autostart/jetbrains-toolbox.desktop ~/.config/autostart
 
