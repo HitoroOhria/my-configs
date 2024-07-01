@@ -1,0 +1,15 @@
+# block site
+127.0.0.1 www.youtube.com
+127.0.0.1 m.youtube.com
+127.0.0.1 www.twitch.tv
+127.0.0.1 www.netflix.com
+# 127.0.0.1 www.amazon.co.jp
+127.0.0.1 www.nicovideo.jp
+127.0.0.1 sp.nicovideo.jp
+127.0.0.1 dokusho-ojikan.jp
+127.0.0.1 ebookjapan.yahoo.co.jp
+127.0.0.1 booklive.jp
+127.0.0.1 www.cmoa.jp
+127.0.0.1 mechacomic.jp
+127.0.0.1 comic-walker.com
+
