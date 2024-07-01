@@ -1,0 +1,3 @@
+
+ohira ALL=ALL, !/usr/sbin/visudo, !/bin/vi /etc/hosts, !/bin/vim /etc/hosts, 
+
