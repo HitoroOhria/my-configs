@@ -19,3 +19,8 @@ alias aicommits='~/.anyenv/envs/nodenv/versions/20.2.0/bin/aicommits'
 # github
 ## set ghq
 alias gcd='cd $(ghq list -p | peco --query "$LBUFFER")'
+
+# ai-commit
+alias ac='ai-commit --language japanese'
+alias acl='ai-commit --language japanese --list'
+
