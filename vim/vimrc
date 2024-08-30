@@ -49,6 +49,8 @@ set listchars=tab:^\ ,trail:~
 set showmatch
 
 " Yank
+" ヤンクしたときのハイライト設定
+let g:highlightedyank_highlight_duration = 400
 " ヤンクでクリップボードにコピー
 set clipboard=unnamedplus
 
