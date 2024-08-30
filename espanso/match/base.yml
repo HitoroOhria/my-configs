@@ -140,7 +140,7 @@ matches:
     replace: "go get github.com/pocketsign/schema@"
 
   - trigger: ";gcpd"
-    replace: "git cherry-pick ecb1938d7e3503861e70d494af37af0ea0118c54"
+    replace: "git cherry-pick 68ac862c9b14fb85d84706708a82c4ced0940efe"
 
   - trigger: ";sid"
     replace: "ceb933b7-c6be-4d73-a2a0-c25d4866abdc"
