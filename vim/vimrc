@@ -1,0 +1,58 @@
+" vim-plug
+call plug#begin('~/.vim/plugged')
+Plug 'easymotion/vim-easymotion'
+Plug 'machakann/vim-highlightedyank'
+call plug#end()
+
+:set nocompatible
+
+" Set leader to space 
+let mapleader = "\<Space>"
+
+" EasyMotion 
+map <leader>s <Plug>(easymotion-s2)
+map <leader>w <Plug>(easymotion-bd-w)
+map <leader>l <Plug>(easymotion-bd-jk)
+
+" Scroll
+set scroll=15
+set scrolloff=5
+map J <C-D>
+map K <C-U>
+
+" Move
+" 行をまたいで移動
+set whichwrap=b,s,h,l,<,>,[,],~
+
+" Search
+" 検索するときに大文字小文字を区別しない
+set ignorecase
+" 検索時に大文字を含んでいたら大/小を区別
+set smartcase
+" インクリメンタル検索 (検索ワードの最初の文字を入力した時点で検索が開始)
+set incsearch
+" 検索対象をハイライト
+set hlsearch
+
+" Display
+" 対応する括弧やブレースを表示
+set showmatch matchtime=1
+" 省略されずに表示
+set display=lastline
+" 行末のスペースを可視化
+set listchars=tab:^\ ,trail:~
+" 対応する括弧を強調表示
+set showmatch
+
+" Yank
+" ヤンクでクリップボードにコピー
+set clipboard=unnamedplus
+
+" Escの2回押しでハイライト消去
+nnoremap <Esc><Esc> :nohlsearch<CR><ESC>
+
+" Delete
+"x キー削除でデフォルトレジスタに入れない
+nnoremap x "_x
+vnoremap x "_x
+
