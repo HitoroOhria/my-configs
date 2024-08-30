@@ -21,9 +21,22 @@ WaylandEnable=false
 
 https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04-ja
 
-# Wayland
+# X11 vs Wayland
 
-## Shortcut
+## X11
+
+- pros
+- cons
+  - tig main view is very slow on mobile monitor
+
+## Wayland
+
+- pros
+- cons
+  - flameshot is not working
+  - not supported scan QR code on 1Password
+
+### Shortcut
 
 - Settings > Keyboard
 - Keyboard Shortcuts > Custom Shortcuts
@@ -35,6 +48,7 @@ https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu
   - Name: `Show CopyQ`
   - Command: `copyq show`
   - Shortcut: `Ctrl` + `Shift` + `V`
+
 
 # For FMVUH01005
 
