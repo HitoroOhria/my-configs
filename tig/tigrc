@@ -41,48 +41,58 @@ set show-changes = no
 
 # ------- キーバンド --------
 
-## -------- Commit --------
-
-# C で commit
-# + で commit --amend
-bind status C !git commit --allow-empty --no-verify
-bind status + !git commit --amend --allow-empty --no-verify
-
-# M で merge
-bind refs M ?!git merge %(branch)
+## -------- Main --------
 
 # R で rebase -i
 # F で commit --fixup
 # S で commit --squash
+# C で commit
 bind main R !git  rebase -i %(commit)
 bind main F ?!git commit --fixup %(commit)
 bind main S ?!git commit --squash %(commit)
-bind diff R !git  rebase -i %(commit)
-bind diff F ?!git commit --fixup %(commit)
-bind diff S ?!git commit --squash %(commit)
-
-# A で add -u
-bind status A !git add -u 
-
-# R で git restore .
-bind status R ?git restore .
-
-## -------- Branch --------
-
-# F で branch を rename
-# R で branch を rebase
-# O で branch を rebase --onto
-bind refs F !git branch -m %(branch) "%(prompt Enter new branch name: )"
-bind refs R ?!git rebase %(branch)
-bind refs O !git rebase --onto %(branch) "%(prompt Enter commit hash: )"
+bind main C !git commit --allow-empty --no-verify
 
 # B で reset %(commit)
 bind main B !git reset %(commit)
 
-## -------- Commit Hash --------
-
 # H で クリップボードに commit hash をコピー
 bind main   H @sh -c "printf '%s' %(commit) | git pbcopy"
+
+## -------- Diff --------
+
+# R で rebase -i
+# F で commit --fixup
+# S で commit --squash
+bind diff R !git  rebase -i %(commit)
+bind diff F ?!git commit --fixup %(commit)
+bind diff S ?!git commit --squash %(commit)
+
+## -------- Status --------
+
+# A で add -u
+# C で commit
+# + で commit --amend
+# - で ai-commit
+# R で restore .
+bind status A !git add -u 
+bind status C !git commit --allow-empty --no-verify
+bind status + !git commit --amend --allow-empty --no-verify
+bind status - !ai-commit --language japanese --force
+bind status R ?git restore .
+
+## -------- Refs --------
+
+# M で merge
+# F で branch を rename
+# R で branch を rebase
+# O で branch を rebase --onto
+bind refs M ?!git merge %(branch)
+bind refs F !git branch -m %(branch) "%(prompt Enter new branch name: )"
+bind refs R ?!git rebase %(branch)
+bind refs O !git rebase --onto %(branch) "%(prompt Enter commit hash: )"
+
+## -------- Reflog --------
+
 bind reflog H @sh -c "printf '%s' %(commit) | git pbcopy"
 
 ## -------- Stash --------
@@ -101,3 +111,4 @@ bind generic C >git commit
 bind stash S !git stash save "%(prompt Enter stash comment: )"
 bind stash A !git stash apply %(stash)
 bind stash P !git stash pop %(stash)
+
