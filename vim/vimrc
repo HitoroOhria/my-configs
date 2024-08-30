@@ -6,6 +6,10 @@ call plug#end()
 
 :set nocompatible
 
+" hybrid line numbers
+:set number relativenumber
+:set nu rnu
+
 " Set leader to space 
 let mapleader = "\<Space>"
 
