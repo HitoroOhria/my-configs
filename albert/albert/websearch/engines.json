@@ -1,5 +1,6 @@
 [
     {
+        "fallback": true,
         "iconPath": "/home/ohira/.config/albert/websearch/{fe8d1381-3039-437e-9e48-96183311f440}.",
         "id": "526aa9b3",
         "name": "Amazon",
@@ -7,6 +8,7 @@
         "url": "http://www.amazon.co.jp/s/?field-keywords=%s"
     },
     {
+        "fallback": true,
         "iconPath": "/home/ohira/.config/albert/websearch/{005cd53a-e17e-4dce-9e93-720ad534f9b8}.",
         "id": "6003f018",
         "name": "DeepL En",
@@ -14,6 +16,7 @@
         "url": "https://www.deepl.com/en/translator#en/ja/%s"
     },
     {
+        "fallback": true,
         "iconPath": "/home/ohira/.config/albert/websearch/{c71496eb-dc6f-4ad3-9e10-f10554c9980e}.",
         "id": "49ba7690",
         "name": "DeepL Ja",
@@ -21,6 +24,15 @@
         "url": "https://www.deepl.com/ja/translator#ja/en/%s"
     },
     {
+        "fallback": true,
+        "iconPath": ":default",
+        "id": "b42e1b69",
+        "name": "DuckDuckGo",
+        "trigger": "ddg",
+        "url": "https://duckduckgo.com/?q=%s"
+    },
+    {
+        "fallback": true,
         "iconPath": "/home/ohira/.config/albert/websearch/{d3b34d19-bb54-4439-8a6b-ac70670af141}.",
         "id": "50cd4025",
         "name": "GitHub",
@@ -28,6 +40,7 @@
         "url": "https://github.com/search?utf8=✓&q=%s"
     },
     {
+        "fallback": true,
         "iconPath": "/home/ohira/.config/albert/websearch/{27c74612-7025-4a4e-a77d-5239bd8b2dad}.",
         "id": "360d73df",
         "name": "Google",
@@ -35,6 +48,7 @@
         "url": "https://www.google.com/search?q=%s"
     },
     {
+        "fallback": true,
         "iconPath": "/home/ohira/.config/albert/websearch/{0e7783d3-54d1-4f12-b31b-fe7908869be8}.",
         "id": "39e3073a",
         "name": "Google En",
@@ -42,6 +56,7 @@
         "url": "https://www.google.com/search?q=%s&gl=us&hl=en&pws=0\n"
     },
     {
+        "fallback": true,
         "iconPath": "/home/ohira/.config/albert/websearch/{14cf67e8-728a-420a-89d6-7ac26360cbcb}.",
         "id": "fcfd1083",
         "name": "Google Ja",
@@ -49,6 +64,7 @@
         "url": "https://www.google.com/search?q=%s&gl=jp&hl=ja&pws=0\n"
     },
     {
+        "fallback": true,
         "iconPath": "/home/ohira/.config/albert/websearch/{48038b43-81be-4961-aca6-cc0fc2e545b4}.",
         "id": "d435f376",
         "name": "Google Maps",
@@ -56,6 +72,7 @@
         "url": "https://www.google.com/maps/search/%s/"
     },
     {
+        "fallback": true,
         "iconPath": "/home/ohira/.config/albert/websearch/{08b574b2-b4b1-4253-97d5-41175a4fce63}.png",
         "id": "eeaf8ecd",
         "name": "Google Translate En",
@@ -63,6 +80,7 @@
         "url": "https://translate.google.com/?sl=en&tl=ja&text=%s"
     },
     {
+        "fallback": true,
         "iconPath": "/home/ohira/.config/albert/websearch/{34f6fe8b-6256-4696-a3db-d4a7ea5598bf}.",
         "id": "348e37c0",
         "name": "Google Translate Ja",
@@ -70,6 +88,7 @@
         "url": "https://translate.google.com/?sl=ja&tl=en&text=%s"
     },
     {
+        "fallback": true,
         "iconPath": "/home/ohira/.config/albert/websearch/{f098aeb6-b9a2-44fa-af17-bc0477707c7e}.",
         "id": "c5c309a4",
         "name": "Wolfram Alpha",
