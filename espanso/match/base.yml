@@ -103,57 +103,16 @@ matches:
   - trigger: ";lo"
     replace: "local-ohira-"
 
-  - trigger: ";ad"
-    replace: "1234567"
+  # circus
+  - trigger: ";de"
+    replace: "@デカフェ"
 
-  # connpass
-  - trigger: ";shit"
-    replace: "【$|$】渋谷で朝活"
+  - trigger: ";hi"
+    replace: "@ハイテク"
 
-  - trigger: ";shib"
-    replace: "### コンセプト\n渋谷でもくもくと朝活します！家や職場が近い方はぜひ一緒に朝活しましょう！\n\n主催者はエンジニアですが、エンジニアの方もそうでない方も大歓迎です〜:raising_hands:\n\n### 詳細\n- 毎日 8:00 ~ 10:00\n- エクセルシオール カフェ 渋谷道玄坂店\n- 参加費無料 (カフェ代のみ各自支払い)"
+  - trigger: ";fu"
+    replace: "@フルスター"
 
-  # Balus
-  - trigger: ";yar"
-    replace: "やります！\n\n-"
-
-  - trigger: ";owa"
-    replace: "終わります！\n\nやったこと\n-"
-
-  - trigger: ";dtmail"
-    replace: "dev.taro@balus.co"
-
-  - trigger: ";isb"
-    replace: "## 背景・課題\n\n## 完了条件\n\n## 実装方法・提案\n\n## 期限\n\n## 関連リンク\n\n## その他・備考\n\n"
-
-  - trigger: ";bimail"
-    replace: "invoice-spwn@balus.co"
-
-  - trigger: ";bisub"
-    replace: "【大平】2024年$|$月の請求書の送付について"
-
-  - trigger: ";bibod"
-    replace: "Balus株式会社 担当者様\n\nいつもお世話になっております。 \n業務委託の大平でございます。\n\n 表題の通り、先月分の請求書を送付いたします。 \n内容をご確認いただき、期日までにお支払いいただきますようお願い申し上げます。 \n\n何卒よろしくお願い申し上げます。\n"
-
-  # PocketSign
-  - trigger: ";ggs"
-    replace: "go get github.com/pocketsign/schema@"
-
-  - trigger: ";gcpd"
-    replace: "git cherry-pick 68ac862c9b14fb85d84706708a82c4ced0940efe"
-
-  - trigger: ";sid"
-    replace: "ceb933b7-c6be-4d73-a2a0-c25d4866abdc"
-
-  ## GitHub PR template of bousai.
-  - trigger: ";prb"
-    replace: "# 背景\n\n\n# 概要\n\n\n# 挙動\n\n\n# 確認事項\n\n"
-
-  ## GitHub PR template of schema.
-  - trigger: ";prs"
-    replace: "# 背景\n\n\n# 概要\n\n\n#"
-
-  # Coeru
-  - trigger: ";coe"
-    replace: "コエルでやっていきます！"
+  - trigger: ";dhf"
+    replace: "@デカフェ @ハイテク @フルスター"
 
