@@ -41,6 +41,22 @@
     },
     {
         "fallback": true,
+        "iconPath": ":default",
+        "id": "dba54c15",
+        "name": "GitHub PR - circus_backend",
+        "trigger": "cb",
+        "url": "https://github.com/circusdev/circus_backend/pulls?q=is%3Apr+%s"
+    },
+    {
+        "fallback": true,
+        "iconPath": ":default",
+        "id": "1df4a1f7",
+        "name": "GitHub PR - circus_frontend",
+        "trigger": "cf",
+        "url": "https://github.com/circusdev/circus_frontend/pulls?q=is%3Apr+%s"
+    },
+    {
+        "fallback": true,
         "iconPath": "/home/ohira/.config/albert/websearch/{27c74612-7025-4a4e-a77d-5239bd8b2dad}.",
         "id": "360d73df",
         "name": "Google",
