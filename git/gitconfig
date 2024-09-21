@@ -14,6 +14,8 @@
   pecoBranch = !peco --prompt 'GIT BRANCH>' | xargs
   localBranches = !git branch | git pecoBranch | sed -e "s/^\\*\\s*//g"
   remoteBranches = !git branch -r | grep -v -w HEAD | git pecoBranch | sed "s@origin/@@g"
+  pecoCommit =  !peco --prompt 'GIT COMMIT>' | xargs
+  commitHashes = !git log --oneline -100 | git pecoCommit | awk '{print $1}'
 
   ; for linux (e.g. echo "foo" | git pbcopy)
   pbcopy = !xclip -selection clipboard -in
@@ -31,6 +33,7 @@
   ; branch
   b = branch
   bm = branch -m
+  bmp = !git branch -m $(git withPRPrefixCurrentBranch)
   bd = !git branch -D
   bdl = !git branch -D $(git localBranches)
   bdr = !git push -d origin $(git remoteBranches)
@@ -39,10 +42,6 @@
   bc = !git currentBranch | git pbcopy
   bcl = !git localBranches | git pbcopy
   bcr = !git remoteBranches | git pbcopy
-
-  ; pr branch
-  bmp = !git branch -m $(git withPRPrefixCurrentBranch)
-  puop = !git pull origin --rebase $(git withoutPRPrefixCurrentBranch)
 
   ; pr branch
   mai = !git switch $(git mainBranch)
@@ -84,10 +83,10 @@
   coa = commit --abort
   coc = commit --continue
   cos = commit --skip
-  
+
   ; cherry-pick
   cp = cherry-pick
-  cpc = cherry-pick --continue 
+  cpc = cherry-pick --continue
   cpa = cherry-pick --abort
   cps = cherry-pick --skip
 
@@ -103,6 +102,7 @@
   pu = pull
   pur = pull --rebase
   puo = !git pull origin --rebase $(git currentBranch)
+  puop = !git pull origin --rebase $(git withoutPRPrefixCurrentBranch)
 
   ; log
   l = log
@@ -110,6 +110,7 @@
   ln= log --name-status
   lo = log --oneline -10
   lon = log --oneline
+  lmc = !git log -1 --pretty=%B $(git commitHashes) | head -n 1 | tr -d '\n' | git pbcopy
   lg = log --graph --decorate --pretty=oneline --branches --abbrev-commit --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(auto)%d%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
   today = "!f () {\
              git log --oneline --branches \
