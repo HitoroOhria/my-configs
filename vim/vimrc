@@ -14,6 +14,7 @@ call plug#end()
 let mapleader = "\<Space>"
 
 " EasyMotion 
+map f <Plug>(easymotion-s2)
 map <leader>s <Plug>(easymotion-s2)
 map <leader>w <Plug>(easymotion-bd-w)
 map <leader>l <Plug>(easymotion-bd-jk)
