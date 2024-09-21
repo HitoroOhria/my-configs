@@ -28,11 +28,13 @@ https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu
 - pros
 - cons
   - tig main view is very slow on mobile monitor
+  - not supported scan QR code on 1Password
 
 ## Wayland
 
 - pros
 - cons
+  - auto switch window when close float terminal in IntelliJ?
   - flameshot is not working
   - not supported scan QR code on 1Password
 
