@@ -13,3 +13,6 @@ ln -sf $(pwd)/vimrc ~/.vimrc
 # install vim with clipboard supported
 sudo apt install vim-gtk3
 
+# install vim plugin
+# Open file by vim and type command :PlugInstall 
+
