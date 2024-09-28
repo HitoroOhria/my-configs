@@ -5,5 +5,5 @@
 sudo add-apt-repository universe
 sudo apt install gnome-tweaks
 gnome-tweaks
-#=> Fonts > Scaling Factor > 1.17
+#=> Fonts > Scaling Factor > 1.20
 
