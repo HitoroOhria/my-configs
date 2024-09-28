@@ -5,4 +5,5 @@
 !.gikeep
 
 # zsh
-prezto/zsh.d/*.zsh
+**/zsh.d/*.zsh
+

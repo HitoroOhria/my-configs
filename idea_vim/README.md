@@ -1,5 +1,0 @@
-# Setup
-
-```shell
-$ ./setup.sh
-```
