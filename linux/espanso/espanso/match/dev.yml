@@ -1,0 +1,17 @@
+matches:
+  # shell script
+  - trigger: ";sb"
+    replace: "#!/bin/bash"
+
+  # git
+  - trigger: ";re"
+    replace: "rebase: fix "
+
+  # GitHub
+  - trigger: ";sug"
+    replace: "```suggestion\n$|$\n```\n"
+
+  # Dev
+  - trigger: ";lo"
+    replace: "local-ohira-"
+

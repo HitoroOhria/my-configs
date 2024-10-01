@@ -1,0 +1,25 @@
+matches:
+  # Email
+  - trigger: ";mail"
+    replace: "hiroto100114@gmail.com"
+
+  - trigger: ";frmail"
+    replace: "hiroto.ohira.freelance@gmail.com"
+
+  - trigger: ";prmail"
+    replace: "ohira@praha-inc.com"
+
+  - trigger: ";bamail"
+    replace: "ohira.hiroto@balus.co"
+
+  - trigger: ";pomail"
+    replace: "ohira@pocketsign.co.jp"
+
+  # Phone
+  - trigger: ";tel"
+    replace: "07043902141"
+
+  # Amazon
+  - trigger: ";amz"
+    replace: "&emi=AN1VRQENFRJN5"
+

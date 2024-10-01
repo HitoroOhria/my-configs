@@ -1,0 +1,31 @@
+matches:  
+  - trigger: ";deca"
+    replace: "@Yuya Kushida @菊池 @Kamikawa Yurie\n\n"
+
+  - trigger: ";deci"
+    replace: "@デカフェ\n"
+
+  - trigger: ";hite"
+    replace: "@ハイテク\n"
+
+  - trigger: ";full"
+    replace: "@フルスター\n"
+
+  - trigger: ";kikuchi"
+    replace: "nowano0403@gmail.com"
+
+  - trigger: ";kitaka"
+    replace: "ykjq247298@gmail.com"
+
+  - trigger: ";kushi"
+    replace: "y-kushida@circus-group.jp"
+
+  - trigger: ";jirai"
+    replace: "## 📝 目的と概要 \n-$|$ \n\n## ✅ 受入基準（Acceptance Criteria） \n- \n\n### ⛔ やらないこと\n- \n\n## 🎉インクリメント\n- \n\n"
+
+  - regex: ";\\[(?P<num>\\d{4})"
+    replace: "[CAD-{{num}}] "
+
+  - regex: ";l(?P<num>\\d{4})"
+    replace: "https://uniasdev.atlassian.net/browse/CAD-{{num}}"
+
