@@ -36,6 +36,7 @@
   bmp = !git branch -m $(git withPRPrefixCurrentBranch)
   bd = !git branch -D
   bdl = !git branch -D $(git localBranches)
+  bdp = !git branch --list "$(git prBranchPrefix)*" | xargs -n 1 git branch -D
   bdr = !git push -d origin $(git remoteBranches)
   bdm = !git branch --merged | grep -v -e main -e master -e develop | xargs git branch -d
   bdmb = !git switch $(git localBranches) && git branch --merged | grep -v -e main -e master -e develop | xargs git branch -d
