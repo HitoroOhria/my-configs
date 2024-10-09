@@ -2,8 +2,9 @@
 export EDITOR=vim
 
 # ls
-alias ls='ls -G -l'
-alias lsg='ls -G -l | grep'
+alias ls='ls -lG'
+alias lsa='ls -alG'
+alias lsg='ls -alG | grep'
 alias sl='ls'
 
 # ps
