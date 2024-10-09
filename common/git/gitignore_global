@@ -10,3 +10,7 @@
 # JebBrains IDE
 .idea
 *.iml
+
+# VSCode
+.vscode
+
