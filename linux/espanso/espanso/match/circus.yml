@@ -29,3 +29,6 @@ matches:
   - regex: ";l(?P<num>\\d{4})"
     replace: "https://uniasdev.atlassian.net/browse/CAD-{{num}}"
 
+  - regex: ";mtrap"
+    replace: "export MAIL_HOST=smtp.mailtrap.io MAIL_PORT=2525 MAIL_USERNAME=00618245103afa MAIL_PASSWORD=7a1b4a0ac04f51"
+
