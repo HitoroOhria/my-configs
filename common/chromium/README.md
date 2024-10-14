@@ -32,6 +32,7 @@ $ sudo find / -name **balcphgbdpojaiombnfmlnllaihkmgnc*'
 /home/ohira/.local/share/icons/hicolor/32x32/apps/brave-balcphgbdpojaiombnfmlnllaihkmgnc-Default.png
 /home/ohira/.local/share/icons/hicolor/128x128/apps/brave-balcphgbdpojaiombnfmlnllaihkmgnc-Default.png
 /home/ohira/.local/share/icons/hicolor/48x48/apps/brave-balcphgbdpojaiombnfmlnllaihkmgnc-Default.png
+# rename below files
 /home/ohira/.local/share/applications/brave-balcphgbdpojaiombnfmlnllaihkmgnc-Default.desktop
 /home/ohira/.gnome/apps/brave-balcphgbdpojaiombnfmlnllaihkmgnc-Default.desktop
 
