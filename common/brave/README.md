@@ -30,7 +30,7 @@ see https://www.japan-secure.com/entry/what-to-do-if-something-goes-wrong-with-t
 set install shortcut.
 
 - go to `brave://settings/system/shortcuts`
-- change short cut `Install WPA` to `Ctrl + I`
+- change short cut `Install PWA` to `Ctrl + I`
 
 install app.
 
