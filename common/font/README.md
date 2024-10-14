@@ -1,19 +1,4 @@
-<!-- START doctoc -->
-<!-- END doctoc -->
+# UDEV Gothic
 
-# Preconditions
+https://github.com/yuru7/udev-gothic?tab=readme-ov-file
 
-- should be installed homebrew
-
-# Step
-
-### Run setup script
-
-```shell
-$ ./setup.sh
-```
-
-### Set font
-
-- IntelliJ IDEA
-- Iterm2
