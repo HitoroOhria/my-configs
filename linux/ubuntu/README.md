@@ -9,6 +9,11 @@
 
 https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04-ja
 
+# Keyring Manager
+
+- Auto-Unlock Keyring Manager
+- https://www.maketecheasier.com/auto-unlock-keyring-manager-in-ubuntu-intrepid/2009/03/14
+
 # X11 vs Wayland
 
 ## X11
@@ -42,7 +47,7 @@ https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu
 - Add guake shortcut
   - Name: `Toggle Guake`
   - Command: `guake --toggle-visibility`
-  - Shortcut: `Ctrl` + `Space`
+  - Shortcut: `Ctrl` + `Alt` + `T`
 
 # Gnome Extentions
 
