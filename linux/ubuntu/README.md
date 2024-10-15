@@ -1,18 +1,23 @@
-# Launguage
+# Common
+## Launguage
 
 - Settings > Reasion & Launguage
 - Launuage > Manage Installed Launguages
 - Install Japanese
   - for work keyd
 
-# RAM swap
+## RAM swap
 
 https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04-ja
 
-# Keyring Manager
+## Keyring Manager
 
 - Auto-Unlock Keyring Manager
 - https://www.maketecheasier.com/auto-unlock-keyring-manager-in-ubuntu-intrepid/2009/03/14
+
+# Gnome Extentions
+
+- [Smart Auto Move](https://extensions.gnome.org/extension/4736/smart-auto-move/)
 
 # X11 vs Wayland
 
@@ -49,9 +54,9 @@ https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu
   - Command: `guake --toggle-visibility`
   - Shortcut: `Ctrl` + `Alt` + `T`
 
-# Gnome Extentions
+### Vertial Display
 
-- [Smart Auto Move](https://extensions.gnome.org/extension/4736/smart-auto-move/)
+see https://claude.ai/chat/abff5203-d116-430d-a790-1729159b4d35
 
 # For FMVUH01005
 

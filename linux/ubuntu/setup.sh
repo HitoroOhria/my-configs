@@ -33,10 +33,17 @@ gsettings set org.gnome.desktop.wm.keybindings switch-windows "[]" && \
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Super>Page_Up', '<Super><Alt>Left']" && \
   gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Super>Page_Down', '<Super><Alt>Right']"
 
-# Disable emoji picker hotkey
+# Disable emoji picker hotkey for Slack show thread.
 gsettings set org.freedesktop.ibus.panel.emoji hotkey "[]"
 
 # Disable power management of wifi.
 # see https://vegam57.livedoor.blog/archives/9644083.html
 sudo sed -i 's/3/2/' /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
+
+# Dual-Up Monitor
+## scale up font size
+sudo add-apt-repository universe
+sudo apt install gnome-tweaks
+gnome-tweaks
+#=> Fonts > Scaling Factor > 1.20
 
