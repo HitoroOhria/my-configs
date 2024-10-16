@@ -6,6 +6,8 @@ import (
 	"time"
 )
 
+// https://zenn.dev/hsaki/books/golang-concurrency/viewer/appliedusage
+// https://tech.yappli.io/entry/goroutine-channel
 func main() {
 	// noMeeting()
 	// wg()
