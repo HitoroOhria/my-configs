@@ -1,6 +1,6 @@
 matches:  
   - trigger: ";deca"
-    replace: "@Yuya Kushida @菊池 @Kamikawa Yurie\n\n"
+    replace: "@Yuya Kushida @菊池 @Kamikawa Yurie @Daisuke Nakashima\n\n"
 
   - trigger: ";deci"
     replace: "@デカフェ\n"
@@ -34,4 +34,10 @@ matches:
 
   - regex: ";cbatch"
     replace: "go run main.go -batch "
+
+  - regex: ";lio"
+    replace: " LIKE '%大平%'"
+
+  - regex: ";lil"
+    replace: " LIKE '%ローカル%'"
 
