@@ -8,6 +8,9 @@ ln -sf $(pwd)/autostart/albert.desktop ~/.config/autostart && \
   ln -sf $(pwd)/autostart/guake.desktop ~/.config/autostart && \
   ln -sf $(pwd)/autostart/jetbrains-toolbox.desktop ~/.config/autostart
 
+# emoji
+sudo snap install emote
+
 # key speed
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 12 && \
   gsettings set org.gnome.desktop.peripherals.keyboard delay 190
