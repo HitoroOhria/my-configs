@@ -1,4 +1,4 @@
-# Set my job
+# Set up for mass notifications
 UPDATE jobs
 SET member_id    = 1111,
     agent_id     = 582,
@@ -9,8 +9,8 @@ WHERE id IN (3002, 3004)
 ;
 # Create job_commission_fee_logs
 INSERT INTO job_commission_fee_logs (job_id, fee_value, fee_unit)
-VALUES (3002, 35, 1),
-       (3004, 850000, 2)
+VALUES (3002, 25, 1),
+       (3004, 750000, 2)
 ;
 
 SELECT id, commission_fee_value, commission_fee_id

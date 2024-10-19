@@ -1,4 +1,3 @@
-
 INSERT INTO circus.agent_selection_occupation_6_months_summaries
     (applied_agent_id,count_management,count_customers,count_clerical,count_services,count_marketing,count_it_engineer,count_creative,count_consultant,count_financial,count_construction,count_machinery,count_food,count_chemical,count_medical,count_civil_servant,count_light_work,count_skilled,aggregation_start,aggregation_end)
 VALUES
@@ -142,8 +141,6 @@ INSERT INTO circus.agent_selection_salary_range_6_months_summaries (applied_agen
     (12,38,0,0,0,0,8,0,CONCAT(DATE_SUB(CURDATE(), INTERVAL 6 MONTH), ' 00:00:00'),CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY), ' 23:59:59')),
     (195,32,64,0,8,0,0,0,CONCAT(DATE_SUB(CURDATE(), INTERVAL 6 MONTH), ' 00:00:00'),CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY), ' 23:59:59'))
 ON DUPLICATE KEY UPDATE `count_lt_300` = VALUES(`count_lt_300`), `count_300_449` = VALUES(`count_300_449`), `count_450_599` = VALUES(`count_450_599`), `count_600_799` = VALUES(`count_600_799`), `count_800_1199` = VALUES(`count_800_1199`), `count_1200_1999` = VALUES(`count_1200_1999`), `count_gte_2000` = VALUES(`count_gte_2000`), `aggregation_start` = VALUES(`aggregation_start`), `aggregation_end` = VALUES(`aggregation_end`);
-
-
 
 INSERT INTO circus.hr_selection_6_months_summaries (agent_id,applied_agent_id,count,aggregation_start,aggregation_end) VALUES
     (350,105,1,CONCAT(DATE_SUB(CURDATE(), INTERVAL 6 MONTH), ' 00:00:00'),CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY), ' 23:59:59')),
