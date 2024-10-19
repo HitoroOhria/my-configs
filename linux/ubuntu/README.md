@@ -15,6 +15,31 @@ https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu
 - Auto-Unlock Keyring Manager
 - https://www.maketecheasier.com/auto-unlock-keyring-manager-in-ubuntu-intrepid/2009/03/14
 
+## Wi-Fi
+
+https://askubuntu.com/a/1399353
+
+```shell
+$ sudo vi /etc/default/grub 
+
+# Edit the following line and add pcie_aspm=off
+GRUB_CMDLINE_LINUX_DEFAULT="splash pcie_aspm=off"
+
+$ sudo update-grub
+```
+
+maybe
+
+
+```shell
+$ sudo vi /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
+
+[connection]
+wifi.powersave = 2
+
+```
+
+
 # Gnome Extentions
 
 - [Smart Auto Move](https://extensions.gnome.org/extension/4736/smart-auto-move/)
