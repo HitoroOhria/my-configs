@@ -1,5 +1,12 @@
 SELECT id, occupations_sub FROM jobs WHERE JSON_LENGTH(occupations_sub) = 0;
 
+# SalaryType
+SELECT id, jobs.salary_type, expected_annual_salary_min, expected_annual_salary_max, expected_monthly_salary_min, expected_monthly_salary_max
+FROM jobs
+WHERE salary_type = 2
+ORDER BY created_at DESC
+;
+
 # Occupation
 -- occupations_main: 23
 -- occupations_sub: [46]
