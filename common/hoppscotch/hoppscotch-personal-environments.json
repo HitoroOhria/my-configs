@@ -1,0 +1,48 @@
+[
+  {
+    "name": "PocketSign - Bousai",
+    "v": 1,
+    "id": "w8s4bfrostn",
+    "variables": [
+      {
+        "key": "baseUrl",
+        "value": "http://local1.localhost:8080/kumamoto",
+        "secret": false
+      }
+    ]
+  },
+  {
+    "name": "circus - AGENT - local",
+    "v": 1,
+    "id": "tozekz9fcki",
+    "variables": [
+      {
+        "key": "baseUrl",
+        "value": "http://localhost:8080",
+        "secret": false
+      },
+      {
+        "key": "token",
+        "value": "eb93d2cc-dc56-49a5-b440-d725ce440580",
+        "secret": false
+      }
+    ]
+  },
+  {
+    "name": "circus - AGENT - dev1",
+    "v": 1,
+    "id": "q4nvs9f8zp",
+    "variables": [
+      {
+        "key": "baseUrl",
+        "value": "https://api-dev1.circus-job.com",
+        "secret": false
+      },
+      {
+        "key": "token",
+        "value": "8911d167-4a40-4299-bc4d-9ae622c67d41",
+        "secret": false
+      }
+    ]
+  }
+]
