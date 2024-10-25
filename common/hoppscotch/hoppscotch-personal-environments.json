@@ -1,17 +1,5 @@
 [
   {
-    "name": "PocketSign - Bousai",
-    "v": 1,
-    "id": "w8s4bfrostn",
-    "variables": [
-      {
-        "key": "baseUrl",
-        "value": "http://local1.localhost:8080/kumamoto",
-        "secret": false
-      }
-    ]
-  },
-  {
     "name": "circus - AGENT - local",
     "v": 1,
     "id": "tozekz9fcki",
