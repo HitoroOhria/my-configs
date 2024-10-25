@@ -18,6 +18,9 @@ map f <Plug>(easymotion-s2)
 map <leader>s <Plug>(easymotion-s2)
 map <leader>w <Plug>(easymotion-bd-w)
 map <leader>l <Plug>(easymotion-bd-jk)
+" EasyMotion 検索時に大文字と小文字を区別しない
+let g:EasyMotion_smartcase = 1
+let g:EasyMotion_use_smartsign_us = 1
 
 " Scroll
 set scroll=15
