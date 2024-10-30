@@ -83,6 +83,14 @@ wifi.powersave = 2
 
 see https://claude.ai/chat/abff5203-d116-430d-a790-1729159b4d35
 
+# For Mini PC
+
+## Respond automatic logout when idle
+
+- Setting > Privacy > Screen Lock > Automatic Screen Lock (Off)
+- see https://askubuntu.com/a/1302229
+
+
 # For FMVUH01005
 
 ## Itnernal Microphone not working
