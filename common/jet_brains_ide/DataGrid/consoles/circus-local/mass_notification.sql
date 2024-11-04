@@ -1,13 +1,10 @@
-
-INSERT INTO feature_controls(agent_id, feature, is_active, capacity)
-VALUES (582, 'massNotification', 1, 5)
+# 一括告知の配信済み件数の取得
+SELECT COUNT(m.id) AS mail_log_count
+FROM agents AS a
+LEFT JOIN mail_logs AS m
+    ON m.agent_id = a.id
+    AND DATE_FORMAT(m.created_at, '%Y%m') = DATE_FORMAT(NOW(), '%Y%m')
+    AND m.sending_status = 'success'
+WHERE a.id = 582
 ;
-
-INSERT INTO mail_logs (account_id, agent_id, recipient, title, message, attachments, sending_status)
-VALUES (1043,582,'[{"agent_id": 1043, "account_id": 582}]','タイトル','s3.url','{}','success')
-;
-# 1043,582,"[{""agent_id"": 1043, ""account_id"": 582}]",タイトル,s3.url,{},success
-# 1043,582,"[{""agent_id"": 1043, ""account_id"": 582}]",タイトル,s3.url,{},success
-
-SELE
 
