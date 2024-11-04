@@ -4,6 +4,8 @@
 ln -sf $(pwd)/autostart/albert.desktop ~/.config/autostart && \
   ln -sf $(pwd)/autostart/copyq.desktop ~/.config/autostart && \
   ln -sf $(pwd)/autostart/dockerd.desktop ~/.config/autostart && \
+  # Only desptok pc?
+  ln -sf $(pwd)/autostart/docker-desktop.desktop ~/.config/autostart && \
   ln -sf $(pwd)/autostart/flameshot.desktop ~/.config/autostart && \
   ln -sf $(pwd)/autostart/guake.desktop ~/.config/autostart && \
   ln -sf $(pwd)/autostart/jetbrains-toolbox.desktop ~/.config/autostart
