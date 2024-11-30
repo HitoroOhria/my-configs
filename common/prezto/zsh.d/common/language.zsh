@@ -3,6 +3,7 @@
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 alias nci='npm ci'
 alias nrd='npm run dev'
+alias nrs='npm run storybook'
 
 # java
 ## set java
