@@ -12,8 +12,8 @@
   statusFiles = !git status --porcelain | peco --query '$LBUFFER' | awk -F ' ' '{print $NF}'
   currentBranch = !git rev-parse --abbrev-ref HEAD
   pecoBranch = !peco --prompt 'GIT BRANCH>' | xargs
-  localBranches = !git branch | git pecoBranch | sed -e "s/^\\*\\s*//g"
-  remoteBranches = !git branch -r | grep -v -w HEAD | git pecoBranch | sed "s@origin/@@g"
+  localBranches = !git branch --sort=-committerdate | git pecoBranch | sed -e "s/^\\*\\s*//g"
+  remoteBranches = !git branch --sort=-committerdate -r | grep -v -w HEAD | git pecoBranch | sed "s@origin/@@g"
   pecoCommit =  !peco --prompt 'GIT COMMIT>' | xargs
   commitHashes = !git log --oneline -100 | git pecoCommit | awk '{print $1}'
 
@@ -31,7 +31,7 @@
   cl = clone
 
   ; branch
-  b = branch
+  b = "!git for-each-ref --sort=-committerdate --format='%(refname:short) %(committerdate:relative) %(subject)' refs/heads/ | awk '{printf \"[%2s %-5s %-3s] %s\\n\", $2, $3, $4, $1}'"
   bm = branch -m
   bmp = !git branch -m $(git withPRPrefixCurrentBranch)
   bd = !git branch -D
