@@ -31,7 +31,7 @@
   cl = clone
 
   ; branch
-  b = "!git for-each-ref --sort=-committerdate --format='%(refname:short) %(committerdate:relative) %(subject)' refs/heads/ | awk '{printf \"[%2s %-5s %-3s] %s\\n\", $2, $3, $4, $1}'"
+  b = "!git for-each-ref --sort=-committerdate --format=\"%(refname:short) %(committerdate:relative) %(subject)\" refs/heads/ | awk '{gsub(/days?/, \"d\", $3); gsub(/hours?/, \"h\", $3); gsub(/minutes?/, \"m\", $3); printf \"[%2s%-1s ago] %-30s %s\\n\", $2, $3, $1, substr($0, index($0, $5))}'"
   bm = branch -m
   bmp = !git branch -m $(git withPRPrefixCurrentBranch)
   bd = !git branch -D
