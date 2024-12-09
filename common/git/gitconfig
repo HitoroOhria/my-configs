@@ -31,13 +31,14 @@
   cl = clone
 
   ; branch
+  b = branch
   ; 以下の処理が含まれている
   ;   - ローカルブランチの一覧を表示
   ;   - 最終更新日時の降順でソート
   ;   - 最終更新日時を相対表示
-  ;   - days, hours, minutes を d, h, m に変換
+  ;   - months, days, hours, minutes を m, d, h, m に変換
   ;   - 現在のブランチの前に * を付与
-  b = "!current=$(git branch --show-current); git for-each-ref --sort=-committerdate --format=\"%(refname:short) %(committerdate:relative) %(subject)\" refs/heads/ | awk -v current=\"$current\" '{gsub(/days?/, \"d\", $3); gsub(/hours?/, \"h\", $3); gsub(/minutes?/, \"m\", $3); prefix = ($1 == current) ? \"* \" : \"  \"; printf \"[%2s%-1s ago] %s%-30s %s\\n\", $2, $3, prefix, $1, substr($0, index($0, $5))}'"
+  bl = "!current=$(git branch --show-current); git for-each-ref --sort=-committerdate --format=\"%(refname:short) %(committerdate:relative) %(subject)\" refs/heads/ | awk -v current=\"$current\" '{gsub(/months?/, \"m\", $3); gsub(/days?/, \"d\", $3); gsub(/hours?/, \"h\", $3); gsub(/minutes?/, \"m\", $3); prefix = ($1 == current) ? \"* \" : \"  \"; printf \"[%2s%-1s ago] %s%-30s %s\\n\", $2, $3, prefix, $1, substr($0, index($0, $5))}'"
   bm = branch -m
   bmp = !git branch -m $(git withPRPrefixCurrentBranch)
   bd = !git branch -D
