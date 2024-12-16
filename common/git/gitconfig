@@ -41,6 +41,7 @@
   bl = "!current=$(git branch --show-current); git for-each-ref --sort=-committerdate --format=\"%(refname:short) %(committerdate:relative) %(subject)\" refs/heads/ | awk -v current=\"$current\" '{gsub(/months?/, \"m\", $3); gsub(/days?/, \"d\", $3); gsub(/hours?/, \"h\", $3); gsub(/minutes?/, \"m\", $3); prefix = ($1 == current) ? \"* \" : \"  \"; printf \"[%2s%-1s ago] %s%-30s %s\\n\", $2, $3, prefix, $1, substr($0, index($0, $5))}'"
   bm = branch -m
   bmp = !git branch -m $(git withPRPrefixCurrentBranch)
+  bmpp = !git branch -m $(git withoutPRPrefixCurrentBranch)
   bd = !git branch -D
   bdl = !git branch -D $(git localBranches)
   bdp = !git branch --list "$(git prBranchPrefix)*" | xargs -n 1 git branch -D
@@ -104,6 +105,7 @@
   ; push
   p = push
   po = !git push origin $(git rev-parse --abbrev-ref HEAD)
+  pop = !git push origin $(git rev-parse --abbrev-ref HEAD):$(git withoutPRPrefixCurrentBranch)
   pfo = !git push --force-with-lease origin $(git rev-parse --abbrev-ref HEAD)
 
   ; pull
