@@ -14,3 +14,7 @@
 # VSCode
 .vscode
 
+# Aider
+.aider*
+.env*
+
