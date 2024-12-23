@@ -154,7 +154,10 @@
   ; merge
   m = merge
   mb = !git merge $(git localBranches)
-  
+  mc = merge --continue
+  ma = merge --abort
+  ms = merge --skip
+
   ; show-branch
   derived-branch = !git show-branch | grep '*' | grep -v "$(git rev-parse --abbrev-ref HEAD)" | head -1 | awk -F'[]~^[]' '{print $2}'
 
