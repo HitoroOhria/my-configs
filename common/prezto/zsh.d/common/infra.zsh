@@ -44,11 +44,6 @@ alias get_k8s_pod_id='kubectl get pod | tail -n +2 | peco | cut -d" " -f1'
 alias kulog='kubectl logs -f $(get_k8s_pod_id)'
 alias kudel='kubectl delete pod $(get_k8s_pod_id)'
 
-# circleci
-alias ci='circleci'
-alias civa='circleci config validate -c .circleci/config.yml'
-alias cipr='circleci config process .circleci/config.yml > .circleci/process.yml'
-alias cilo='circleci local execute -c process.yml --job'
-
 # terraform
-alias te='terraform'
+alias tf='terraform'
+
