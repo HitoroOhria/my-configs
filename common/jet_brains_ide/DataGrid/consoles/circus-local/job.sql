@@ -7,6 +7,7 @@ SET member_id    = 1111,
     open = 1
 WHERE id IN (3002, 3004)
 ;
+
 # Create job_commission_fee_logs
 INSERT INTO job_commission_fee_logs (job_id, fee_value, fee_unit)
 VALUES (3002, 25, 1),
@@ -17,7 +18,6 @@ SELECT id, commission_fee_value, commission_fee_id
 FROM jobs
 WHERE id IN (3002, 3004)
 ;
-
 
 # FetchJobsWithLastFeeLogs
 SELECT *
