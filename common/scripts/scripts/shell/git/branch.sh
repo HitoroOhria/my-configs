@@ -23,10 +23,11 @@ if [ $# -eq 0 ]; then
   git for-each-ref --sort=-committerdate --format="%(committerdate:relative) %(refname:short) %(subject)" refs/heads/ | \
     # 最終更新日時を整形する
     # - 最終更新日時を[]で囲む
-    # - months, weeks, days, hours, minutes を m, w, d, h, m に変換する
+    # - seconds, minutes, hours, days, weeks, months を s, m h, d, w, m に変換する
     #
     # e.g. [8m ago] feat/foo/bar Here is the commit message
     # e.g. [11h ago] feat/baz/foobar Here is the commit message2
+    sed -E 's/([0-9]+) seconds ago/[\1s ago]/g' | \
     sed -E 's/([0-9]+) minutes ago/[\1m ago]/g' | \
     sed -E 's/([0-9]+) hours ago/[\1h ago]/g' | \
     sed -E 's/([0-9]+) days ago/[\1d ago]/g' | \
@@ -36,7 +37,7 @@ if [ $# -eq 0 ]; then
     #
     # e.g. [ 8m ago] feat/foo/bar Here is the commit message
     # e.g. [11h ago] feat/baz/foobar-hoge-fuga Here is the commit message2
-    sed -E 's/\[([0-9])([mhdw]) ago\]/\[ \1\2 ago\]/' | \
+    sed -E 's/\[([0-9])([smhdw]) ago\]/\[ \1\2 ago\]/' | \
     # ブランチ名を整形する
     # - ブランチ名を40文字で空白埋めする
     # - ブランチ名が40文字を超えれば...で省略表示する
