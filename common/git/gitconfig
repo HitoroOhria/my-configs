@@ -35,6 +35,7 @@
 
   ; branch
   b = !git extendedBranch
+  bl = !git branch --sort=-committerdate -l
   bm = branch -m
   bmp = !git branch -m $(git withPRPrefixCurrentBranch)
   bmpp = !git branch -m $(git withoutPRPrefixCurrentBranch)
@@ -155,6 +156,9 @@
 
   ; show-branch
   derived-branch = !git show-branch | grep '*' | grep -v "$(git rev-parse --abbrev-ref HEAD)" | head -1 | awk -F'[]~^[]' '{print $2}'
+
+  ; ls-status
+  lf = "!git ls-files | while read file; do echo \"$(git log -1 --format=\"%ai | %an\" -- \"$file\") | $file\"; done | sort -r | column -t -s \"|\""
 
   ; git webui
   webui = !~/.git-webui/release/libexec/git-core/git-webui
