@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 表示するブランチ名の最大の長さ
-BRANCH_NAME_MAX_LEN=40
+BRANCH_NAME_MAX_LEN=55
 
 # git branch を拡張するスクリプト
 # 引数がない場合は、ブランチ一覧を情報付きで表示する
