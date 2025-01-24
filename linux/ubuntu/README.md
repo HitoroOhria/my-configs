@@ -30,7 +30,6 @@ $ sudo update-grub
 
 maybe
 
-
 ```shell
 $ sudo vi /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
 
@@ -38,7 +37,6 @@ $ sudo vi /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
 wifi.powersave = 2
 
 ```
-
 
 # Gnome Extentions
 
