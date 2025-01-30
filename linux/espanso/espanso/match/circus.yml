@@ -35,6 +35,9 @@ matches:
   - regex: ";cbatch"
     replace: "go run main.go -batch "
 
+  - regex: ";lip"
+    replace: " LIKE '%$|$%'"
+
   - regex: ";lio"
     replace: " LIKE '%大平%'"
 
