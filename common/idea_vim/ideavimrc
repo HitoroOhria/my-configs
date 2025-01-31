@@ -113,3 +113,8 @@ sethandler <C-Y> a:vim
 sethandler <C-[> a:ide
 sethandler <C-]> a:vim
 
+" visual mode で範囲を選択し / を押すと、コメントアウトする
+xnoremap / c/* <C-r>" */<Esc>
+" visual mode で範囲を選択し ? を押すと、コメントアウトを解除する
+vnoremap ? :s/\/\*\s*\(.\{-}\)\s*\*\//\1/<CR>gv``<Esc>
+

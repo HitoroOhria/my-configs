@@ -66,3 +66,13 @@ nnoremap <Esc><Esc> :nohlsearch<CR><ESC>
 nnoremap x "_x
 vnoremap x "_x
 
+" visual mode で範囲を選択し / を押すと、コメントアウトする
+xnoremap / c/* <C-r>" */<Esc>
+" visual mode で範囲を選択し ? を押すと、コメントアウトを解除する
+xnoremap ? :s/\/\*\s*\(.\{-}\)\s*\*\//\1/<CR>
+
+" visual mode で範囲を選択し / を押すと、コメントアウトする
+xnoremap / c/* <C-r>" */<Esc>
+" visual mode で範囲を選択し ? を押すと、コメントアウトを解除する
+vnoremap ? :s/\/\*\s*\(.\{-}\)\s*\*\//\1/<CR>gv``<Esc>
+
