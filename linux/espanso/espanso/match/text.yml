@@ -27,6 +27,9 @@ matches:
   - trigger: ";typ"
     replace: "```typescript\n$|$\n```\n"
 
+  - trigger: ";go"
+    replace: "```go\n$|$\n```\n"
+
   - trigger: ";she"
     replace: "```shell\n$|$\n```\n"
 
