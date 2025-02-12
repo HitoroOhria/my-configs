@@ -17,7 +17,15 @@ alias ta='tail -n 30'
 alias pe='printenv'
 
 # copy
-alias copy='pbcopy'
+copy() {
+    if [ -t 0 ]; then
+        # 引数がある場合、ターミナルからの直接入力を受ける
+        echo -n "$*" | xclip -selection clipboard
+    else
+        # 標準入力がある場合、パイプ経由で入力を受ける
+        xclip -selection clipboard
+    fi
+}
 
 # ssh
 alias ssho='ssh -oStrictHostKeyChecking=no'
