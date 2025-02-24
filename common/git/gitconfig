@@ -141,6 +141,7 @@
   ree = rebase --edit-todo
   rec = rebase --continue
   rea = rebase --abort
+  req = rebase --quit
   res = rebase --skip
   reh = rebase -i HEAD~~~~~~~~~
   reo = rebase --onto
