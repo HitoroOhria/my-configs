@@ -47,29 +47,16 @@ set show-changes = no
 # + で commit --amend
 # R で rebase -i
 # ! で revert
-# F で commit --fixup
-# S で commit --squash
 bind main C !git commit --allow-empty --no-verify
 bind main + !git commit --amend --allow-empty --no-verify
 bind main R !git rebase -i %(commit)
 bind main ! !git revert %(commit)
-bind main F ?!git commit --fixup %(commit)
-bind main S ?!git commit --squash %(commit)
 
 # B で reset %(commit)
 bind main B !git reset %(commit)
 
 # H で クリップボードに commit hash をコピー
 bind main   H @sh -c "printf '%s' %(commit) | git pbcopy"
-
-## -------- Diff --------
-
-# R で rebase -i
-# F で commit --fixup
-# S で commit --squash
-bind diff R !git  rebase -i %(commit)
-bind diff F ?!git commit --fixup %(commit)
-bind diff S ?!git commit --squash %(commit)
 
 ## -------- Status --------
 
