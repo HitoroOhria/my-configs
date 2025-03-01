@@ -1,0 +1,4 @@
+# see https://github.com/jesseduffield/lazydocker/blob/master/docs/Config.md
+gui:
+  returnImmediately: true
+

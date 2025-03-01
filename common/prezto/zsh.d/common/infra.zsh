@@ -26,13 +26,9 @@ else
     chmod +x "$DOCKER_COMPOSE_COMPLETION_FILE"
     . "$DOCKER_COMPOSE_COMPLETION_FILE"
 fi
-#if [ -e "~/.docker-compose-completioon.sh" ]; then
-#    . ~/.docker-compose-completioon.sh
-#else
-#    docker completion zsh > ~/.docker-compose-completioon.sh
-#    chmod +x ~/.docker-compose-completioon.sh
-#    . ~/.docker-compose-completioon.sh
-#fi
+
+## set lazydocker
+alias lzd=lazydocker
 
 ## set docker-clean
 alias dcl='docker-clean'
