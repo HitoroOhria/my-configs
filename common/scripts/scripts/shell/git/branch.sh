@@ -8,7 +8,7 @@ BRANCH_NAME_MAX_LEN=55
 # 引数がある場合は、そのまま git branch を実行する
 #
 # 引数がない場合は、以下のような出力になる
-# e.g. [ 8m ago] * feat/foo/bar                   Here is the commit message
+# e.g. [ 8m ago] * feat/foo/bar                   Here is the commit message1
 # e.g. [11h ago]   feat/baz/foobar                Here is the commit message2
 # e.g. [22d ago]   feat/looooooooooooooooooooo... Here is the commit message3
 if [ $# -eq 0 ]; then
@@ -25,7 +25,7 @@ if [ $# -eq 0 ]; then
     # - 最終更新日時を[]で囲む
     # - seconds, minutes, hours, days, weeks, months を s, m h, d, w, m に変換する
     #
-    # e.g. [8m ago] feat/foo/bar Here is the commit message
+    # e.g. [8m ago] feat/foo/bar Here is the commit message1
     # e.g. [11h ago] feat/baz/foobar Here is the commit message2
     sed -E 's/([0-9]+) seconds ago/[\1s ago]/g' | \
     sed -E 's/([0-9]+) minutes ago/[\1m ago]/g' | \
@@ -35,7 +35,7 @@ if [ $# -eq 0 ]; then
     sed -E 's/([0-9]+) months ago/[\1m ago]/g' | \
     # 最終更新日時の数値を2桁に空白埋めする
     #
-    # e.g. [ 8m ago] feat/foo/bar Here is the commit message
+    # e.g. [ 8m ago] feat/foo/bar Here is the commit message1
     # e.g. [11h ago] feat/baz/foobar-hoge-fuga Here is the commit message2
     sed -E 's/\[([0-9])([smhdw]) ago\]/\[ \1\2 ago\]/' | \
     # ブランチ名を整形する
@@ -43,7 +43,7 @@ if [ $# -eq 0 ]; then
     # - ブランチ名が40文字を超えれば...で省略表示する
     # - 現在のブランチ名に * を付与する
     #
-    # e.g. [ 8m ago] * feat/foo/bar                   Here is the commit message
+    # e.g. [ 8m ago] * feat/foo/bar                   Here is the commit message1
     # e.g. [22d ago]   feat/looooooooooooooooooooo... Here is the commit message3
     gawk -v max_len="$BRANCH_NAME_MAX_LEN" -v current="$current" 'match($0, /^(\[[ 0-9][0-9][smhdw] ago\]) ([^ ]+) (.*)/, arr) {
            # ブランチ名部分の最大長 (ブランチ名 + アスタリスク(*)付与するための2文字)
