@@ -45,7 +45,7 @@ if [ $# -eq 0 ]; then
     #
     # e.g. [ 8m ago] * feat/foo/bar                   Here is the commit message
     # e.g. [22d ago]   feat/looooooooooooooooooooo... Here is the commit message3
-    gawk -v max_len="$BRANCH_NAME_MAX_LEN" -v current="$current" 'match($0, /^(\[[ 0-9][0-9][mhdw] ago\]) ([^ ]+) (.*)/, arr) {
+    gawk -v max_len="$BRANCH_NAME_MAX_LEN" -v current="$current" 'match($0, /^(\[[ 0-9][0-9][smhdw] ago\]) ([^ ]+) (.*)/, arr) {
            # ブランチ名部分の最大長 (ブランチ名 + アスタリスク(*)付与するための2文字)
            branch_max_len = max_len + 2
 
