@@ -58,3 +58,4 @@ $ ./setup.sh
     - Shift + Ctrl + C
 - [ ] Set Fn + Left Edges
 - [ ] Consider what key to use for lower left key
+

@@ -6,3 +6,4 @@ defaults write -g KeyRepeat -int 1
 
 # set able to key repeat on any software
 defaults write -g ApplePressAndHoldEnabled -bool false
+
