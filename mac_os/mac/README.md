@@ -71,3 +71,4 @@ This action is unnecessary for me.
 ### Install Google Japanese Input
 
 - install from [here](https://www.google.co.jp/ime/)
+
