@@ -56,11 +56,8 @@ set showmatch
 " ヤンクしたときのハイライト設定
 let g:highlightedyank_highlight_duration = 400
 " ヤンクでクリップボードにコピー
-" below is not working on mac.
-" set clipboard=unnamedplus
-nnoremap y "+y
-nnoremap yy "+yy
-vnoremap y "+y
+" set clipboard=unnamedplus " for Linux vim
+set clipboard+=unnamed " for mac vim
 
 " Escの2回押しでハイライト消去
 nnoremap <Esc><Esc> :nohlsearch<CR><ESC>
