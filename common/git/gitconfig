@@ -20,8 +20,9 @@
   pecoCommit =  !peco --prompt 'GIT COMMIT>' | xargs
   commitHashes = !git log --oneline -100 | git pecoCommit | awk '{print $1}'
 
-  ; for linux (e.g. echo "foo" | git pbcopy)
-  pbcopy = !xclip -selection clipboard -in
+  ; copy
+  ; copy = !xclip -selection clipboard -in ; for linux
+  copy = !pbcopy ; for mac
 
   ; ps
   mkdirTmp = !mkdir -p ~/tmp-git
@@ -45,9 +46,9 @@
   bdr = !git push -d origin $(git remoteBranches)
   bdm = !git branch --merged | grep -v -e main -e master -e develop | xargs git branch -d
   bdmb = !git switch $(git localBranches) && git branch --merged | grep -v -e main -e master -e develop | xargs git branch -d
-  bc = !git currentBranch | git pbcopy
-  bcl = !git localBranches | git pbcopy
-  bcr = !git remoteBranches | git pbcopy
+  bc = !git currentBranch | git copy
+  bcl = !git localBranches | git copy
+  bcr = !git remoteBranches | git copy
 
   ; pr branch
   mai = !git switch $(git mainBranch)
@@ -117,7 +118,7 @@
   ln= log --name-status
   lo = log --oneline -10
   lon = log --oneline
-  lmc = !git log -1 --pretty=%B $(git commitHashes) | head -n 1 | tr -d '\n' | git pbcopy
+  lmc = !git log -1 --pretty=%B $(git commitHashes) | head -n 1 | tr -d '\n' | git copy
   lg = log --graph --decorate --pretty=oneline --branches --abbrev-commit --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(auto)%d%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
   today = "!f () {\
              git log --oneline --branches \
