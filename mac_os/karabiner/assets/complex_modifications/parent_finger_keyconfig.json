@@ -9,9 +9,7 @@
                     "from": {
                         "key_code": "left_control",
                         "modifiers": {
-                            "optional": [
-                                "any"
-                            ]
+                            "optional": ["any"]
                         }
                     },
                     "parameters": {
@@ -44,9 +42,7 @@
                     "from": {
                         "key_code": "fn",
                         "modifiers": {
-                            "optional": [
-                                "any"
-                            ]
+                            "optional": ["any"]
                         }
                     },
                     "parameters": {
@@ -79,10 +75,7 @@
                     "from": {
                         "key_code": "m",
                         "modifiers": {
-                            "mandatory": [
-                                "control",
-                                "fn"
-                            ]
+                            "mandatory": ["control", "fn"]
                         }
                     },
                     "to": [
@@ -102,10 +95,7 @@
                     "from": {
                         "key_code": "f",
                         "modifiers": {
-                            "mandatory": [
-                                "control",
-                                "fn"
-                            ]
+                            "mandatory": ["control", "fn"]
                         }
                     },
                     "to": [
@@ -120,10 +110,7 @@
                     "from": {
                         "key_code": "b",
                         "modifiers": {
-                            "mandatory": [
-                                "control",
-                                "fn"
-                            ]
+                            "mandatory": ["control", "fn"]
                         }
                     },
                     "to": [
@@ -143,10 +130,7 @@
                     "from": {
                         "key_code": "n",
                         "modifiers": {
-                            "mandatory": [
-                                "control",
-                                "fn"
-                            ]
+                            "mandatory": ["control", "fn"]
                         }
                     },
                     "to": [
@@ -161,10 +145,7 @@
                     "from": {
                         "key_code": "p",
                         "modifiers": {
-                            "mandatory": [
-                                "control",
-                                "fn"
-                            ]
+                            "mandatory": ["control", "fn"]
                         }
                     },
                     "to": [
@@ -184,10 +165,7 @@
                     "from": {
                         "key_code": "h",
                         "modifiers": {
-                            "mandatory": [
-                                "control",
-                                "fn"
-                            ]
+                            "mandatory": ["control", "fn"]
                         }
                     },
                     "to": [
@@ -202,10 +180,7 @@
                     "from": {
                         "key_code": "d",
                         "modifiers": {
-                            "mandatory": [
-                                "control",
-                                "fn"
-                            ]
+                            "mandatory": ["control", "fn"]
                         }
                     },
                     "to": [
@@ -225,9 +200,7 @@
                     "from": {
                         "key_code": "spacebar",
                         "modifiers": {
-                            "optional": [
-                                "any"
-                            ]
+                            "optional": ["any"]
                         }
                     },
                     "to": [

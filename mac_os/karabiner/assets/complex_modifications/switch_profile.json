@@ -9,10 +9,7 @@
                     "from": {
                         "key_code": "1",
                         "modifiers": {
-                            "mandatory": [
-                                "control",
-                                "shift"
-                            ]
+                            "mandatory": ["control", "shift"]
                         }
                     },
                     "to": [
@@ -31,10 +28,7 @@
                     "from": {
                         "key_code": "2",
                         "modifiers": {
-                            "mandatory": [
-                                "control",
-                                "shift"
-                            ]
+                            "mandatory": ["control", "shift"]
                         }
                     },
                     "to": [
