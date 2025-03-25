@@ -10,7 +10,7 @@
 
 - `Option + Left` to `Send Escape Sequence + b`
 - `Option + Right` to `Send Escape Sequence + f`
-- `Option + Delete` to `Send Hex Code + 0x17`
+- `Option + Delete` to `Send Hex Code + 0x17` (Ctrl + W)
 - `Option + Forward Delete` to `Send Escape Sequence + d`
 
 ## Profiles > Keys > General
