@@ -88,7 +88,7 @@
             ]
         },
         {
-            "description": "[parent] Ctrl + fn + F / B to Option + Right / Left (Place above [ctrl])",
+            "description": "[parent] Ctrl + fn + <F | B | P | N> to Option + <Right | Left | Up | Down> (NOTE: Place above [ctrl])",
             "manipulators": [
                 {
                     "type": "basic",
@@ -121,27 +121,6 @@
                             "modifiers": "option"
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "description": "[parent] Ctrl + fn + N / P to Option + Down / Up (Place above [ctrl])",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "n",
-                        "modifiers": {
-                            "mandatory": ["control", "fn"],
-                            "optional": ["any"]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "down_arrow",
-                            "modifiers": "option"
-                        }
-                    ]
                 },
                 {
                     "type": "basic",
@@ -158,11 +137,27 @@
                             "modifiers": "option"
                         }
                     ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "n",
+                        "modifiers": {
+                            "mandatory": ["control", "fn"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "down_arrow",
+                            "modifiers": "option"
+                        }
+                    ]
                 }
             ]
         },
         {
-            "description": "[parent] Ctrl + fn + H / D to Option + Delete / Delete forward",
+            "description": "[parent] Ctrl + fn + <H | D> to Option + <Delete | Delete forward>",
             "manipulators": [
                 {
                     "type": "basic",

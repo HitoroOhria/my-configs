@@ -5,7 +5,33 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Ctrl to Eisuu if alone.",
+                        "description": "[profile] Switch to MacBook build-in keyboard profile",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "1",
+                                    "modifiers": { "mandatory": ["control", "shift"] }
+                                },
+                                "to": [{ "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'MacBook build-in keyboard'" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "[profile] Switch to Corne Cherry profile",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "2",
+                                    "modifiers": { "mandatory": ["control", "shift"] }
+                                },
+                                "to": [{ "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'Corne Cherry'" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "[parent] Ctrl to Eisuu if alone.",
                         "manipulators": [
                             {
                                 "from": {
@@ -26,7 +52,7 @@
                         ]
                     },
                     {
-                        "description": "Fn to Kana if alone.",
+                        "description": "[parent] Fn to Kana if alone.",
                         "manipulators": [
                             {
                                 "from": {
@@ -47,7 +73,7 @@
                         ]
                     },
                     {
-                        "description": "Ctrl + fn + M to Cmd + Return",
+                        "description": "[parent] Ctrl + fn + M to Cmd + Return",
                         "manipulators": [
                             {
                                 "from": {
@@ -65,7 +91,7 @@
                         ]
                     },
                     {
-                        "description": "Ctrl + fn + F / B to Option + Right / Left",
+                        "description": "[parent] Ctrl + fn + <F | B | P | N> to Option + <Right | Left | Up | Down> (NOTE: Place above [ctrl])",
                         "manipulators": [
                             {
                                 "from": {
@@ -98,27 +124,6 @@
                                     }
                                 ],
                                 "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Ctrl + fn + N / P to Option + Down / Up",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "n",
-                                    "modifiers": {
-                                        "mandatory": ["control", "fn"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "down_arrow",
-                                        "modifiers": "option"
-                                    }
-                                ],
-                                "type": "basic"
                             },
                             {
                                 "from": {
@@ -135,11 +140,27 @@
                                     }
                                 ],
                                 "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "n",
+                                    "modifiers": {
+                                        "mandatory": ["control", "fn"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow",
+                                        "modifiers": "option"
+                                    }
+                                ],
+                                "type": "basic"
                             }
                         ]
                     },
                     {
-                        "description": "Ctrl + fn + H / D to Option + Delete / Delete forward",
+                        "description": "[parent] Ctrl + fn + <H | D> to Option + <Delete | Delete forward>",
                         "manipulators": [
                             {
                                 "from": {
@@ -171,7 +192,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "SandS (I want to allow shift + space. I try optional without shift, but it has problem when press after any key.)",
+                        "description": "[parent] SandS",
                         "manipulators": [
                             {
                                 "from": {
@@ -185,34 +206,123 @@
                         ]
                     },
                     {
-                        "description": "Switch to MacBook build-in keyboard profile",
+                        "available_since": "12.3.0",
+                        "description": "[ctrl] Ctrl + <F | B | P | N> to <Right | Left | Up | Down>.",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "1",
-                                    "modifiers": { "mandatory": ["control", "shift"] }
+                                    "key_code": "f",
+                                    "modifiers": {
+                                        "mandatory": ["control"],
+                                        "optional": ["any"]
+                                    }
                                 },
-                                "to": [{ "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'MacBook build-in keyboard'" }],
+                                "to": [{ "key_code": "right_arrow" }],
                                 "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Switch to Corne Cherry profile",
-                        "manipulators": [
+                            },
                             {
                                 "from": {
-                                    "key_code": "2",
-                                    "modifiers": { "mandatory": ["control", "shift"] }
+                                    "key_code": "b",
+                                    "modifiers": {
+                                        "mandatory": ["control"],
+                                        "optional": ["any"]
+                                    }
                                 },
-                                "to": [{ "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'Corne Cherry'" }],
+                                "to": [{ "key_code": "left_arrow" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "p",
+                                    "modifiers": {
+                                        "mandatory": ["control"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "key_code": "up_arrow" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "n",
+                                    "modifiers": {
+                                        "mandatory": ["control"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "key_code": "down_arrow" }],
                                 "type": "basic"
                             }
                         ]
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "Ctrl + { / } to Cmd + Shift + { / }.",
+                        "description": "[ctrl] Ctrl + <H | D> to <Delete | Delete forward>.",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": {
+                                        "mandatory": ["control"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "key_code": "delete_or_backspace" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "d",
+                                    "modifiers": {
+                                        "mandatory": ["control"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "key_code": "delete_forward" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "available_since": "12.3.0",
+                        "description": "[ctrl] Ctrl + U to deletes to beginning of line",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "u",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow",
+                                        "modifiers": ["shift", "command"]
+                                    },
+                                    { "key_code": "delete_or_backspace" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "available_since": "12.3.0",
+                        "description": "[ctrl] Ctrl + M to Return.",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "m",
+                                    "modifiers": {
+                                        "mandatory": ["control"],
+                                        "optional": ["shift", "option", "command"]
+                                    }
+                                },
+                                "to": [{ "key_code": "return_or_enter" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "available_since": "12.3.0",
+                        "description": "[ctrl] Ctrl + <{ | }> to Cmd + Shift + <{ | }>.",
                         "manipulators": [
                             {
                                 "from": {
@@ -244,158 +354,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "Ctrl + M to Return.",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "m",
-                                    "modifiers": {
-                                        "mandatory": ["control"],
-                                        "optional": ["shift", "option", "command"]
-                                    }
-                                },
-                                "to": [{ "key_code": "return_or_enter" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "available_since": "12.3.0",
-                        "description": "Ctrl + F / B to Right / Left.",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "f",
-                                    "modifiers": {
-                                        "mandatory": ["control"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [{ "key_code": "right_arrow" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "b",
-                                    "modifiers": {
-                                        "mandatory": ["control"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [{ "key_code": "left_arrow" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "available_since": "12.3.0",
-                        "description": "Ctrl + N / P to Down / Up.",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "n",
-                                    "modifiers": {
-                                        "mandatory": ["control"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [{ "key_code": "down_arrow" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "p",
-                                    "modifiers": {
-                                        "mandatory": ["control"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [{ "key_code": "up_arrow" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "available_since": "12.3.0",
-                        "description": "Ctrl + H / D to Delete / Delete forward .",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "h",
-                                    "modifiers": {
-                                        "mandatory": ["control"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [{ "key_code": "delete_or_backspace" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "d",
-                                    "modifiers": {
-                                        "mandatory": ["control"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [{ "key_code": "delete_forward" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "available_since": "12.3.0",
-                        "description": "Ctrl + U to deletes to beginning of line",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "u",
-                                    "modifiers": { "mandatory": ["control"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow",
-                                        "modifiers": ["shift", "command"]
-                                    },
-                                    { "key_code": "delete_or_backspace" }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "available_since": "12.3.0",
-                        "description": "Fn + Edges to Media keys.",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "close_bracket",
-                                    "modifiers": { "mandatory": ["fn"] }
-                                },
-                                "to": [{ "key_code": "volume_increment" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "equal_sign",
-                                    "modifiers": { "mandatory": ["fn"] }
-                                },
-                                "to": [{ "key_code": "volume_decrement" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "tab",
-                                    "modifiers": { "mandatory": ["fn"] }
-                                },
-                                "to": [{ "key_code": "mute" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "available_since": "12.3.0",
-                        "description": "Fn + 2nd columns to Symbols.",
+                        "description": "[1st layer] Fn + 2nd columns to Symbols.",
                         "manipulators": [
                             {
                                 "from": {
@@ -485,7 +444,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "Fn + 3rd columns to Numbers.",
+                        "description": "[1st layer] Fn + 3rd columns to Numbers.",
                         "manipulators": [
                             {
                                 "from": {
@@ -601,7 +560,7 @@
                     },
                     {
                         "available_since": "12.3.0",
-                        "description": "Fn + 4th Columns to Function keys.",
+                        "description": "[1st layer] Fn + 4th Columns to Function keys.",
                         "manipulators": [
                             {
                                 "from": {
@@ -733,6 +692,36 @@
                                     }
                                 },
                                 "to": [{ "key_code": "f12" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "available_since": "12.3.0",
+                        "description": "[1st layer] Fn + Edges to Media keys.",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "close_bracket",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [{ "key_code": "volume_increment" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "equal_sign",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [{ "key_code": "volume_decrement" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "tab",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [{ "key_code": "mute" }],
                                 "type": "basic"
                             }
                         ]

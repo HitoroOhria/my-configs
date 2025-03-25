@@ -3,64 +3,7 @@
     "rules": [
         {
             "available_since": "12.3.0",
-            "description": "[ctrl] Ctrl + { / } to Cmd + Shift + { / }.",
-            "manipulators": [
-                {
-                    "from": {
-                        "key_code": "open_bracket",
-                        "modifiers": {
-                            "mandatory": ["control"]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "open_bracket",
-                            "modifiers": ["command", "shift"]
-                        }
-                    ],
-                    "type": "basic"
-                },
-                {
-                    "from": {
-                        "key_code": "close_bracket",
-                        "modifiers": {
-                            "mandatory": ["control"]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "close_bracket",
-                            "modifiers": ["command", "shift"]
-                        }
-                    ],
-                    "type": "basic"
-                }
-            ]
-        },
-        {
-            "available_since": "12.3.0",
-            "description": "[ctrl] Ctrl + M to Return.",
-            "manipulators": [
-                {
-                    "from": {
-                        "key_code": "m",
-                        "modifiers": {
-                            "mandatory": ["control"],
-                            "optional": ["shift", "option", "command"]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "return_or_enter"
-                        }
-                    ],
-                    "type": "basic"
-                }
-            ]
-        },
-        {
-            "available_since": "12.3.0",
-            "description": "[ctrl] Ctrl + F / B to Right / Left.",
+            "description": "[ctrl] Ctrl + <F | B | P | N> to <Right | Left | Up | Down>.",
             "manipulators": [
                 {
                     "from": {
@@ -91,27 +34,6 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "available_since": "12.3.0",
-            "description": "[ctrl] Ctrl + N / P to Down / Up.",
-            "manipulators": [
-                {
-                    "from": {
-                        "key_code": "n",
-                        "modifiers": {
-                            "mandatory": ["control"],
-                            "optional": ["any"]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "down_arrow"
-                        }
-                    ],
-                    "type": "basic"
                 },
                 {
                     "from": {
@@ -127,12 +49,27 @@
                         }
                     ],
                     "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "n",
+                        "modifiers": {
+                            "mandatory": ["control"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "down_arrow"
+                        }
+                    ],
+                    "type": "basic"
                 }
             ]
         },
         {
             "available_since": "12.3.0",
-            "description": "[ctrl] Ctrl + H / D to Delete / Delete forward .",
+            "description": "[ctrl] Ctrl + <H | D> to <Delete | Delete forward>.",
             "manipulators": [
                 {
                     "from": {
@@ -187,6 +124,63 @@
                             "key_code": "delete_or_backspace"
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "available_since": "12.3.0",
+            "description": "[ctrl] Ctrl + M to Return.",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "m",
+                        "modifiers": {
+                            "mandatory": ["control"],
+                            "optional": ["shift", "option", "command"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "return_or_enter"
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {
+            "available_since": "12.3.0",
+            "description": "[ctrl] Ctrl + <{ | }> to Cmd + Shift + <{ | }>.",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "open_bracket",
+                        "modifiers": {
+                            "mandatory": ["control"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "open_bracket",
+                            "modifiers": ["command", "shift"]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "close_bracket",
+                        "modifiers": {
+                            "mandatory": ["control"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "close_bracket",
+                            "modifiers": ["command", "shift"]
+                        }
+                    ],
+                    "type": "basic"
                 }
             ]
         }

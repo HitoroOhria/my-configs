@@ -3,54 +3,6 @@
     "rules": [
         {
             "available_since": "12.3.0",
-            "description": "[1st layer] Fn + Edges to Media keys.",
-            "manipulators": [
-                {
-                    "from": {
-                        "key_code": "close_bracket",
-                        "modifiers": {
-                            "mandatory": ["fn"]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "volume_increment"
-                        }
-                    ],
-                    "type": "basic"
-                },
-                {
-                    "from": {
-                        "key_code": "equal_sign",
-                        "modifiers": {
-                            "mandatory": ["fn"]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "volume_decrement"
-                        }
-                    ],
-                    "type": "basic"
-                },
-                {
-                    "from": {
-                        "key_code": "tab",
-                        "modifiers": {
-                            "mandatory": ["fn"]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "mute"
-                        }
-                    ],
-                    "type": "basic"
-                }
-            ]
-        },
-        {
-            "available_since": "12.3.0",
             "description": "[1st layer] Fn + 2nd columns to Symbols.",
             "manipulators": [
                 {
@@ -507,6 +459,54 @@
                     "to": [
                         {
                             "key_code": "f12"
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {
+            "available_since": "12.3.0",
+            "description": "[1st layer] Fn + Edges to Media keys.",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "close_bracket",
+                        "modifiers": {
+                            "mandatory": ["fn"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "volume_increment"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "equal_sign",
+                        "modifiers": {
+                            "mandatory": ["fn"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "volume_decrement"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "tab",
+                        "modifiers": {
+                            "mandatory": ["fn"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "mute"
                         }
                     ],
                     "type": "basic"
