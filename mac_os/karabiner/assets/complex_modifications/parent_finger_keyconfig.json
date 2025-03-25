@@ -37,7 +37,7 @@
             ]
         },
         {
-            "description": "CapsLock to Fn if not press with Ctrl. If alone, to Kana",
+            "description": "CapsLock to Fn. If alone, to Kana",
             "manipulators": [
                 {
                     "type": "basic",
@@ -46,6 +46,7 @@
                         "modifiers": {
                             "optional": [
                                 "shift",
+                                "control",
                                 "option",
                                 "command"
                             ]
@@ -74,22 +75,23 @@
             ]
         },
         {
-            "description": "CapsLock to Cmd if press with Ctrl.",
+            "description": "Ctrl + fn + M to Cmd + Return",
             "manipulators": [
                 {
                     "type": "basic",
                     "from": {
-                        "key_code": "caps_lock",
+                        "key_code": "m",
                         "modifiers": {
                             "mandatory": [
-                                "control"
+                                "control",
+                                "fn"
                             ]
                         }
                     },
                     "to": [
                         {
-                            "key_code": "right_command",
-                            "modifiers": "control"
+                            "key_code": "return_or_enter",
+                            "modifiers": "command"
                         }
                     ]
                 }
