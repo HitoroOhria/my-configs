@@ -2,7 +2,7 @@
     "title": "Parent finger keyconfig.",
     "rules": [
         {
-            "description": "Ctrl to Eisuu if alone.",
+            "description": "[parent] Ctrl to Eisuu if alone.",
             "manipulators": [
                 {
                     "type": "basic",
@@ -35,7 +35,7 @@
             ]
         },
         {
-            "description": "Fn to Kana if alone.",
+            "description": "[parent] Fn to Kana if alone.",
             "manipulators": [
                 {
                     "type": "basic",
@@ -68,7 +68,7 @@
             ]
         },
         {
-            "description": "Ctrl + fn + M to Cmd + Return",
+            "description": "[parent] Ctrl + fn + M to Cmd + Return",
             "manipulators": [
                 {
                     "type": "basic",
@@ -88,7 +88,7 @@
             ]
         },
         {
-            "description": "Ctrl + fn + F / B to Option + Right / Left",
+            "description": "[parent] Ctrl + fn + F / B to Option + Right / Left (Place above [ctrl])",
             "manipulators": [
                 {
                     "type": "basic",
@@ -125,7 +125,7 @@
             ]
         },
         {
-            "description": "Ctrl + fn + N / P to Option + Down / Up",
+            "description": "[parent] Ctrl + fn + N / P to Option + Down / Up (Place above [ctrl])",
             "manipulators": [
                 {
                     "type": "basic",
@@ -162,7 +162,7 @@
             ]
         },
         {
-            "description": "Ctrl + fn + H / D to Option + Delete / Delete forward",
+            "description": "[parent] Ctrl + fn + H / D to Option + Delete / Delete forward",
             "manipulators": [
                 {
                     "type": "basic",
@@ -198,7 +198,7 @@
         },
         {
             "available_since": "12.3.0",
-            "description": "SandS (I want to allow shift + space. I try optional without shift, but it has problem when press after any key.)",
+            "description": "[parent] SandS",
             "manipulators": [
                 {
                     "from": {

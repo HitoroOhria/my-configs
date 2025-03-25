@@ -3,7 +3,7 @@
     "rules": [
         {
             "available_since": "12.3.0",
-            "description": "Ctrl + { / } to Cmd + Shift + { / }.",
+            "description": "[ctrl] Ctrl + { / } to Cmd + Shift + { / }.",
             "manipulators": [
                 {
                     "from": {
@@ -39,7 +39,7 @@
         },
         {
             "available_since": "12.3.0",
-            "description": "Ctrl + M to Return.",
+            "description": "[ctrl] Ctrl + M to Return.",
             "manipulators": [
                 {
                     "from": {
@@ -60,7 +60,7 @@
         },
         {
             "available_since": "12.3.0",
-            "description": "Ctrl + F / B to Right / Left.",
+            "description": "[ctrl] Ctrl + F / B to Right / Left.",
             "manipulators": [
                 {
                     "from": {
@@ -96,7 +96,7 @@
         },
         {
             "available_since": "12.3.0",
-            "description": "Ctrl + N / P to Down / Up.",
+            "description": "[ctrl] Ctrl + N / P to Down / Up.",
             "manipulators": [
                 {
                     "from": {
@@ -132,7 +132,7 @@
         },
         {
             "available_since": "12.3.0",
-            "description": "Ctrl + H / D to Delete / Delete forward .",
+            "description": "[ctrl] Ctrl + H / D to Delete / Delete forward .",
             "manipulators": [
                 {
                     "from": {
@@ -168,7 +168,7 @@
         },
         {
             "available_since": "12.3.0",
-            "description": "Ctrl + U to deletes to beginning of line",
+            "description": "[ctrl] Ctrl + U to deletes to beginning of line",
             "manipulators": [
                 {
                     "type": "basic",

@@ -3,7 +3,7 @@
     "rules": [
         {
             "available_since": "12.3.0",
-            "description": "Fn + Edges to Media keys.",
+            "description": "[1st layer] Fn + Edges to Media keys.",
             "manipulators": [
                 {
                     "from": {
@@ -51,7 +51,7 @@
         },
         {
             "available_since": "12.3.0",
-            "description": "Fn + 2nd columns to Symbols.",
+            "description": "[1st layer] Fn + 2nd columns to Symbols.",
             "manipulators": [
                 {
                     "from": {
@@ -173,7 +173,7 @@
         },
         {
             "available_since": "12.3.0",
-            "description": "Fn + 3rd columns to Numbers.",
+            "description": "[1st layer] Fn + 3rd columns to Numbers.",
             "manipulators": [
                 {
                     "from": {
@@ -329,7 +329,7 @@
         },
         {
             "available_since": "12.3.0",
-            "description": "Fn + 4th Columns to Function keys.",
+            "description": "[1st layer] Fn + 4th Columns to Function keys.",
             "manipulators": [
                 {
                     "from": {
