@@ -205,6 +205,30 @@
                     "type": "basic"
                 }
             ]
+        },
+        {
+            "available_since": "12.3.0",
+            "description": "Ctrl + U to deletes to beginning of line",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "u",
+                        "modifiers": {
+                            "mandatory": ["control"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_arrow",
+                            "modifiers": ["shift", "command"]
+                        },
+                        {
+                            "key_code": "delete_or_backspace"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
