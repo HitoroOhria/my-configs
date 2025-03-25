@@ -37,18 +37,15 @@
             ]
         },
         {
-            "description": "CapsLock to Fn. If alone, to Kana",
+            "description": "Fn to Kana if alone.",
             "manipulators": [
                 {
                     "type": "basic",
                     "from": {
-                        "key_code": "caps_lock",
+                        "key_code": "fn",
                         "modifiers": {
                             "optional": [
-                                "shift",
-                                "control",
-                                "option",
-                                "command"
+                                "any"
                             ]
                         }
                     },
