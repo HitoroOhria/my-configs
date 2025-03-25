@@ -1,3 +1,7 @@
+# keybind for mac
+bindkey "^[^?" backward-kill-word # Option + Delete to backward delete word
+bindkey "^[[3;3~" kill-word # Option + Forwad Delete to forwad delete word
+
 # editor
 export EDITOR=vim
 
