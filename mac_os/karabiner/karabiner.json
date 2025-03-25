@@ -5,32 +5,6 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Switch to MacBook build-in keyboard profile",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "1",
-                                    "modifiers": { "mandatory": ["control", "shift"] }
-                                },
-                                "to": [{ "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'MacBook build-in keyboard'" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Switch to Corne Cherry profile",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "2",
-                                    "modifiers": { "mandatory": ["control", "shift"] }
-                                },
-                                "to": [{ "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'Corne Cherry'" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Ctrl to Eisuu if alone.",
                         "manipulators": [
                             {
@@ -96,7 +70,10 @@
                             {
                                 "from": {
                                     "key_code": "f",
-                                    "modifiers": { "mandatory": ["control", "fn"] }
+                                    "modifiers": {
+                                        "mandatory": ["control", "fn"],
+                                        "optional": ["any"]
+                                    }
                                 },
                                 "to": [
                                     {
@@ -109,7 +86,10 @@
                             {
                                 "from": {
                                     "key_code": "b",
-                                    "modifiers": { "mandatory": ["control", "fn"] }
+                                    "modifiers": {
+                                        "mandatory": ["control", "fn"],
+                                        "optional": ["any"]
+                                    }
                                 },
                                 "to": [
                                     {
@@ -127,7 +107,10 @@
                             {
                                 "from": {
                                     "key_code": "n",
-                                    "modifiers": { "mandatory": ["control", "fn"] }
+                                    "modifiers": {
+                                        "mandatory": ["control", "fn"],
+                                        "optional": ["any"]
+                                    }
                                 },
                                 "to": [
                                     {
@@ -140,7 +123,10 @@
                             {
                                 "from": {
                                     "key_code": "p",
-                                    "modifiers": { "mandatory": ["control", "fn"] }
+                                    "modifiers": {
+                                        "mandatory": ["control", "fn"],
+                                        "optional": ["any"]
+                                    }
                                 },
                                 "to": [
                                     {
@@ -194,6 +180,32 @@
                                 },
                                 "to": [{ "key_code": "left_shift" }],
                                 "to_if_alone": [{ "key_code": "spacebar" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Switch to MacBook build-in keyboard profile",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "1",
+                                    "modifiers": { "mandatory": ["control", "shift"] }
+                                },
+                                "to": [{ "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'MacBook build-in keyboard'" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Switch to Corne Cherry profile",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "2",
+                                    "modifiers": { "mandatory": ["control", "shift"] }
+                                },
+                                "to": [{ "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'Corne Cherry'" }],
                                 "type": "basic"
                             }
                         ]
@@ -755,6 +767,22 @@
                 {
                     "from": { "key_code": "f8" },
                     "to": [{ "key_code": "f8" }]
+                },
+                {
+                    "from": { "key_code": "f9" },
+                    "to": [{ "key_code": "f9" }]
+                },
+                {
+                    "from": { "key_code": "f10" },
+                    "to": [{ "key_code": "f10" }]
+                },
+                {
+                    "from": { "key_code": "f11" },
+                    "to": [{ "key_code": "f11" }]
+                },
+                {
+                    "from": { "key_code": "f12" },
+                    "to": [{ "key_code": "f12" }]
                 }
             ],
             "name": "MacBook build-in keyboard",

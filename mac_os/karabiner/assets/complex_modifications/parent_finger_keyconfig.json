@@ -95,7 +95,8 @@
                     "from": {
                         "key_code": "f",
                         "modifiers": {
-                            "mandatory": ["control", "fn"]
+                            "mandatory": ["control", "fn"],
+                            "optional": ["any"]
                         }
                     },
                     "to": [
@@ -110,7 +111,8 @@
                     "from": {
                         "key_code": "b",
                         "modifiers": {
-                            "mandatory": ["control", "fn"]
+                            "mandatory": ["control", "fn"],
+                            "optional": ["any"]
                         }
                     },
                     "to": [
@@ -130,7 +132,8 @@
                     "from": {
                         "key_code": "n",
                         "modifiers": {
-                            "mandatory": ["control", "fn"]
+                            "mandatory": ["control", "fn"],
+                            "optional": ["any"]
                         }
                     },
                     "to": [
@@ -145,7 +148,8 @@
                     "from": {
                         "key_code": "p",
                         "modifiers": {
-                            "mandatory": ["control", "fn"]
+                            "mandatory": ["control", "fn"],
+                            "optional": ["any"]
                         }
                     },
                     "to": [
