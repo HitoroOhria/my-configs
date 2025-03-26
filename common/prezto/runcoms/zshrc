@@ -28,7 +28,6 @@ for conf in "$ZSHHOME/"**/*.zsh; do
 done
 unset conf
 
-
 # pnpm
 export PNPM_HOME="/home/ohira/.local/share/pnpm"
 case ":$PATH:" in
@@ -36,3 +35,4 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
