@@ -68,8 +68,23 @@
             ]
         },
         {
-            "description": "[parent] Ctrl + fn + M to Cmd + Return",
+            "description": "[parent] <Cmd | Ctrl> + fn + M to <Ctrl | Cmd> + Return",
             "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "m",
+                        "modifiers": {
+                            "mandatory": ["command", "fn"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "return_or_enter",
+                            "modifiers": "control"
+                        }
+                    ]
+                },
                 {
                     "type": "basic",
                     "from": {
