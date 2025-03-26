@@ -2,7 +2,7 @@
 export PATH=$PATH:/opt/homebrew/bin
 
 # set mise
-eval "$(mise activate zsh)"
+eval "$(~/.local/bin/mise activate zsh)"
 alias ml="mise ls"
 alias mlg="mise ls | grep --color=never go"
 alias mln="mise ls | grep --color=never node"
