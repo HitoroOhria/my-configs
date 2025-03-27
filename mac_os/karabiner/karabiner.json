@@ -737,10 +737,26 @@
                             },
                             {
                                 "from": {
+                                    "key_code": "close_bracket",
+                                    "modifiers": { "mandatory": ["fn", "shift"] }
+                                },
+                                "to": [{ "key_code": "volume_decrement" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
                                     "key_code": "equal_sign",
                                     "modifiers": { "mandatory": ["fn"] }
                                 },
-                                "to": [{ "key_code": "volume_decrement" }],
+                                "to": [{ "apple_vendor_keyboard_key_code": "brightness_up" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "equal_sign",
+                                    "modifiers": { "mandatory": ["fn", "shift"] }
+                                },
+                                "to": [{ "apple_vendor_keyboard_key_code": "brightness_down" }],
                                 "type": "basic"
                             },
                             {
