@@ -68,7 +68,15 @@ This action is unnecessary for me.
 - open Keyboard Prefecture and move Application tab
 - Add any shortcut on Slack to Ctrl + T
 
-### Install Google Japanese Input
+### Disable default keyboard shortcut
 
-- install from [here](https://www.google.co.jp/ime/)
+- open Keyboard Prefecture and move shortcut tab
+- disable below
+  - Input source
+  - Screenshot
+  - Spotlight
+  - Accessibility
+  - Function Keys
+    - turn on `Use F1, F2, etc. keys as standard function keys`
+
 
