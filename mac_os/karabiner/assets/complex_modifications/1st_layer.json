@@ -441,6 +441,12 @@
                             "optional": ["any"]
                         }
                     },
+                    "conditions": [
+                        {
+                            "type": "modifier_if",
+                            "value": ["command", "option", "control", "shift"]
+                        }
+                    ],
                     "to": [
                         {
                             "key_code": "f11"
@@ -479,6 +485,21 @@
                     "to": [
                         {
                             "key_code": "mute"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "hyphen",
+                        "modifiers": {
+                            "mandatory": ["fn"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "q",
+                            "modifiers": ["control", "command"]
                         }
                     ],
                     "type": "basic"
