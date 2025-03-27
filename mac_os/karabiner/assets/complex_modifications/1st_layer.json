@@ -471,6 +471,20 @@
             "manipulators": [
                 {
                     "from": {
+                        "key_code": "tab",
+                        "modifiers": {
+                            "mandatory": ["fn"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "mute"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
                         "key_code": "close_bracket",
                         "modifiers": {
                             "mandatory": ["fn"]
@@ -521,20 +535,6 @@
                     "to": [
                         {
                             "apple_vendor_keyboard_key_code": "brightness_down"
-                        }
-                    ],
-                    "type": "basic"
-                },
-                {
-                    "from": {
-                        "key_code": "tab",
-                        "modifiers": {
-                            "mandatory": ["fn"]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "mute"
                         }
                     ],
                     "type": "basic"
