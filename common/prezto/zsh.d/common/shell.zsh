@@ -38,6 +38,7 @@ alias ssho='ssh -oStrictHostKeyChecking=no'
 
 # date
 alias datef='date +"%Y-%m-%d %H:%M:%S %z"'
+alias now='date +"%Y-%m-%d_%H-%M-%S"'
 
 # peco
 function peco-history-selection() {
