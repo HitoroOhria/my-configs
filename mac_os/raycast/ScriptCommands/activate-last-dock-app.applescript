@@ -2,7 +2,7 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Active last Dock App
+# @raycast.title Activate last Dock App
 # @raycast.mode silent
 
 # Optional parameters:
