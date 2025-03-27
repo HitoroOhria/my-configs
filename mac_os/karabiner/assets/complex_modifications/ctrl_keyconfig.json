@@ -105,7 +105,7 @@
         },
         {
             "available_since": "12.3.0",
-            "description": "[ctrl] Ctrl + <A | E> to <Home | End>",
+            "description": "[ctrl] Ctrl + <A | E> to <Home | End> (disabled)",
             "manipulators": [
                 {
                     "type": "basic",
@@ -222,3 +222,4 @@
         }
     ]
 }
+
