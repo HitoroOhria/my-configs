@@ -5,6 +5,7 @@
 - launch VIA or visit [via web app](https://www.usevia.app/)
 - move `SAVE + LOAD` on sidebar
 - exec `Load Saved layout`
+- load `via_layout-corne_cherry-jis-windows_with-replacing.json`
 
 # Linux
 
