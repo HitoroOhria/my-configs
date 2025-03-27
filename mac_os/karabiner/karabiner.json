@@ -819,8 +819,7 @@
             "selected": true,
             "simple_modifications": [
                 {
-                    "from": { "key_code": "international1" },
-                    "to": [{ "key_code": "equal_sign" }]
+                    "comment": "----- JIS Mac 配列 -----"
                 },
                 {
                     "from": { "key_code": "japanese_eisuu" },
@@ -829,6 +828,40 @@
                 {
                     "from": { "key_code": "japanese_kana" },
                     "to": [{ "key_code": "fn" }]
+                },
+                {
+                    "from": { "key_code": "right_command" },
+                    "to": [{ "key_code": "right_option" }]
+                },
+                {
+                    "comment": "----- JIS Windows 配列 -----"
+                },
+                {
+                    "from": { "key_code": "caps_lock" },
+                    "to": [{ "key_code": "tab" }]
+                },
+                {
+                    "from": { "key_code": "japanese_pc_nfer" },
+                    "to": [{ "key_code": "left_control" }]
+                },
+                {
+                    "from": { "key_code": "japanese_pc_xfer" },
+                    "to": [{ "key_code": "fn" }]
+                },
+                {
+                    "from": { "key_code": "japanese_pc_katakana" },
+                    "to": [{ "key_code": "right_option" }]
+                },
+                {
+                    "from": { "key_code": "left_option" },
+                    "to": [{ "key_code": "left_command" }]
+                },
+                {
+                    "comment": "----- JIS 配列・共通 (ANSI) -----"
+                },
+                {
+                    "from": { "key_code": "tab" },
+                    "to": [{ "key_code": "escape" }]
                 },
                 {
                     "from": { "key_code": "left_control" },
@@ -843,16 +876,12 @@
                     "to": [{ "key_code": "close_bracket" }]
                 },
                 {
-                    "from": { "key_code": "right_command" },
-                    "to": [{ "key_code": "right_option" }]
-                },
-                {
                     "from": { "key_code": "semicolon" },
                     "to": [{ "key_code": "open_bracket" }]
                 },
                 {
-                    "from": { "key_code": "tab" },
-                    "to": [{ "key_code": "escape" }]
+                    "from": { "key_code": "international1" },
+                    "to": [{ "key_code": "equal_sign" }]
                 }
             ],
             "virtual_hid_keyboard": {
