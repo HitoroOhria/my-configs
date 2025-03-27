@@ -1,0 +1,23 @@
+{
+  "title": "Special keyconfig",
+  "rules": [
+    {
+      "available_since": "12.3.0",
+      "description": "[special] Lower left key to Taking screenshot.",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "f13"
+          },
+          "to": [
+            {
+              "key_code": "5",
+              "modifiers": ["command", "shift"]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}

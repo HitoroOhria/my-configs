@@ -5,6 +5,22 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "available_since": "12.3.0",
+                        "description": "[special] Lower left key to Taking screenshot.",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "f13" },
+                                "to": [
+                                    {
+                                        "key_code": "5",
+                                        "modifiers": ["command", "shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "[parent] Ctrl to Eisuu if alone.",
                         "manipulators": [
                             {
@@ -827,6 +843,10 @@
                 {
                     "from": { "key_code": "left_option" },
                     "to": [{ "key_code": "left_command" }]
+                },
+                {
+                    "from": { "key_code": "left_shift" },
+                    "to": [{ "key_code": "f13" }]
                 },
                 {
                     "from": { "key_code": "open_bracket" },
