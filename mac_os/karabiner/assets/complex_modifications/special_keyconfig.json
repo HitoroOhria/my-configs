@@ -15,6 +15,20 @@
             }
           ],
           "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "f13",
+            "modifiers": {
+              "mandatory": ["shift"]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "MY_SCREENCAPTURE_FILE=$HOME/Pictures/Capture/Screenshot_$(date +'%Y-%m-%d_%H-%M-%S').png; screencapture -C $MY_SCREENCAPTURE_FILE && osascript -e \"set the clipboard to (read (POSIX file \\\"$MY_SCREENCAPTURE_FILE\\\") as JPEG picture)\""
+            }
+          ],
+          "type": "basic"
         }
       ]
     }
