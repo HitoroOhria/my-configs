@@ -13,9 +13,12 @@
 
 # Amphetamine
 
-- open Quick Settins
-- turn off all of the following:
-  - [ ] Allow display sleep
-  - [ ] Allow system sleep when display is closed
-  - [ ] Allow screen saver after 45m of inactivity
+- open Settings > Triggers
+- Add below trigger
+  - Name: `Connect to external display`
+  - Criteria: `USB Device: LG Monitor Controls (405NTABCD760)`
+  - Additional Options
+    - [x] Allow display sleep
+    - [ ] Allow system sleep when display is closed
+    - [ ] Allow screen saver after 45m of inactivity
 
