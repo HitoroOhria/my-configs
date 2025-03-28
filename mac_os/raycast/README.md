@@ -28,3 +28,8 @@
   - `Shift + Cmd + 3` to Normal Size For LG Dual-Up Monitor
   - `Shift + Cmd + 4` to Terminal Size For LG Dual-Up Monitor
 
+## Othres
+
+- `F13` to Translator > Translate
+- `Ctrl + F13` to ScreenOCR > Recognize Text 
+

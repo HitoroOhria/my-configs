@@ -5,25 +5,6 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "available_since": "12.3.0",
-                        "description": "[special] Lower left key to Taking screenshot and copy to clipboard.",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "f13" },
-                                "to": [{ "shell_command": "MY_SCREENCAPTURE_FILE=$HOME/Pictures/Capture/Screenshot_$(date +'%Y-%m-%d_%H-%M-%S').png; screencapture -i -C $MY_SCREENCAPTURE_FILE && osascript -e \"set the clipboard to (read (POSIX file \\\"$MY_SCREENCAPTURE_FILE\\\") as JPEG picture)\"" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "f13",
-                                    "modifiers": { "mandatory": ["shift"] }
-                                },
-                                "to": [{ "shell_command": "MY_SCREENCAPTURE_FILE=$HOME/Pictures/Capture/Screenshot_$(date +'%Y-%m-%d_%H-%M-%S').png; screencapture -C $MY_SCREENCAPTURE_FILE && osascript -e \"set the clipboard to (read (POSIX file \\\"$MY_SCREENCAPTURE_FILE\\\") as JPEG picture)\"" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "[parent] Ctrl to Eisuu if alone.",
                         "manipulators": [
                             {
