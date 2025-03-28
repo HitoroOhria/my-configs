@@ -19,6 +19,7 @@
   - ...
   - `Cmd + F9` to last application in Dock
     - This is achieved through Script Command
+  - `Shift + Ctrl + T` to iTerm2
 
 ## Window Manager
 
