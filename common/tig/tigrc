@@ -43,20 +43,16 @@ set show-changes = no
 
 ## -------- Main --------
 
-# C で commit
-# + で commit --amend
+# H で commit hash をコピー
+# M で commit message をコピー
+# B で reset %(commit)
 # R で rebase -i
 # ! で revert
-bind main C !git commit --allow-empty --no-verify
-bind main + !git commit --amend --allow-empty --no-verify
+bind main H @sh -c "printf '%s' %(commit) | git copy"
+bind main M @sh -c "git log -1 --pretty=%s %(commit) | git copy"
+bind main B !git reset %(commit)
 bind main R !git rebase -i %(commit)
 bind main ! !git revert %(commit)
-
-# B で reset %(commit)
-bind main B !git reset %(commit)
-
-# H で クリップボードに commit hash をコピー
-bind main   H @sh -c "printf '%s' %(commit) | git pbcopy"
 
 ## -------- Status --------
 
@@ -84,7 +80,7 @@ bind refs O !git rebase --onto %(branch) "%(prompt Enter commit hash: )"
 
 ## -------- Reflog --------
 
-bind reflog H @sh -c "printf '%s' %(commit) | git pbcopy"
+bind reflog H @sh -c "printf '%s' %(commit) | git copy"
 
 ## -------- Stash --------
 
