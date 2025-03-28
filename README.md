@@ -77,6 +77,8 @@ $ ./setup_all.sh
     - [Google Dive](https://www.google.com/intl/ja_jp/drive/download/)
     - [VIA](https://github.com/the-via/releases/releases)
     - [DevToys](https://devtoys.app/)
+    - [battery](https://github.com/actuallymentor/battery)
+    - [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12)
 - Development Tools
     - Docker Desktop
     - JetBrains IDE
