@@ -1,4 +1,5 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
+
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
@@ -64,23 +65,21 @@ $ ./setup_all.sh
 ### Mac
 
 - Utility Tools
-    - Alfred
+    - Raycast
     - Karabiner-Elements
-    - Deepl
     - 1Password
-    - Slack for Desktop
+    - Slack
     - Notion
     - 1Focus
     - [f.lux](https://justgetflux.com/) (set 6:00 wake up)
     - [CleanShot X](https://cleanshot.com/)
     - Yoink
-    - BetterSnapTool
-    - Typelet4Me
+    - BetterDisplay
     - [Google Dive](https://www.google.com/intl/ja_jp/drive/download/)
     - [VIA](https://github.com/the-via/releases/releases)
     - [DevToys](https://devtoys.app/)
 - Development Tools
-    - Docker for Mac
+    - Docker Desktop
     - JetBrains IDE
     - homebrew
     - prezto
@@ -89,11 +88,10 @@ $ ./setup_all.sh
     - tig
     - ghq
     - peco
-    - anyenv
+    - mise
     - httpie
-    - ricty deminished
+    - UDEV Gothic
 - Chrome Extensions
-    - [workona](https://chrome.google.com/webstore/detail/workona-tab-manager/ailcmbgekjpnablpdkmaaccecekgdhlh)
     - [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb)
     - [Chrome Show Tab Numbers](https://chrome.google.com/webstore/detail/chrome-show-tab-numbers/pflnpcinjbcfefgbejjfanemlgcfjbna)
     - [Color zilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp)
