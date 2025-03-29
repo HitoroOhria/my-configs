@@ -35,7 +35,7 @@
             ]
         },
         {
-            "description": "[parent] Fn to Layer1 if single, Layer2 if double, Kana if alone.",
+            "description": "[parent] Fn to Kana if alone.",
             "manipulators": [
                 {
                     "type": "basic",
@@ -45,118 +45,23 @@
                             "optional": ["any"]
                         }
                     },
-                    "conditions": [
-                        {
-                            "type": "variable_if",
-                            "name": "tap_fn",
-                            "value": true
-                        }
-                    ],
-                    "to": [
-                        {
-                            "set_variable": {
-                                "name": "tap_fn",
-                                "value": false
-                            }
-                        },
-                        {
-                            "set_variable": {
-                                "name": "layer2",
-                                "value": true,
-                                "key_up_value": false
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "fn",
-                        "modifiers": {
-                            "optional": ["any"]
-                        }
-                    },
                     "parameters": {
-                        "basic.to_delayed_action_delay_milliseconds": 300
+                        "basic.to_if_held_down_threshold_milliseconds": 100
                     },
                     "to": [
                         {
-                            "set_variable": {
-                                "name": "layer1",
-                                "value": true,
-                                "key_up_value": false
-                            }
-                        },
-                        {
-                            "set_variable": {
-                                "name": "tap_fn",
-                                "value": true
-                            }
+                            "key_code": "fn",
+                            "lazy": true
                         }
                     ],
-                    "to_delayed_action": {
-                        "to_if_invoked": [
-                            {
-                                "set_variable": {
-                                    "name": "tap_fn",
-                                    "value": false
-                                }
-                            }
-                        ],
-                        "to_if_canceled": [
-                            {
-                                "set_variable": {
-                                    "name": "tap_fn",
-                                    "value": false
-                                }
-                            }
-                        ]
-                    },
+                    "to_if_held_down": [
+                        {
+                            "key_code": "fn"
+                        }
+                    ],
                     "to_if_alone": [
                         {
                             "key_code": "japanese_kana"
-                        }
-                    ]
-                },
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "a",
-                        "modifiers": {
-                            "optional": ["any"]
-                        }
-                    },
-                    "conditions": [
-                        {
-                            "type": "variable_if",
-                            "name": "layer1",
-                            "value": true
-                        }
-                    ],
-                    "to": [
-                        {
-                            "key_code": "1"
-                        }
-                    ]
-                },
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "a",
-                        "modifiers": {
-                            "optional": ["any"]
-                        }
-                    },
-                    "conditions": [
-                        {
-                            "type": "variable_if",
-                            "name": "layer2",
-                            "value": true
-                        }
-                    ],
-                    "to": [
-                        {
-                            "key_code": "2"
                         }
                     ]
                 }
