@@ -7,7 +7,7 @@
             "manipulators": [
                 {
                     "from": {
-                        "key_code": "f13"
+                        "key_code": "f20"
                     },
                     "to": [
                         {
@@ -18,7 +18,7 @@
                 },
                 {
                     "from": {
-                        "key_code": "f13",
+                        "key_code": "f20",
                         "modifiers": {
                             "mandatory": ["shift"]
                         }
