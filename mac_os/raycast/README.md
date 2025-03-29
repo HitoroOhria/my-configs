@@ -12,25 +12,25 @@
 
 ## Application
 
-- `Cmd + Function Key` to activate regular applications
-  - `Cmd + F1` to Browser
-  - `Cmd + F2` to Finder
-  - `Cmd + F3` to Calendar
-  - ...
-  - `Cmd + F9` to last application in Dock
-    - This is achieved through Script Command
-  - `Shift + Ctrl + T` to iTerm2
+`Cmd + Function Key` to activate regular applications.
+
+- `Cmd + F1` to Browser
+- `Cmd + F2` to Finder
+- `Cmd + F3` to Calendar
+- ...
+- `Cmd + F9` to last application in Dock
+  - This is achieved through Script Command
+- `Shift + Ctrl + T` to iTerm2
+
+## Translator
+
+- `F13 (Option + A)` to Dictionary > Define Word
+- `F16 (Option + S)` to Translator > Translate
+- `F17 (Option + D)` to ScreenOCR > Recognize Text
 
 ## Window Manager
 
-- `Shift + Cmd + Number Key` to resize window
-  - `Shift + Cmd + 1` to Toggle Fullscreen
-  - `Shift + Cmd + 2` to Reasonable Size
-  - `Shift + Cmd + 3` to Normal Size For LG Dual-Up Monitor
-  - `Shift + Cmd + 4` to Terminal Size For LG Dual-Up Monitor
-
-## Othres
-
-- `F13` to Translator > Translate
-- `Ctrl + F13` to ScreenOCR > Recognize Text 
-
+- `Option + F13` to Maximize
+- `Option + F16` to Reasonable Size
+- `Option + F17` to Normal Size For LG Dual-Up Monitor
+- `Option + F18` to Terminal Size For LG Dual-Up Monitor

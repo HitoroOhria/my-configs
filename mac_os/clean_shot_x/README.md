@@ -17,11 +17,11 @@
 
 ## Global
 
-- `Shift + Ctrl + 1` to OCR
-- `Shift + Ctrl + 2` to Capture Area
-- `Shift + Ctrl + 3` to Captrue Fullscreen
-- `Shift + Ctrl + 4` to Record Screen
-- `Shift + Ctrl + 5` to All-in-One
+- `Shift + F13 (Option + Q)` to OCR
+- `Shift + F16 (Option + W)` to Capture Area
+- `Shift + F17 (Option + E)` to Captrue Fullscreen
+- `Shift + F18 (Option + R)` to Record Screen
+- `Shift + F19 (Option + T)` to All-in-One
 
 ## Internal
 
